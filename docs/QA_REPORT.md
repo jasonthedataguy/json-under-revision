@@ -8,7 +8,7 @@
 - Source is preserved separately. The text on the PDF is the *proposed edited version*, not approved canonical manuscript.
 
 ## Not verified / outstanding
-- Browser navigation to file:// and localhost was blocked by the testing environment. Browser QA used `page.set_content` and data-uri images instead. Actual deployed HTTP/HTTPS loading is **untested**.
+- Follow-up local HTTP checks passed at 390/820/1440px: ten original paragraphs, image/audio loading, memory switching and no horizontal overflow. Live HTTPS remains **untested**.
 - No iOS/Android real-device test, screen-reader test, performance audit or QR test.
 - Final original-layer artwork, 300-dpi/CMYK preparation and printer preflight absent.
 - Narration, licensed music, final motion graphics and social exports absent.
@@ -17,4 +17,4 @@
 ## Human approval request
 1. Is the edited chapter text acceptable as canonical, or preserve the original verbatim?
 2. Does the father/child in a lamp-lit apartment and city view feel emotionally accurate despite being a fictionalized visual setting?
-3. Do you want the companion mainly visual/quiet, or to add your own voice recording?
+3. Narrator audio is now required. Reference URL supplied; speaker/time range and recording/generation method remain pending. No narrator has been generated or mixed yet.

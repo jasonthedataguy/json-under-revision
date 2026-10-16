@@ -22,12 +22,12 @@ The sentence about stomach pain is parental dialogue, not medical advice. The pr
 
 ## Outstanding release dependencies
 
-1. Git commit author name/email and authenticated GitHub account. No existing repository or commit convention was present.
+1. Completed: GitHub identity verified, repository created, origin connected and initial local commit `3daa919` recorded.
 2. Author's text selection; channel account identity and handle availability.
-3. Create remote repository, push, enable Pages, run deployment and verify the live chapter URL.
+3. Resolve public-repository publication scope, push, enable Pages and verify the deployed chapter URL.
 4. Choose the durable owned URL before printing a QR. The deck's domain is a concept, not evidence of ownership.
 5. The existing A5 PDF is an edited-text layout proof with a QR placeholder. It is not press-ready; update only after text selection and live URL, then obtain printer specifications/proof.
-6. Existing video remains a 24-second animatic with provisional art. Do not label it as a finished narrated film. Final social release needs approved art and a rendered, checked export; author narration requires an actual recording if wanted.
+6. Existing video remains a 24-second animatic with provisional art. Do not label it as a finished narrated film. Final social release needs approved art and a rendered, checked export; narrator audio is now required; reference URL supplied, speaker selection and recording/generation method pending.
 7. Sign in to YouTube/TikTok to create channels. No channels or uploads have been created by this preparation.
 
 Do not start preorders from the deck's illustrative prices. The remaining manuscripts, consent review, print/fulfillment quotes and refund/checkout arrangements are not supplied.
@@ -37,3 +37,7 @@ Do not start preorders from the deck's illustrative prices. The remaining manusc
 The original-text candidate was served over local HTTP and opened in a browser. All ten manuscript paragraphs rendered with Vietnamese accents, the two-bowl image loaded, and the second memory button updated its text and pressed state. The skip-link encoding issue found during this check was corrected. Live HTTPS, real-device audio playback and printed QR verification remain pending.
 
 Git was initialized on `main`. The author identified the GitHub account as `jasonthedataguy`; commit attribution uses that account's verified GitHub-provided noreply address. The remote repository is https://github.com/jasonthedataguy/json-under-revision. It was created public, so uploading the full production kit awaits a choice between private source storage and public publication of drafts. Website deployment remains pending.
+
+## Narration update — 16 October 2026
+
+The author supplied [this voice reference](https://www.youtube.com/watch?v=Q-HcJBSspHQ). Its page title is “Phim ngắn: True Love - Tôi không cần yêu!!!”, uploaded by TrungTrau, with He Always Smiles credited in the description. This does not establish which speaker is intended or permission to imitate a voice. Playback did not permit reliable voice assessment. The source-based reading draft is ready; narrator audio and voice-generation capability are pending.

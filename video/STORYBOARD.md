@@ -1,9 +1,9 @@
 # .json / 07 — Cơm nguội: Short film storyboard v0.1
 
 **Format:** vertical 9:16, MP4; intended release 1080×1920, 24 fps; proof is 720×1280.  
-**Target duration:** 24 seconds for animatic; later optional 40–70-second human-voice version for social discovery as proposed in the strategy deck.  
+**Target duration:** 24 seconds for animatic; required narrator-led discovery version targeting 40–70 seconds for social discovery as proposed in the strategy deck.  
 **Narrative rule:** no new dialogue, no fabricated family photographs, no attribution of an invented voice to an actual family member.  
-**Current status:** animated storyboard / visual proof of concept. No author voiceover or real environmental recordings yet.
+**Current status:** animated storyboard / visual proof of concept. Narration is now required; no narrator track or real environmental recording exists yet. See [narration brief](NARRATION.md).
 
 | Time | Visual | On-screen text (source-derived) | Audio | Edit notes |
 |---|---|---|---|---|
@@ -17,7 +17,7 @@
 
 1. Author approves which memory details may be represented visually. The present kitchen/city-window are *artistic interpretation*, not literal documentation.
 2. Replace provisional illustration with an original production-resolution layered artwork; export backgrounds/figures/table as separate layers.
-3. Record author's voice if desired; avoid generating a synthetic impersonation of a real family member.
+3. Produce required narrator audio using the confirmed source and method in the narration brief. The healwayssmile reference URL is supplied; speaker/time range and intended use remain pending.
 4. Build real parallax on layered artwork; design stillness around the last line.
 5. Add licensed/original sound, mix narration at consistent levels and provide Vietnamese captions.
 6. Render social cuts with safe caption area, poster frame and upload-ready descriptions; validate on a real phone.

@@ -39,3 +39,9 @@ Unpublished memoir prose stays the author's content. Keep this repository **priv
 See [launch review](docs/LAUNCH_REVIEW.md) for inspection findings and outstanding dependencies, and [channel copy](docs/CHANNEL_LAUNCH.md) for prepared YouTube/TikTok descriptions.
 
 Build a public candidate with `python scripts/build_site.py --text original`. Preview it with `python -m http.server 8765 --directory site --bind 127.0.0.1`. This exports only selected public files; the source kit remains private. The manual GitHub Pages workflow requires an authenticated repository and Pages configuration. Neither deployment nor channel creation has happened yet.
+
+## Required narrator track and checklist updates
+
+Narration is required for the next video export. See the [audio brief](video/NARRATION.md) and [reading draft](video/narration-script.txt). The healwayssmile reference URL is recorded; the existing MP4 still has room tone only.
+
+The [CSV checklist](docs/CHECKLIST.csv) is the status source of truth. Run `python scripts/build_checklists.py` to update Markdown and browser views. With `reportlab` installed, add `--pdf --font /path/to/Unicode.ttf` to regenerate the printable checklist.

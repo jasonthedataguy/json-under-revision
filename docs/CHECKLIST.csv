@@ -25,25 +25,37 @@ D02,DIGITAL,Implement interactive memory moments,Assistant,D01,DONE,Accessible b
 D03,DIGITAL,Implement original/revision archive,Assistant,D01,DONE,Original and editorial explanations accessible separately
 D04,DIGITAL,Create nonhistorical sound study,Assistant,D01,DONE,Original ambient audio plays when user chooses
 D05,DIGITAL,Replace provisional art with approved exports,Engineer,A07,BLOCKED,All image slots use approved optimized assets
-D06,DIGITAL,"Complete screen reader, keyboard, reduced motion tests",QA,D05,TODO,WCAG-focused manual check on mobile and desktop
+D06,DIGITAL,"Complete screen reader, keyboard, reduced motion tests",QA,D05,IN PROGRESS,"Focus styles and tab initialization improved; full keyboard, screen-reader and reduced-motion checks still pending"
 D07,DIGITAL,"Measure speed, CLS and mobile loading",Engineer,D05,TODO,Real 4G phone load target <3s where feasible
 D08,DIGITAL,Confirm privacy and analytics consent decisions,Jason,E05,TODO,No personal data capture without explicit policy
 D09,DIGITAL,Publish to a real owned domain,Engineer,"D06,D07,D08",BLOCKED,HTTPS and permanent human-readable chapter URL working
 D10,DIGITAL,Confirm final chapter permalink and redirects,Engineer,D09,BLOCKED,"Permalink documented, backup/redirect behavior checked"
 D11,DIGITAL,Test archive access from final printed QR,QA,"B05,D10",BLOCKED,iOS/Android camera opens exact chapter page
 D12,DIGITAL,Optionally record author voiceover and captions,Jason,E06,TODO,Own voice rights and transcript; user-initiated audio playback
+D13,DIGITAL,Build isolated public chapter export,Assistant,D01,DONE,"Build emits landing page, chapter page and two assets; original prose preserved; private notes and provisional family image excluded"
+D14,DIGITAL,Verify local HTTP and responsive layout,Assistant,D13,DONE,10 source paragraphs preserved; image/audio loaded; memory button updates; no overflow at 390/820/1440px
+D15,DIGITAL,Prepare manual Pages deployment workflow,Assistant,D13,DONE,Workflow publishes only site/ on manual dispatch; no remote deployment run yet
 V01,VIDEO,Write 5-beat short-form storyboard,Assistant,E02,DONE,Every quote comes from source or labeled editorial paraphrase
 V02,VIDEO,Generate 5 visual animatic cards,Assistant,"V01,A02",DONE,Consistent keyframe and text safe area
 V03,VIDEO,Render vertical animatic MP4,Assistant,V02,DONE,Playable H.264 720x1280 with original room tone
 V04,VIDEO,Authorize depiction of father/child memory,Jason,A03,NEEDS APPROVAL,No inaccurate claims of historical documentation
 V05,VIDEO,Create layered art for true movement,Artist,"A04,V04",BLOCKED,Separate foreground/background layers
-V06,VIDEO,Record author narration (optional),Jason,E06,TODO,Clean self-recorded voice in lossless audio
-V07,VIDEO,"Final edit, audio mastering and subtitles",Video editor,"V05,V06",BLOCKED,"Portrait 1080x1920, licensed audio, captions and safe zones"
+V06,VIDEO,Produce required narrator audio from confirmed voice source,Jason + Audio producer,"E06,V11,V12",BLOCKED,healwayssmile reference URL recorded in video/NARRATION.md; intended speaker/time range and permitted use clarified; narrator WAV produced and reviewed; room tone does not count
+V07,VIDEO,"Final edit, audio mastering and subtitles",Video editor,"V05,V06",BLOCKED,Portrait 1080x1920; voice mixed above ambience without clipping; Vietnamese captions timed to actual narration; safe zones verified
 V08,VIDEO,Export 40–70s discovery cut and 15s teaser,Video editor,V07,BLOCKED,Finished exports plus thumbnail and short caption
 V09,VIDEO,Review platform preview and factual claims,Jason,V08,BLOCKED,"No false implied recordings, no clipping, legible on phone"
 V10,VIDEO,Publish social post with clear chapter CTA,Jason,"V09,D09",BLOCKED,"Correct live landing page, logged post URLs"
-R01,RELEASE,Compare source/edit against exported PDF/web/video,Editor + QA,"B01,D01,V03",TODO,All excerpts consistent; no altered final sentence
-R02,RELEASE,Run visual QA on PDF and mobile preview,QA,"B01,D01",TODO,"No clipped text, low contrast, or broken navigation"
+V11,VIDEO,Confirm reference speaker and narration method,Jason,—,IN PROGRESS,"YouTube reference Q-HcJBSspHQ supplied; timestamp/speaker, voice-use permission where needed, and recording/generation method still pending"
+V12,VIDEO,Prepare source-based discovery reading script,Assistant,E01,DONE,video/narration-script.txt uses unchanged source excerpts; ending preserved; recording duration and final selection pending
+G01,GIT,Commit initial chapter kit locally,Assistant,—,DONE,Initial commit 3daa919 on main with GitHub noreply identity
+G02,GIT,Create remote repository and connect origin,Jason + Assistant,G01,DONE,jasonthedataguy/json-under-revision created; HTTPS origin configured; empty remote inspected
+G03,GIT,Choose public repository publication scope,Jason,G02,NEEDS APPROVAL,"Choose private full kit, public website only, or explicit public release of drafts and notes"
+G04,GIT,Push selected files and verify upstream,Assistant,G03,BLOCKED,GitHub main contains intended files; local and remote commits match
+C01,CHANNELS,Prepare channel identity and launch copy,Assistant,—,DONE,"YouTube description, TikTok bio and first-post copy in docs/CHANNEL_LAUNCH.md"
+C02,CHANNELS,Create book YouTube channel,Jason + Assistant,C01,BLOCKED,Signed in but creation page did not complete; channel handle and URL must be verified
+C03,CHANNELS,Create book TikTok account/channel,Jason + Assistant,C01,BLOCKED,Author-controlled sign-in required; handle and URL must be verified
+R01,RELEASE,Compare source/edit against exported PDF/web/video,Editor + QA,"B01,D01,V03",IN PROGRESS,Original prose matches public web candidate; PDF still uses proposed edit; final narrated-video consistency pending
+R02,RELEASE,Run visual QA on PDF and mobile preview,QA,"B01,D01",IN PROGRESS,Previous PDF contact-sheet inspection recorded; local HTTP page checked at 390/820/1440px with no overflow; final-art and device QA pending
 R03,RELEASE,Ask 5 test readers about emotional impact,Jason,"E03,D01",TODO,Log feedback without leading respondents
 R04,RELEASE,Run pilot with permissioned/paid intent metrics,Jason,"B08,D10,V10",BLOCKED,Measure buyer intent and sales; views alone do not prove demand
 R05,RELEASE,Choose release or revision after feedback,Jason,"R01,R02,R03",BLOCKED,Document go/revise/stop decision with evidence

@@ -1,13 +1,12 @@
 # .json / 07 — Cơm nguội: Production Checklist
 
-**Checkpoint:** 2026-10-16 · Prototype v0.1
+**Checkpoint:** 2026-10-16 · Release preparation; narrator required
 
-Legend: DONE means a draft artifact exists, not release approved. BLOCKED means dependency unmet.
+Source of truth: [CHECKLIST.csv](CHECKLIST.csv). DONE applies to task acceptance criteria, not release approval. IN PROGRESS means partial verification; BLOCKED means a dependency is missing.
 
 ## Definition of done
 
-A complete, approved chapter manuscript; final-resolution illustrated book pages and printer proof; deployed HTTPS archive reachable by a scanned QR; and a released vertical video with legally cleared media, accessible captions and author-approved visuals.
-
+A complete, approved chapter manuscript; final-resolution illustrated book pages and printer proof; deployed HTTPS archive reachable by a scanned QR; and a released vertical video with required narrator audio, cleared media, synchronized Vietnamese captions and approved visuals. Ambient sound alone does not satisfy narration.
 
 ## Editorial
 - [x] **E01 · Freeze original manuscript** — `DONE`  
@@ -68,8 +67,8 @@ A complete, approved chapter manuscript; final-resolution illustrated book pages
   Owner: Assistant · Depends: D01 · Pass: Original ambient audio plays when user chooses
 - [ ] **D05 · Replace provisional art with approved exports** — `BLOCKED`  
   Owner: Engineer · Depends: A07 · Pass: All image slots use approved optimized assets
-- [ ] **D06 · Complete screen reader, keyboard, reduced motion tests** — `TODO`  
-  Owner: QA · Depends: D05 · Pass: WCAG-focused manual check on mobile and desktop
+- [ ] **D06 · Complete screen reader, keyboard, reduced motion tests** — `IN PROGRESS`  
+  Owner: QA · Depends: D05 · Pass: Focus styles and tab initialization improved; full keyboard, screen-reader and reduced-motion checks still pending
 - [ ] **D07 · Measure speed, CLS and mobile loading** — `TODO`  
   Owner: Engineer · Depends: D05 · Pass: Real 4G phone load target <3s where feasible
 - [ ] **D08 · Confirm privacy and analytics consent decisions** — `TODO`  
@@ -82,6 +81,12 @@ A complete, approved chapter manuscript; final-resolution illustrated book pages
   Owner: QA · Depends: B05,D10 · Pass: iOS/Android camera opens exact chapter page
 - [ ] **D12 · Optionally record author voiceover and captions** — `TODO`  
   Owner: Jason · Depends: E06 · Pass: Own voice rights and transcript; user-initiated audio playback
+- [x] **D13 · Build isolated public chapter export** — `DONE`  
+  Owner: Assistant · Depends: D01 · Pass: Build emits landing page, chapter page and two assets; original prose preserved; private notes and provisional family image excluded
+- [x] **D14 · Verify local HTTP and responsive layout** — `DONE`  
+  Owner: Assistant · Depends: D13 · Pass: 10 source paragraphs preserved; image/audio loaded; memory button updates; no overflow at 390/820/1440px
+- [x] **D15 · Prepare manual Pages deployment workflow** — `DONE`  
+  Owner: Assistant · Depends: D13 · Pass: Workflow publishes only site/ on manual dispatch; no remote deployment run yet
 
 ## Video
 - [x] **V01 · Write 5-beat short-form storyboard** — `DONE`  
@@ -94,22 +99,44 @@ A complete, approved chapter manuscript; final-resolution illustrated book pages
   Owner: Jason · Depends: A03 · Pass: No inaccurate claims of historical documentation
 - [ ] **V05 · Create layered art for true movement** — `BLOCKED`  
   Owner: Artist · Depends: A04,V04 · Pass: Separate foreground/background layers
-- [ ] **V06 · Record author narration (optional)** — `TODO`  
-  Owner: Jason · Depends: E06 · Pass: Clean self-recorded voice in lossless audio
+- [ ] **V06 · Produce required narrator audio from confirmed voice source** — `BLOCKED`  
+  Owner: Jason + Audio producer · Depends: E06,V11,V12 · Pass: healwayssmile reference URL recorded in video/NARRATION.md; intended speaker/time range and permitted use clarified; narrator WAV produced and reviewed; room tone does not count
 - [ ] **V07 · Final edit, audio mastering and subtitles** — `BLOCKED`  
-  Owner: Video editor · Depends: V05,V06 · Pass: Portrait 1080x1920, licensed audio, captions and safe zones
+  Owner: Video editor · Depends: V05,V06 · Pass: Portrait 1080x1920; voice mixed above ambience without clipping; Vietnamese captions timed to actual narration; safe zones verified
 - [ ] **V08 · Export 40–70s discovery cut and 15s teaser** — `BLOCKED`  
   Owner: Video editor · Depends: V07 · Pass: Finished exports plus thumbnail and short caption
 - [ ] **V09 · Review platform preview and factual claims** — `BLOCKED`  
   Owner: Jason · Depends: V08 · Pass: No false implied recordings, no clipping, legible on phone
 - [ ] **V10 · Publish social post with clear chapter CTA** — `BLOCKED`  
   Owner: Jason · Depends: V09,D09 · Pass: Correct live landing page, logged post URLs
+- [ ] **V11 · Confirm reference speaker and narration method** — `IN PROGRESS`  
+  Owner: Jason · Depends: — · Pass: YouTube reference Q-HcJBSspHQ supplied; timestamp/speaker, voice-use permission where needed, and recording/generation method still pending
+- [x] **V12 · Prepare source-based discovery reading script** — `DONE`  
+  Owner: Assistant · Depends: E01 · Pass: video/narration-script.txt uses unchanged source excerpts; ending preserved; recording duration and final selection pending
+
+## Git
+- [x] **G01 · Commit initial chapter kit locally** — `DONE`  
+  Owner: Assistant · Depends: — · Pass: Initial commit 3daa919 on main with GitHub noreply identity
+- [x] **G02 · Create remote repository and connect origin** — `DONE`  
+  Owner: Jason + Assistant · Depends: G01 · Pass: jasonthedataguy/json-under-revision created; HTTPS origin configured; empty remote inspected
+- [ ] **G03 · Choose public repository publication scope** — `NEEDS APPROVAL`  
+  Owner: Jason · Depends: G02 · Pass: Choose private full kit, public website only, or explicit public release of drafts and notes
+- [ ] **G04 · Push selected files and verify upstream** — `BLOCKED`  
+  Owner: Assistant · Depends: G03 · Pass: GitHub main contains intended files; local and remote commits match
+
+## Channels
+- [x] **C01 · Prepare channel identity and launch copy** — `DONE`  
+  Owner: Assistant · Depends: — · Pass: YouTube description, TikTok bio and first-post copy in docs/CHANNEL_LAUNCH.md
+- [ ] **C02 · Create book YouTube channel** — `BLOCKED`  
+  Owner: Jason + Assistant · Depends: C01 · Pass: Signed in but creation page did not complete; channel handle and URL must be verified
+- [ ] **C03 · Create book TikTok account/channel** — `BLOCKED`  
+  Owner: Jason + Assistant · Depends: C01 · Pass: Author-controlled sign-in required; handle and URL must be verified
 
 ## Release
-- [ ] **R01 · Compare source/edit against exported PDF/web/video** — `TODO`  
-  Owner: Editor + QA · Depends: B01,D01,V03 · Pass: All excerpts consistent; no altered final sentence
-- [ ] **R02 · Run visual QA on PDF and mobile preview** — `TODO`  
-  Owner: QA · Depends: B01,D01 · Pass: No clipped text, low contrast, or broken navigation
+- [ ] **R01 · Compare source/edit against exported PDF/web/video** — `IN PROGRESS`  
+  Owner: Editor + QA · Depends: B01,D01,V03 · Pass: Original prose matches public web candidate; PDF still uses proposed edit; final narrated-video consistency pending
+- [ ] **R02 · Run visual QA on PDF and mobile preview** — `IN PROGRESS`  
+  Owner: QA · Depends: B01,D01 · Pass: Previous PDF contact-sheet inspection recorded; local HTTP page checked at 390/820/1440px with no overflow; final-art and device QA pending
 - [ ] **R03 · Ask 5 test readers about emotional impact** — `TODO`  
   Owner: Jason · Depends: E03,D01 · Pass: Log feedback without leading respondents
 - [ ] **R04 · Run pilot with permissioned/paid intent metrics** — `BLOCKED`  
