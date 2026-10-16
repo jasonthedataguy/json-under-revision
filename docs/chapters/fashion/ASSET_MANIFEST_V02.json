@@ -1,0 +1,92 @@
+{
+  "chapter": "02",
+  "title": "Fashion",
+  "version": "0.2",
+  "status": "author_review",
+  "style": "A Room in Revision",
+  "visual_palette": {
+    "pine": "#062F26",
+    "pink": "#F47EAC",
+    "paper": "#F5EBD8",
+    "ink": "#0F1E1A",
+    "denim": "#72838A",
+    "peach": "#E9A29B",
+    "leather": "#BB807C"
+  },
+  "local_package": "Fashion_Room_In_Revision_v02_FULL.zip",
+  "package_files": 80,
+  "assets": [
+    {
+      "id": "manuscript",
+      "file": "content/original.md",
+      "status": "review_only"
+    },
+    {
+      "id": "edit",
+      "file": "content/proposed-edit.md",
+      "status": "awaits_canonical_approval"
+    },
+    {
+      "id": "a5",
+      "file": "book/02_Fashion_Room_in_Revision_A5_PROOF.pdf",
+      "pages": 9,
+      "status": "editorial_proof"
+    },
+    {
+      "id": "a4",
+      "file": "book/02_Fashion_Album_Poster_A4_ART_PRINT_PROOF.pdf",
+      "pages": 1,
+      "status": "art_proof"
+    },
+    {
+      "id": "website",
+      "file": "website/index.html",
+      "status": "offline_proof_full_manuscript"
+    },
+    {
+      "id": "interactive",
+      "file": "docs/wardrobe_timeline.json",
+      "steps": 6,
+      "status": "working_local"
+    },
+    {
+      "id": "social",
+      "file": "social/instagram/slide_01_3x4.jpg",
+      "count": 5,
+      "dimensions": "1080x1440",
+      "status": "draft"
+    },
+    {
+      "id": "vertical",
+      "file": "video/02_Fashion_RoomInRevision_ANIMATIC_9x16.mp4",
+      "dimensions": "720x1280",
+      "duration_seconds": 24,
+      "narration": false,
+      "status": "ambient_animatic"
+    },
+    {
+      "id": "youtube",
+      "file": "video/02_Fashion_YouTube_LANDSCAPE_ANIMATIC_16x9.mp4",
+      "dimensions": "1280x720",
+      "duration_seconds": 24,
+      "narration": false,
+      "status": "ambient_animatic"
+    },
+    {
+      "id": "board",
+      "file": "docs/PROJECT_BOARD.html",
+      "task_count": 64,
+      "status": "local_interactive"
+    }
+  ],
+  "pending": [
+    "approve_canonical_text",
+    "clear_poster_logo_and_third_party_rights",
+    "approve_public_release",
+    "record_and_license_voice",
+    "sync_subtitles_to_voice",
+    "print_vendor_pdfx_and_proof",
+    "deploy_and_test_owned_url",
+    "upload_to_social_channels"
+  ]
+}
