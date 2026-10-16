@@ -11,6 +11,7 @@ A book with a version history. Each chapter is a complete story with an optional
 | 06 — Play to Win, Don’t Play Not to Lose | [Online](https://jasonthedataguy.github.io/json-under-revision/chapters/06/) | [chapters/play-to-win](chapters/play-to-win/) | [Approved board](docs/chapters/choi-de-khong-thua/PROJECT_BOARD.html) |
 | 07 — Cơm nguội | [Online](https://jasonthedataguy.github.io/json-under-revision/chapters/07/) | [chapters/com-nguoi](chapters/com-nguoi/) | [Board](chapters/com-nguoi/previews/product-board.jpg) |
 | 08 — Dating Algorithm | [Online](https://jasonthedataguy.github.io/json-under-revision/chapters/08/) | [chapters/dating-algorithm](chapters/dating-algorithm/) | [Product board](chapters/dating-algorithm/previews/product-board.jpg) |
+| 09 — Thế giới trong mơ của tôi | [Online](https://jasonthedataguy.github.io/json-under-revision/chapters/09/) | [chapters/the-gioi-trong-mo-cua-toi](chapters/the-gioi-trong-mo-cua-toi/) | [Product board](chapters/the-gioi-trong-mo-cua-toi/previews/PROJECT_BOARD.pdf) |
 | 15 — Three Meeting Theory | [Online](https://jasonthedataguy.github.io/json-under-revision/chapters/15/) | [chapters/three-meeting-theory](chapters/three-meeting-theory/) | [Product board](chapters/three-meeting-theory/previews/product-board.jpg) |
 | 16 — Dating 102 | [Online](https://jasonthedataguy.github.io/json-under-revision/chapters/16/) | [chapters/dating-102](chapters/dating-102/) | [Product board](chapters/dating-102/previews/PROJECT_BOARD.pdf) |
 
@@ -29,6 +30,8 @@ Earlier work remains under `archive/`, with a checksum-verified [migration map](
 Chapter 06 publishes all 41 original paragraphs of Play to Win, Don’t Play Not to Lose with the approved jade/table illustrations and a qualitative before/after beliefs matrix. The author authorized a new title and chapter number; validation permits that heading change and requires the body to remain byte-identical. Its multimedia set adds the complete A5 proof, A4 poster, bookmark, five narration-ready video cuts, captions, recording scripts, social packs and a downloadable bundle. See the [product comparison](chapters/play-to-win/docs/COMPLETENESS_REVIEW.md) and [actual product board](chapters/play-to-win/previews/product-board.jpg).
 
 ## Build the website
+
+Chapter 09 publishes Thế giới trong mơ của tôi with all nineteen original paragraphs and The Borrowed Reel: observed, imagined and afterimage modes with a color-grade slider. The author selected 09 because 06 is occupied; all 76 kit files and original 06 labels remain archived unchanged. New public products include full A5/A4 proofs, five 1080p edit formats, exact-excerpt social cards and recording handoffs. See the [72-task review](chapters/the-gioi-trong-mo-cua-toi/docs/CHECKLIST_REVIEW.md) for proof states and remaining narration/print work.
 
 Chapter 15 preserves Three Meeting Theory's eight original paragraphs and emphasis, with the supplied blue/yellow design and The Third Intersection explorer. Its 62 kit files remain unchanged references. Downloads include five-page A5 and A4 proofs, the original ambient animatic, a corrected 1080p edit, captions, recording scripts and social artwork. See the [71-item audit](chapters/three-meeting-theory/docs/CHECKLIST_REVIEW.md) for proof states and pending narration, print and artwork work. The chapter number follows the supplied package.
 

@@ -33,4 +33,9 @@ chapters/dating-102/source/original.md -text -whitespace
 chapters/dating-102/source/approved.md -text -whitespace
 chapters/dating-102/audio/reading-script.md -text -whitespace
 chapters/dating-102/**/*.csv -text -whitespace
+chapters/the-gioi-trong-mo-cua-toi/source/original.md -text -whitespace
+chapters/the-gioi-trong-mo-cua-toi/source/approved.md -text -whitespace
+chapters/the-gioi-trong-mo-cua-toi/audio/reading-script.md -text -whitespace
+chapters/the-gioi-trong-mo-cua-toi/**/*.csv -text -whitespace
+chapters/the-gioi-trong-mo-cua-toi/video/VISUAL_BEAT_CAPTIONS_NOT_SYNCED_TO_VOICE.srt -text -whitespace
 docs/chapters/choi-de-khong-thua/source/*.md -text -whitespace
