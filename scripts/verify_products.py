@@ -36,6 +36,8 @@ for folder,meta in chapters(args.chapter):
         if plan['name']=='discovery-9x16':
             subprocess.run([args.ffmpeg,'-y','-v','error','-ss','12','-i',str(path),'-frames:v','1',str(folder/'previews/video-frame.jpg')],check=True)
         media.append({'file':path.relative_to(folder).as_posix(),'dimensions':plan['size'],'duration':actual,'decode':'pass','narration':'not present; author recording pending'})
-    evidence={'images_decoded':len(images),'pdf_pages':len(document),'pdf_selected_prose':'all paragraphs preserved','video':media,'source_resolution':list(Image.open(folder/meta['illustration']).size)}
+    source=folder/meta['illustration']
+    source_resolution='scalable SVG; raster export dimensions in artwork/scenes/index.json' if source.suffix=='.svg' else list(Image.open(source).size)
+    evidence={'images_decoded':len(images),'pdf_pages':len(document),'pdf_selected_prose':'all paragraphs preserved','video':media,'source_resolution':source_resolution}
     write_json(folder/'docs/MEDIA_QA.json',evidence)
     print(meta['slug'],len(images),'images,',len(document),'PDF pages,',len(media),'videos: PASS',flush=True)

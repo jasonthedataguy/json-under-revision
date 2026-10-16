@@ -70,19 +70,21 @@ def save(image,path):
     image.convert('RGB').save(path,quality=92,optimize=True,subsampling=0)
 
 def crop_scenes(folder,meta):
-    source=Image.open(folder/meta['illustration']).convert('RGB')
-    # Normalized framing from the supplied illustration; these are documented crops.
     production=read_json(folder/'production.json')
-    boxes=[(scene['id'],scene['box']) for scene in production['scenes']]
-    if not boxes:raise ValueError(f'{meta["slug"]}: define scene crops in production.json')
+    if not production['scenes']:raise ValueError(f'{meta["slug"]}: define scenes in production.json')
     records=[]
-    w,h=source.size
-    for i,(name,box) in enumerate(boxes,1):
+    source=None
+    for i,scene in enumerate(production['scenes'],1):
+        name=scene['id'];box=scene.get('box',[0,0,1,1])
+        raster=scene.get('raster',meta['illustration'])
+        original=Image.open(safe_path(folder,raster)).convert('RGB')
+        if source is None:source=original
+        w,h=original.size
         bounds=tuple(round(v*(w if j%2==0 else h)) for j,v in enumerate(box))
-        image=source.crop(bounds)
+        image=original.crop(bounds)
         path=folder/f'artwork/scenes/{i:02d}-{name}.jpg'
         save(image,path)
-        records.append({'id':name,'path':path.relative_to(folder).as_posix(),'source':meta['illustration'],'source_crop_pixels':bounds,'native_size':list(image.size),'kind':'crop of supplied illustration'})
+        records.append({'id':name,'path':path.relative_to(folder).as_posix(),'source':scene.get('source',meta['illustration']),'raster':raster,'source_crop_pixels':bounds,'native_size':list(image.size),'kind':scene.get('kind','crop of supplied illustration')})
     write_json(folder/'artwork/scenes/index.json',records)
     return source,records
 
@@ -103,7 +105,8 @@ def card(meta,image,text,size=(1080,1440),number=None,cover_card=False):
         return result
     draw.rectangle((margin//2,margin//2,w-margin//2,h-margin//2),outline=palette['dark'],width=2)
     draw.text((margin,margin),'.json',font=font(round(w*.052),2),fill=palette['dark'])
-    draw.text((w-margin-round(w*.20),margin+14),f'{meta["number"]} / {number or "CHAPTER"}',font=font(round(w*.017),3),fill=palette['dark'])
+    label=f'{meta["number"]} / {number or "CHAPTER"}';label_font=font(round(w*.017),3)
+    draw.text((w-margin-draw.textlength(label,font=label_font),margin+14),label,font=label_font,fill=palette['dark'])
     top=round(h*.14); bottom=round(h*(.65 if not cover_card else .61))
     result.paste(cover(image,(w-2*margin,bottom-top)),(margin,top))
     draw=ImageDraw.Draw(result)
@@ -112,7 +115,9 @@ def card(meta,image,text,size=(1080,1440),number=None,cover_card=False):
     while len(lines(text,face,w-2*margin))*face.size*1.26 > h-bottom-margin*1.9 and face.size>24:
         face=font(face.size-2,2 if cover_card else 0)
     text_block(draw,text,(margin,bottom+margin*.65),w-2*margin,face,palette['dark'])
-    draw.text((margin,h-margin),f'{meta["title"]}  /  Jason, under revision',font=font(round(w*.018),3),fill=palette['dark'])
+    footer=f'{meta["title"]}  /  Jason, under revision';footer_font=font(round(w*.018),3)
+    while draw.textlength(footer,font=footer_font)>w-2*margin:footer_font=font(footer_font.size-1,3)
+    draw.text((margin,h-margin),footer,font=footer_font,fill=palette['dark'])
     return result
 
 def artwork(folder,meta,source,scenes):
@@ -141,7 +146,10 @@ def artwork(folder,meta,source,scenes):
         x=round(w*.60); width=w-x-45
         draw.text((x,60),f'.json / {meta["number"]}',font=font(24,3),fill=meta['palette']['accent'])
         title=meta['title'].replace('_','_\n')
-        bottom=text_block(draw,title,(x,145),width,font(54,2),meta['palette']['paper'])
+        face=font(54,2)
+        while len(lines(title,face,width))*face.size*1.25+len(lines(meta['subtitle'],font(25),width))*32>h-225:
+            face=font(face.size-2,2)
+        bottom=text_block(draw,title,(x,145),width,face,meta['palette']['paper'])
         text_block(draw,meta['subtitle'],(x,bottom+28),width,font(25),meta['palette']['paper'])
         save(image,folder/'social'/target)
     shutil.copy2(folder/'artwork/exports/poster-9x16.jpg',folder/'social/tiktok/cover.jpg')
@@ -173,11 +181,12 @@ def pdf(folder,meta,scenes):
     doc=SimpleDocTemplate(str(path),pagesize=A5,rightMargin=36,leftMargin=36,topMargin=46,bottomMargin=43,title=meta['title'],author='Jason')
     layout=read_json(folder/'production.json').get('print_layout',{})
     style=ParagraphStyle('Prose',fontName='Chapter',fontSize=layout.get('font_size',10.5),leading=layout.get('leading',16),textColor=HexColor(palette['ink']),spaceAfter=layout.get('paragraph_space',10),splitLongWords=False,allowWidows=0,allowOrphans=0)
-    heading=ParagraphStyle('Heading',parent=style,fontName='ChapterBold',fontSize=27,leading=33,spaceAfter=15)
+    heading=ParagraphStyle('Heading',parent=style,fontName='ChapterBold',fontSize=layout.get('heading_size',27),leading=layout.get('heading_leading',33),spaceAfter=15)
     label=ParagraphStyle('Label',parent=style,fontName='Label',fontSize=8,leading=12)
     flow=[Paragraph(f'CHAPTER {meta["number"]}',label),Spacer(1,15),Paragraph(html.escape(meta['title']),heading),Paragraph(html.escape(meta['subtitle']),style),Spacer(1,15)]
     hero=Image.open(folder/'artwork/exports/hero.jpg')
-    flow += [PDFImage(str(folder/'artwork/exports/hero.jpg'),width=width-72,height=(width-72)*hero.height/hero.width),Spacer(1,18),Paragraph('.json — Jason, under revision',label),PageBreak()]
+    hero_width=min(width-72,layout.get('hero_height',1000)*hero.width/hero.height)
+    flow += [PDFImage(str(folder/'artwork/exports/hero.jpg'),width=hero_width,height=hero_width*hero.height/hero.width),Spacer(1,18),Paragraph('.json — Jason, under revision',label),PageBreak()]
     prose=paragraphs(folder/meta['canonical_text'])
     print_scenes={item['after_paragraph']:item['scene'] for item in read_json(folder/'production.json')['print_scenes']}
     for index,text in enumerate(prose):
@@ -273,11 +282,42 @@ def supplemental_products(folder,meta,scenes):
         svg=f'''<svg xmlns="http://www.w3.org/2000/svg" width="1480" height="2100" viewBox="0 0 1480 2100" role="img" aria-label="{html.escape(meta['title'])}">
 <rect width="1480" height="2100" fill="{meta['palette']['paper']}"/>
 <rect x="48" y="48" width="1384" height="2004" fill="none" stroke="{meta['palette']['dark']}" stroke-width="3"/>
-<g font-family="Georgia,serif" fill="{meta['palette']['dark']}"><text x="100" y="170" font-size="76">.json</text><text x="100" y="245" font-size="28">CHAPTER {meta['number']} / JASON, UNDER REVISION</text>
+<g font-family="Times New Roman,Times,serif" fill="{meta['palette']['dark']}"><text x="100" y="170" font-size="76">.json</text><text x="100" y="245" font-size="28">CHAPTER {meta['number']} / JASON, UNDER REVISION</text>
 <image href="../scenes/{Path(scenes[0]['path']).name}" x="100" y="320" width="1280" height="950" preserveAspectRatio="xMidYMid slice"/>
 <text x="100" y="1460" font-size="110" font-style="italic">{spans}</text>
 <text x="100" y="1890" font-size="40">{html.escape(meta['subtitle'])}</text></g></svg>'''
         (folder/'artwork/exports/cover-a5.svg').write_text(svg,encoding='utf-8')
+
+def print_extras(folder,meta,scenes):
+    """Optional A4 poster and 50 x 150 mm bookmark, both trim-size proofs."""
+    if not read_json(folder/'production.json').get('print_extras'):return
+    from reportlab.pdfgen import canvas
+    from reportlab.lib.pagesizes import A4
+    from reportlab.lib.units import mm
+    from reportlab.lib.utils import ImageReader
+    palette=meta['palette']
+    for filename,size,bookmark in [('poster-A4-proof.pdf',A4,False),('bookmark-proof.pdf',(50*mm,150*mm),True)]:
+        width,height=size; margin=12 if bookmark else 35
+        out=canvas.Canvas(str(folder/'book'/filename),pagesize=size)
+        out.setTitle(meta['title']+(' — bookmark' if bookmark else ' — poster'));out.setAuthor('Jason')
+        out.setFillColor(HexColor(palette['paper']));out.rect(0,0,width,height,fill=1,stroke=0)
+        out.setStrokeColor(HexColor(palette['dark']));out.rect(margin/2,margin/2,width-margin,height-margin)
+        out.setFillColor(HexColor(palette['dark']));out.setFont('ChapterItalic',16 if bookmark else 33)
+        out.drawString(margin,height-margin-23,'.json')
+        out.setFont('Label',5 if bookmark else 9);out.drawString(margin,height-margin-40,f'CHAPTER {meta["number"]} / JASON, UNDER REVISION')
+        art_height=height*(.32 if bookmark else .48)
+        image=cover(Image.open(folder/scenes[0]['path']),(int((width-2*margin)*4),int(art_height*4)))
+        art_bottom=height-margin-58-art_height
+        out.drawImage(ImageReader(image),margin,art_bottom,width=width-2*margin,height=art_height)
+        title=Paragraph(html.escape(meta['title']),ParagraphStyle('ExtraTitle',fontName='ChapterItalic',fontSize=16 if bookmark else 34,leading=18 if bookmark else 40,textColor=HexColor(palette['dark'])))
+        _,th=title.wrap(width-2*margin,height);title.drawOn(out,margin,art_bottom-18-th)
+        if not bookmark:
+            subtitle=Paragraph(html.escape(meta['subtitle']),ParagraphStyle('ExtraSub',fontName='Chapter',fontSize=15,leading=20,textColor=HexColor(palette['dark'])))
+            _,sh=subtitle.wrap(width-2*margin,height);subtitle.drawOn(out,margin,art_bottom-38-th-sh)
+        out.setFont('Label',5 if bookmark else 8)
+        out.drawString(margin,margin+15,('.json / CHAPTER ' if bookmark else 'JASON, UNDER REVISION / CHAPTER ')+meta['number'])
+        out.drawString(margin,margin+5,'EDITORIAL PROOF / '+('50 x 150 mm' if bookmark else 'A4'))
+        out.save()
 
 def render_film(folder,meta,variant,ffmpeg):
     size=tuple(variant['size']);w,h=size
@@ -335,6 +375,7 @@ def main():
         variants=film_plan(folder,meta,scenes,quotes)
         copy_and_notes(folder,meta,scenes,quotes)
         supplemental_products(folder,meta,scenes)
+        print_extras(folder,meta,scenes)
         if args.video:
             for variant in variants:render_film(folder,meta,variant,args.ffmpeg)
         print('Built product assets:',meta['slug'],flush=True)

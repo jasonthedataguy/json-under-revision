@@ -91,7 +91,7 @@ def build_site():
         # A chapter's source preview works from both the repo and the downloadable ZIP.
         offline=re.sub(r'href="../../(?!assets/)',f'href="{config["public_url"]}',page)
         offline=offline.replace('../../assets/','../../../shared/')
-        for directory in ['artwork','audio','video','book','social','source']:
+        for directory in ['artwork','audio','video','book','social','source','previews','docs']:
             offline=re.sub(r'((?:href|src|srcset|data-image)=")'+directory+'/',r'\1../'+directory+'/',offline)
         offline=offline.replace('href="product-set.zip"',f'href="{values["url"]}product-set.zip"')
         (folder/'web').mkdir(exist_ok=True)

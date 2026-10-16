@@ -19,7 +19,7 @@
     "ink": "#142721"
   },
   "artifact": "beliefs",
-  "release_stage": "reader",
+  "release_stage": "multimedia",
   "web_template": "web/template.html",
   "canonical_text": "source/approved.md",
   "canonical_path": "chapters/06/",
@@ -38,7 +38,7 @@
   },
   "video_mode": "edit cuts awaiting author-recorded narration",
   "qr_status": "deferred",
-  "print_status": "planned; design board is not a chapter PDF",
+  "print_status": "complete illustrated A5 editorial proof; A4 poster and bookmark proofs",
   "source_status": "author original; title and number changed with approval",
   "text_policy": "verbatim-author-body",
   "manuscript_source": {
@@ -71,5 +71,7 @@
       "width": 1200,
       "height": 850
     }
-  ]
+  ],
+  "artwork_product_name": "Six approved vector illustrations and high-resolution exports",
+  "artwork_product_state": "editable SVG masters; 2400 × 1700 raster scene exports"
 }

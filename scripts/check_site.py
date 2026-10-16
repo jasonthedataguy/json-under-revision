@@ -86,16 +86,17 @@ def check_site():
         if meta.get('text_policy') in {'verbatim-author-original','verbatim-author-body'}:
             original=validate_author_manuscript(folder,meta)
             recording_script=folder/'audio/reading-script.md'
-            if recording_script.exists():assert recording_script.read_bytes()==original,f'Recording script differs from author original: {meta["slug"]}'
+            if recording_script.exists():assert recording_script.read_bytes()==(folder/meta['canonical_text']).read_bytes(),f'Recording script differs from approved manuscript: {meta["slug"]}'
+            manuscript=original.decode('utf-8').replace('\r\n','\n')
             if meta['artifact']=='memory':
-                manuscript=original.decode('utf-8').replace('\r\n','\n')
                 for moment in read_json(folder/'production.json')['memory']['moments']:
                     assert moment['quote'] in manuscript,f'Memory excerpt is not in author original: {moment["title"]}'
+            if (folder/'production.json').exists():
                 recipe=read_json(folder/'production.json')
                 if recipe.get('excerpts_verbatim'):
                     excerpts=[item['text'] for item in recipe.get('carousel',[])]
                     excerpts += [segment['text'] for film in recipe.get('films',[]) for segment in film['segments']]
-                    excerpts += [item['text'] for item in recipe.get('supplemental',{}).get('cards',[])]
+                    excerpts += [item['text'] for item in recipe.get('supplemental',{}).get('cards',[]) if item.get('verbatim',True)]
                     for excerpt in excerpts:assert excerpt in manuscript,f'Product excerpt is not in author original: {excerpt}'
         expected=[normalize(plain(p)) for p in paragraphs(safe_path(folder,meta['canonical_text']))]
         actual=pages[(site/meta['canonical_path']/'index.html').resolve()].story

@@ -1,78 +1,104 @@
-{
-  "source": "Approved design v02",
-  "assets": [
-    {
-      "path": "artwork/source/01-eight-bamboo.svg",
-      "sha256": "450c09ff83933e951d508820f7266639141cca765eab2842635ca2264ad05881",
-      "origin": "author-approved design board v02; original vector study",
-      "dimensions": [
-        1200,
-        850
-      ]
-    },
-    {
-      "path": "artwork/source/02-poker.svg",
-      "sha256": "c04c093a142ef7c8bca21188aed19aa9976fcfb735bfea2f27d5aeb7bfbdc962",
-      "origin": "author-approved design board v02; original vector study",
-      "dimensions": [
-        1200,
-        850
-      ]
-    },
-    {
-      "path": "artwork/source/03-two-seats.svg",
-      "sha256": "e2e57c8ed6df5eb7259bbd6f1f3d2aead05db154121b9ca5584e0657e334c0d6",
-      "origin": "author-approved design board v02; original vector study",
-      "dimensions": [
-        1200,
-        850
-      ]
-    },
-    {
-      "path": "artwork/source/04-beliefs.svg",
-      "sha256": "6ef3bd76c55c89700a777d344d03e2f6c7e5483c3191aa416c0cc4f7f7087aea",
-      "origin": "author-approved design board v02; original vector study",
-      "dimensions": [
-        1200,
-        850
-      ]
-    },
-    {
-      "path": "artwork/source/05-meeting.svg",
-      "sha256": "f9c3df76e15944ea978df426548ba3752f241b07ef92bd60dac4b73a85f0f0a0",
-      "origin": "author-approved design board v02; original vector study",
-      "dimensions": [
-        1200,
-        850
-      ]
-    },
-    {
-      "path": "artwork/source/06-open-book.svg",
-      "sha256": "ce189cf264199249a1f56cf5f43411aeba3d4951918d09b98f0d2aa5e02d3306",
-      "origin": "author-approved design board v02; original vector study",
-      "dimensions": [
-        1200,
-        850
-      ]
-    }
-  ],
-  "exports": {
-    "hero.jpg": {
-      "source": "artwork/source/01-eight-bamboo.svg",
-      "dimensions": [
-        1600,
-        960
-      ],
-      "crop": "center"
-    },
-    "hero-mobile.jpg": {
-      "source": "artwork/source/01-eight-bamboo.svg",
-      "dimensions": [
-        1080,
-        810
-      ],
-      "crop": "center"
-    }
+[
+  {
+    "id": "eight-bamboo",
+    "path": "artwork/scenes/01-eight-bamboo.jpg",
+    "source": "artwork/source/01-eight-bamboo.svg",
+    "raster": "artwork/exports/scene-01-master.jpg",
+    "source_crop_pixels": [
+      0,
+      0,
+      2400,
+      1700
+    ],
+    "native_size": [
+      2400,
+      1700
+    ],
+    "kind": "raster export of approved vector illustration"
   },
-  "note": "Conceptual object illustrations, not film stills or documentary scenes."
-}
+  {
+    "id": "poker",
+    "path": "artwork/scenes/02-poker.jpg",
+    "source": "artwork/source/02-poker.svg",
+    "raster": "artwork/exports/scene-02-master.jpg",
+    "source_crop_pixels": [
+      0,
+      0,
+      2400,
+      1700
+    ],
+    "native_size": [
+      2400,
+      1700
+    ],
+    "kind": "raster export of approved vector illustration"
+  },
+  {
+    "id": "two-seats",
+    "path": "artwork/scenes/03-two-seats.jpg",
+    "source": "artwork/source/03-two-seats.svg",
+    "raster": "artwork/exports/scene-03-master.jpg",
+    "source_crop_pixels": [
+      0,
+      0,
+      2400,
+      1700
+    ],
+    "native_size": [
+      2400,
+      1700
+    ],
+    "kind": "raster export of approved vector illustration"
+  },
+  {
+    "id": "beliefs",
+    "path": "artwork/scenes/04-beliefs.jpg",
+    "source": "artwork/source/04-beliefs.svg",
+    "raster": "artwork/exports/scene-04-master.jpg",
+    "source_crop_pixels": [
+      0,
+      0,
+      2400,
+      1700
+    ],
+    "native_size": [
+      2400,
+      1700
+    ],
+    "kind": "raster export of approved vector illustration"
+  },
+  {
+    "id": "meeting",
+    "path": "artwork/scenes/05-meeting.jpg",
+    "source": "artwork/source/05-meeting.svg",
+    "raster": "artwork/exports/scene-05-master.jpg",
+    "source_crop_pixels": [
+      0,
+      0,
+      2400,
+      1700
+    ],
+    "native_size": [
+      2400,
+      1700
+    ],
+    "kind": "raster export of approved vector illustration"
+  },
+  {
+    "id": "open-book",
+    "path": "artwork/scenes/06-open-book.jpg",
+    "source": "artwork/source/06-open-book.svg",
+    "raster": "artwork/exports/scene-06-master.jpg",
+    "source_crop_pixels": [
+      0,
+      0,
+      2400,
+      1700
+    ],
+    "native_size": [
+      2400,
+      1700
+    ],
+    "kind": "raster export of approved vector illustration"
+  }
+]

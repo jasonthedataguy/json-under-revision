@@ -23,7 +23,7 @@ Chapter 05 publishes For Mother Russia's original 25-paragraph essay, supplied w
 
 Earlier work remains under `archive/`, with a checksum-verified [migration map](docs/MIGRATION.json). The complete prior Expected_utility delivery is unchanged. Existing chapter URLs and earlier media download URLs remain supported. Private ignored voice scratch was neither moved into the archive nor included in product ZIPs.
 
-Chapter 06 publishes all 41 original paragraphs of Play to Win, Don’t Play Not to Lose with the approved jade/table illustrations and a qualitative before/after beliefs matrix. The author authorized a new title and chapter number; validation permits that heading change and requires the body to remain byte-identical. The current release is the reader and interactive artifact. Print, video, narration and social production remain separately tracked.
+Chapter 06 publishes all 41 original paragraphs of Play to Win, Don’t Play Not to Lose with the approved jade/table illustrations and a qualitative before/after beliefs matrix. The author authorized a new title and chapter number; validation permits that heading change and requires the body to remain byte-identical. Its multimedia set adds the complete A5 proof, A4 poster, bookmark, five narration-ready video cuts, captions, recording scripts, social packs and a downloadable bundle. See the [product comparison](chapters/play-to-win/docs/COMPLETENESS_REVIEW.md) and [actual product board](chapters/play-to-win/previews/product-board.jpg).
 
 ## Build the website
 
@@ -65,8 +65,10 @@ python scripts/check_site.py
 
 Omit `--video` to rebuild print/social assets and timing notes without re-encoding cuts. `production.json` controls provisional film timing. MP4 outputs are 1080×1920 (discovery and YouTube) and 1080×1440 (feed). SRT/VTT describe the existing on-screen card timing; they are not a recorded narration transcript.
 
+For Chapter 06's SVG scene masters, install Playwright and its Chromium browser, then run `python scripts/render_vector_artwork.py --chapter play-to-win` before the product build. `--browser PATH` can select an existing Chromium executable. Its recipe also includes a 1920×1080 film, a 15-second teaser, print extras and supplementary social cards. Inventory can be refreshed for one chapter with `python scripts/build_inventory.py --chapter play-to-win`.
+
 ## Current production decision
 
-The author chose **supplied artwork and crops** and **edit cuts prepared for his recorded narration**. There is no generated voice. All six cuts are playable edit previews, awaiting the actual recording and retiming. The source images limit close-up and print detail; the PDFs are A5 editorial proofs. Printer-certified production, real-device/screen-reader review and author-managed social uploads remain separate. QR remains deferred.
+The author chose **supplied artwork and crops** and **edit cuts prepared for his recorded narration**. There is no generated voice. All generated cuts are playable edit previews, awaiting the actual recording and retiming. The source images limit close-up and print detail; the PDFs are A5 editorial proofs. Printer-certified production, real-device/screen-reader review and author-managed social uploads remain separate. QR remains deferred.
 
 The boards' checkmarks, illustrative probabilities, sample durations, locations and QR graphics are references, not verified product facts. The strategy's commercial assumptions are not prices or checkout commitments. No store, payment flow or social post has been created.

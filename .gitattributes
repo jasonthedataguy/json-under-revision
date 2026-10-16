@@ -19,4 +19,5 @@ chapters/for-mother-russia/source/original.md -text -whitespace
 chapters/for-mother-russia/source/approved.md -text -whitespace
 chapters/play-to-win/source/original.md -text -whitespace
 chapters/play-to-win/source/approved.md -text -whitespace
+chapters/play-to-win/audio/reading-script.md -text -whitespace
 docs/chapters/choi-de-khong-thua/source/*.md -text -whitespace

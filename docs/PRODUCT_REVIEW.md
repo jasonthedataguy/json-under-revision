@@ -23,3 +23,9 @@ Author decisions in this session: use the supplied artwork and crops; prepare cu
 Source constraints: Cơm nguội artwork is 744×332; Expected_utility artwork is 1122×1402. Crops and enlarged format exports do not add native detail. A new original scene painting or high-resolution print master is not claimed. The eight-page prior Expected_utility PDF remains archived unchanged; the current layout is a separately generated proof.
 
 Migration preserved all 92 moved tracked files with raw SHA-256 checksums, including the complete 37-file prior Expected_utility delivery. The original public routes and media links remain supported. Untracked/private voice experiments were not imported. The strategy PDF remains in the parent workspace; its confidential commercial deck is not published as a website download.
+
+## Chapter 06 multimedia completion — 2026-10-17
+
+Compared Play to Win against Sài Gòn's 24 tracked product groups and the approved chapter board. The reader now includes five playable narration-ready edits (15s, 45s, 60s, and 150s in vertical and landscape), a nine-page illustrated A5 proof, A4 poster, bookmark, five-card carousel, three stories, highlight, platform artwork/copy, provisional captions, cut scripts, full reading script and ambient bed. Six unchanged approved SVG masters provide the scene library. The qualitative beliefs explorer remains intact. [Comparison](../chapters/play-to-win/docs/COMPLETENESS_REVIEW.md) · [Actual board](../chapters/play-to-win/previews/product-board.jpg).
+
+Validation preserves every original body byte and all 41 paragraphs, checks every product excerpt against the original, decodes all five video files, checks PDF prose and trim sizes, and exercises the reader at 320/390/820/1440 pixels with media playback and keyboard interaction. Author narration, final speech captions and printer-specific production remain pending.

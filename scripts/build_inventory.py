@@ -1,9 +1,13 @@
 """Record actual artifact files and explicit remaining production work."""
 import hashlib
+import argparse
 from common import ROOT, chapters, read_json, write_json, artifact_hash
 from build_site import reader_release
 
-for folder,meta in chapters():
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--chapter')
+args=parser.parse_args()
+for folder,meta in chapters(args.chapter):
     if not meta['publish']:continue
     if meta.get('release_stage')=='supplied':
         inventory=[]
@@ -46,7 +50,7 @@ for folder,meta in chapters():
     write_json(folder/'docs/INVENTORY.json',inventory)
     products=[
        {'product':'Selected prose','state':'ready','path':meta['canonical_text']},
-       {'product':'Source illustration and scene crops','state':'ready as supplied-art derivatives','path':'artwork/scenes/index.json'},
+       {'product':meta.get('artwork_product_name','Source illustration and scene crops'),'state':meta.get('artwork_product_state','ready as supplied-art derivatives'),'path':'artwork/scenes/index.json'},
        {'product':'Illustrated A5 chapter','state':'editorial proof','path':'book/chapter-A5-proof.pdf'},
        {'product':'Interactive website','state':'ready for deployment','path':'web/index.html'},
        {'product':'Instagram carousel (five 3:4 cards)','state':'ready','path':'social/instagram/slide-01.jpg'},
@@ -62,7 +66,7 @@ for folder,meta in chapters():
     products.extend(read_json(folder/'production.json').get('supplemental',{}).get('products',[]))
     for product in products:
         if not (folder/product['path']).is_file():product['state']='missing'
-    write_json(folder/'docs/PRODUCTS.json',{'chapter':meta['slug'],'products':products,'remaining':['Jason recorded narration and final timing/mix','Printer specifications and high-resolution art for certified print production','Physical-device and human screen-reader review','Author-managed social uploads; QR remains deferred']})
+    write_json(folder/'docs/PRODUCTS.json',{'chapter':meta['slug'],'products':products,'remaining':['Jason recorded narration and final timing/mix','Printer specifications and final print production','Physical-device and human screen-reader review','Author-managed social uploads; QR remains deferred']})
     table=['# Product set — '+meta['title'],'','| Product | Actual state | File |','|---|---|---|']
     table += [f'| {p["product"]} | {p["state"]} | [{p["path"]}](../{p["path"]}) |' for p in products]
     table += ['','Remaining: author recording, retimed narration captions, print-specific production and human device review. Social files are prepared; no platform post is claimed.','',f'Inventory: {len(inventory)} files, {sum(p["bytes_at_build"] for p in inventory):,} bytes. Checksums use LF-normalized text and raw binary bytes.']
