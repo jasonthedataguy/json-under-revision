@@ -1,15 +1,33 @@
-# Expected_utility — creative brief v0.1
+# Expected_utility — illustrated poster direction v0.2
 
-**Book:** .json — Jason, under revision. **Working chapter:** 04, stable slug `expected-utility`.
+**Status:** Visual direction selected; artwork still requires factual/privacy and commercial release approval. **Working number:** 04. **Slug:** `expected-utility`.
 
-A late-night programmer cannot debug away a pair of eyes. He constructs a decision model that fails on the missing probabilities and the impossibility of observing an alternate branch.
+## Core scene and motifs
+A young developer staring at a laptop debugging code, AirPods, a cup of coffee, and a physical stack of Game Theory / Behavioral Economics / Decision Making / Probability books. Nighttime city through a window. The unresolved face is NOT a specific person's portrait and must remain symbolic.
 
-**Source-grounded anchors:** coffee, AirPods, glowing code, eyes in dim lighting, bánh mì and homelessness as thought experiment, net café and childhood punishment as illustration, Dr. Strange and the imaginary alternate-timeline email.
+## Design system
+Reference selected by Jason: a textured, imperfect, screen-printed indie album poster feeling, not a polished anime film. Do not copy or trace the source album artwork.
+- Pine `#0c2c24` | Muted pink `#e78fac` | Old paper `#f4ead5` | Text ink `#192e28`
+- Rough print grain, angular shadow shapes, asymmetric pink accents, substantial negative space
+- Cream editorial reading pages with Vietnamese-supporting serif; only restrained Git metadata
+- Poster imagery is interpretation, not an eyewitness record of the room, city, girl, book editions or devices
 
-**Original art direction:** warm amber desk against deep blue-violet night, analog pencil edges, a small cup, code traces, a window with no identifiable face. The visual should be interpreted as symbolic, **not documentation** of a real room or woman.
+## Main illustration
+The user-selected *Expected_utility: A Night of Decisions* poster is the artwork to use in final print/web/social media. Its handwritten numerical outcome doodles are imaginary decorations; **never interpret them as real probability estimates**.
 
-**Chapter extension:** an interaction with two options (speak / stay silent). Both yield *outcome unknown*, never fake probabilities. It adds meaning without explaining the ending.
+A lightweight companion vector `digital/chapters/expected-utility/assets/poster_illustration_v02.svg` is committed to keep the web preview complete before binary media upload. Do not mistake it for the full-resolution master.
 
-**Production requirements:** A5 editorial print proof; original illustration and layered production asset; 1080×1440 3:4 feed card; 9:16 TikTok/Reels/Short, 1080×1920 final; captions timed to authorized narration.
+## Decision tree
+Two choices: *Nói ra* vs *Im lặng*. The four symbolic possible outcomes have **P = ?**. User selects a branch; no fabricated probabilities, scores, or magical alternate timelines. This is a literary artifact, not scientific decision support.
 
-**Release gate:** author approves text, identity/privacy, artwork, narration/voice rights, final public website copy and any printed QR URL.
+## Deliverables created outside GitHub
+- Original poster PNG
+- 8-page A5 full-essay illustrated PDF proof
+- Web full chapter experience with decision tree
+- 5 × Instagram 1080×1440 (3:4) cards
+- 24s 720×1280 (9:16) ambient-only animatic; story stills
+- Facebook landscape image and YouTube landscape thumbnail
+All above provided as a downloadable ZIP. The binary assets are NOT part of this PR yet; upload after author release review.
+
+## Final QA/release gates
+Approved manuscript, illustration/identity review, licensed narration and timed captions, final 1080×1920 narrated social video, printer specs/PDF-X, permanent QR domain, phone and accessibility QA. Public release not authorized solely by approval of design.
