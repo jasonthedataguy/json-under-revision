@@ -24,7 +24,7 @@ archive/                        # original deliveries and earlier work
 site/                           # ignored generated deployment only
 ```
 
-Canonical public number URLs are `/chapters/02/`, `/chapters/03/`, `/chapters/04/` and `/chapters/07/`. Slug URLs redirect there. Folder identity uses the stable slug so a future table-of-contents change does not require moving source assets. Add a chapter through the scaffold; metadata and the registry drive all builds. No chapter-specific conditionals belong in the site renderer; artifact types use their own small templates.
+Canonical public number URLs are `/chapters/02/`, `/chapters/03/`, `/chapters/04/`, `/chapters/05/` and `/chapters/07/`. Slug URLs redirect there. Folder identity uses the stable slug so a future table-of-contents change does not require moving source assets. Add a chapter through the scaffold; metadata and the registry drive all builds. No chapter-specific conditionals belong in the site renderer; artifact types use their own small templates.
 
 The website consumes finished exports, so deployment requires only Python's standard library. Offline production uses Pillow, ReportLab and ffmpeg; PDF QA uses PyMuPDF. All input paths are repo-relative and output writes are restricted to the chapter and generated site folders. The original Expected_utility delivery is retained byte-for-byte, while current products are versioned separately.
 
@@ -35,6 +35,8 @@ Publication and multimedia production are separate. `publish: false` excludes an
 An optional `reference_manifest` points to an exact-byte SHA-256 import inventory; validation checks those files even when the chapter is unpublished. Supplied files under `chapters/*/references/` bypass Git newline conversion. Draft routes must be absent from the generated public site; published chapters must appear on the homepage. Every published manuscript, inventory, local page link and available product is checked. Multimedia releases additionally require their timed video assets and complete ZIP.
 
 A multimedia chapter may set `web_template` to a chapter-local template to preserve its existing design while exposing its finished product set. Optional `supplemental` cards, copy and product entries in `production.json` add channel formats without requiring them from every chapter. Landscape film cards use side-by-side image/text composition. Each cut receives a recording script; `excerpts_verbatim` adds original-source checks for all film, carousel and supplemental-card excerpts. `--chapter` scopes board generation and media verification to the changed product set.
+
+Optional `reading_illustrations` place supplied images after zero-based canonical paragraph indices without embedding or rewriting manuscript text in a template. Each placement declares `src`, `alt`, `width` and `height`; an invalid paragraph index fails the build. For Mother Russia uses these placements to preserve its supplied illustrated reader while rendering the full original without JavaScript. Its author-selected number 05 avoids changing the existing 03 URL, and its imported proof labels remain documented separately.
 
 For an author-requested verbatim restoration, `text_policy: verbatim-author-original` and `manuscript_source` record the supplied source path, byte count and SHA-256. Validation checks the raw original bytes, exact equality of the published source and verbatim membership of memory excerpts. Git attributes preserve the source newlines. Superseded generated prose belongs in the repository archive, outside the deployed chapter.
 

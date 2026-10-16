@@ -22,6 +22,13 @@ def render_chapter(folder,meta,config,next_meta):
     template_path=safe_path(folder,meta['web_template']) if meta.get('web_template') else ROOT/'shared'/name
     template=Template(template_path.read_text(encoding='utf-8'))
     prose=paragraphs(safe_path(folder,meta['canonical_text']))
+    illustrations={}
+    for illustration in meta.get('reading_illustrations',[]):
+        index=illustration['after_paragraph']
+        if not isinstance(index,int) or not 0<=index<len(prose):
+            raise ValueError('Reading illustration must follow an existing paragraph')
+        tag=f'<img class="chapter-art" src="{html.escape(illustration["src"])}" alt="{html.escape(illustration["alt"])}" width="{int(illustration["width"])}" height="{int(illustration["height"])}" loading="lazy">'
+        illustrations.setdefault(index,[]).append(tag)
     history=meta.get('history_text','source/original.md')
     values={
       **meta['palette'],'title':html.escape(meta['title']),'subtitle':html.escape(meta['subtitle']),
@@ -29,7 +36,7 @@ def render_chapter(folder,meta,config,next_meta):
       'hero_alt':html.escape(meta.get('hero_alt',f'Minh họa chương {meta["title"]}')),
       'minutes':str(max(1,math.ceil(sum(len(plain(p).split()) for p in prose)/220))),
       'tags':''.join(f'<span class="tag">{html.escape(tag)}</span>' for tag in meta['theme']),
-      'story':''.join(f'<p>{inline(p)}</p>' for p in prose),
+      'story':''.join(f'<p>{inline(p)}</p>'+''.join(illustrations.get(index,[])) for index,p in enumerate(prose)),
       'closing_quote':inline(prose[-1]),
       'artifact':'' if supplied else artifact(folder,meta),
       'film_note':'Những khoảnh khắc từ chương được đặt cạnh nhau, cùng chữ trên màn hình và âm thanh nền.',

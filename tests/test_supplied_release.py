@@ -23,12 +23,21 @@ class SuppliedReleaseTests(unittest.TestCase):
                     'canonical_text': 'source/original.md', 'title': 'Fashion',
                     'subtitle': 'A room in revision', 'number': '02',
                     'canonical_path': 'chapters/02/', 'palette': {}, 'theme': [],
-                    'artifact': 'wardrobe'}
+                    'artifact': 'wardrobe',
+                    'reading_illustrations': [{'after_paragraph': 0, 'src': 'assets/cabin.jpg',
+                                              'alt': 'Snow & light', 'width': 1500, 'height': 938}]}
             page, _ = render_chapter(chapter, meta, {'public_url': 'https://example.org/book/'},
                                      {'canonical_path': 'chapters/03/', 'title': 'Next & last'})
             self.assertEqual(Page(page).story, ['A$AP & an original sentence.', 'Peace and love!'])
             self.assertIn('https://example.org/book/chapters/02/', page)
             self.assertIn('href="../../chapters/03/">Next &amp; last', page)
+            self.assertLess(page.index('A$AP &amp; an original sentence.'), page.index('assets/cabin.jpg'))
+            self.assertLess(page.index('assets/cabin.jpg'), page.index('Peace and love!'))
+            self.assertIn('alt="Snow &amp; light"', page)
+            meta['reading_illustrations'][0]['after_paragraph'] = 2
+            with self.assertRaises(ValueError):
+                render_chapter(chapter, meta, {'public_url': 'https://example.org/'}, meta)
+            meta['reading_illustrations'][0]['after_paragraph'] = 0
             meta['web_template'] = '../outside.html'
             with self.assertRaises(ValueError):
                 render_chapter(chapter, meta, {'public_url': 'https://example.org/'}, meta)
