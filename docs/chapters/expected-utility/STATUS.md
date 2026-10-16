@@ -1,27 +1,31 @@
-# Expected_utility — acceptance checklist
+# Expected_utility v0.2 — asset truth table
 
-**Status legend:** READY = checked usable file; PROOF = incomplete output; MISSING = absent; BLOCKED = external approval/input.
+**Git branch:** `design/expected-utility-poster-v02` — proposal only.
+**Release:** HOLD / author review. **The Cơm nguội site stays unchanged.**
 
-| Deliverable | State | Evidence / missing dependency |
+| Deliverable | Status | Evidence |
 |---|---|---|
-| Original manuscript | READY | `content/chapters/expected-utility/original.md` verbatim |
-| Proposed edit | PROOF | `proposed-edit.md`; needs author approval |
-| Editorial notes and copyright review | PROOF | `EDIT_NOTES.md` |
-| Main illustration | PROOF | Locally generated SVG/PNG in downloadable production bundle, not yet included in GitHub PR |
-| A5 printable PDF | PROOF | 7-page locally rendered PDF; not printer-ready; in downloadable production bundle |
-| Digital chapter with interaction | PROOF | Local offline HTML in downloadable bundle; not deployed |
-| Instagram 3:4 feed assets | PROOF | Five 1080×1440 cards in downloadable bundle, not uploaded |
-| Storyboard and narration script | READY as drafts | To be committed; voice still missing |
-| TikTok / Reels / YouTube Short 9:16 | PROOF | Locally rendered 25s 720×1280 animatic, synthesized ambience only |
-| Facebook post | READY as draft | Local copy; not published |
-| GitHub chapter branch | READY | `chapter/expected-utility-v01` |
-| Final narrated 1080×1920 video | MISSING | Voice approval, timed captions, final art |
-| Live chapter HTTPS / QR | BLOCKED | Author publication permission + reviewed owned URL |
-| Print-ready PDF/X and physical proof | BLOCKED | Printer specs, final artwork + canonical chapter approval |
-| Social channel uploads | BLOCKED | Account access and release approval |
+| Original and edited chapter | READY as drafts | `content/chapters/expected-utility/{original,proposed-edit}.md` |
+| Poster artwork | PROOF in downloadable ZIP | User-selected rough poster image; binary not committed |
+| SVG lightweight poster illustration | READY as repository visual fallback | `digital/chapters/expected-utility/assets/poster_illustration_v02.svg` |
+| A5 illustrated book | PROOF outside GitHub | 8-page PDF, visually reviewed; not PDF/X or press-ready |
+| Website / interactive decision tree | READY as branch code, NOT DEPLOYED | `digital/chapters/expected-utility/index.html`; text fetched from public manuscript source |
+| Instagram 3:4 carousel | PROOF outside GitHub | 5 × 1080×1440 JPEG |
+| Facebook / YouTube thumbnails | PROOF outside GitHub | 1600×900, 1280×720 image exports |
+| TikTok/Reels/Short portrait | PROOF outside GitHub | 24s 720×1280 MP4 with original synthesized ambient only |
+| Narrated final video and captions | MISSING | No licensed narration, synchronized subtitle track or 1080×1920 export |
+| Press-ready PDF/QR | BLOCKED | Printer, final permissions, owned URL |
+| Social posts / live chapter | NOT PUBLISHED | No uploaded media nor verified public release |
 
-**Source safety:** No other person's likeness, private correspondence, or real-location identification is shown. The local symbolic artwork does not depict an actual woman. The chapter may still require author privacy review.
+## QA
+- [x] A5 PDF was rendered: 8 pages, complete Vietnamese proposed text, last line preserved.
+- [x] Video probed: 720×1280, 24 sec; no human/synthetic narrator.
+- [x] Carousel images: 1080×1440, 5 cards.
+- [x] Repo preview illustration needs no external image host.
+- [ ] Test updated GitHub HTML in a real browser on mobile, including live raw manuscript fetch.
+- [ ] Test screen readers, contrast, iOS/Android audio & video.
+- [ ] Verify PDF/X with printer; produce physical proof.
+- [ ] Copy vetted binary package to repo via authorized local git/Codex workflow.
+- [ ] Obtain explicit content, third-party privacy and commercial release approvals.
 
-**QA:** A5 PDF rendered seven pages without clipping; vertical animatic measured 720×1280, 25 seconds, H.264/AAC; social stills 1080×1440. Real-device audio, screen reader, print vendor and caption checks pending.
-
-**Release decision:** HOLD, proceed with review/production, not public launch.
+**Never claim the assets are deployed, print-ready, or narrated based on the design-board illustration.**
