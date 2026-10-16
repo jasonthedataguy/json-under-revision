@@ -1,0 +1,465 @@
+{
+  "source_commit": "39312072dcd253d1a581e8fc7878f43949104707",
+  "files": [
+    {
+      "from": "Expected_utility/README.md",
+      "to": "archive/deliveries/expected-utility-v02/README.md",
+      "sha256": "2b9a952007a083a623bb1de8f3417fc87a24305576c67d8e3912ee937b3db960"
+    },
+    {
+      "from": "Expected_utility/assets/decision_tree_dark.png",
+      "to": "archive/deliveries/expected-utility-v02/assets/decision_tree_dark.png",
+      "sha256": "dffd6dca8efcea9e4dc2acb26af9c3701d46d53ab2197520c6f7a815e5d40b56"
+    },
+    {
+      "from": "Expected_utility/assets/decision_tree_paper.png",
+      "to": "archive/deliveries/expected-utility-v02/assets/decision_tree_paper.png",
+      "sha256": "669e91b70b42e1297978cebf5401762b16aed5c8d9fd4e9dc6a21b29dbe58e56"
+    },
+    {
+      "from": "Expected_utility/assets/poster_original.png",
+      "to": "archive/deliveries/expected-utility-v02/assets/poster_original.png",
+      "sha256": "746ee8d4404db90737afec37ca52905eb9bb5aa77c7cec0ffa9b147916e4862f"
+    },
+    {
+      "from": "Expected_utility/assets/poster_print_crop.jpg",
+      "to": "archive/deliveries/expected-utility-v02/assets/poster_print_crop.jpg",
+      "sha256": "dbfd29e0ba13f9515af45c5b6006a802efcbad842a996595c0fe278e1f4c1454"
+    },
+    {
+      "from": "Expected_utility/assets/poster_vertical_9x16.jpg",
+      "to": "archive/deliveries/expected-utility-v02/assets/poster_vertical_9x16.jpg",
+      "sha256": "782339aaebc280bd495d8af9aa9c8e973d1416dab53351d414d4cf614f73e797"
+    },
+    {
+      "from": "Expected_utility/book/04_expected_utility_POSTER_A5_PROOF.pdf",
+      "to": "archive/deliveries/expected-utility-v02/book/04_expected_utility_POSTER_A5_PROOF.pdf",
+      "sha256": "90c81031bd1bda18bfa302c42386cb1d26ecba9bb6e7434ba3a9055882844b1c"
+    },
+    {
+      "from": "Expected_utility/content/original.md",
+      "to": "archive/deliveries/expected-utility-v02/content/original.md",
+      "sha256": "807cd926f9b7b9f03386f6d2811c93f35a9cff6504021751fc9e45c73d16812d"
+    },
+    {
+      "from": "Expected_utility/content/proposed-edit.md",
+      "to": "archive/deliveries/expected-utility-v02/content/proposed-edit.md",
+      "sha256": "9ede9cdc721416cbc1f625d7a0df5f2ce1329a1050f8c7e6dab32785c595e5d4"
+    },
+    {
+      "from": "Expected_utility/docs/CHAPTER_METADATA.json",
+      "to": "archive/deliveries/expected-utility-v02/docs/CHAPTER_METADATA.json",
+      "sha256": "849d547077f21a0c226255d11e322dce2c353c61f1b6fcfa680e2dd2d735ec5a"
+    },
+    {
+      "from": "Expected_utility/docs/MANIFEST.json",
+      "to": "archive/deliveries/expected-utility-v02/docs/MANIFEST.json",
+      "sha256": "03d31bcc43c55e8192ee0b79eef1e368082740759bed6714ae1e684688da826e"
+    },
+    {
+      "from": "Expected_utility/docs/PRODUCTION_CHECKLIST.md",
+      "to": "archive/deliveries/expected-utility-v02/docs/PRODUCTION_CHECKLIST.md",
+      "sha256": "a0903a28aad63a0daa367a883363393db438ec29988852f158e5bc9e5b5ff1a5"
+    },
+    {
+      "from": "Expected_utility/docs/QA_REPORT.md",
+      "to": "archive/deliveries/expected-utility-v02/docs/QA_REPORT.md",
+      "sha256": "403b42711be84404d9d62f9b72d92302d19542155ae00c599201f76ae3252201"
+    },
+    {
+      "from": "Expected_utility/previews/chapter_asset_board_v02.jpg",
+      "to": "archive/deliveries/expected-utility-v02/previews/chapter_asset_board_v02.jpg",
+      "sha256": "619f841b5301a0d3d0b86b63ade944f3b13a593d160b64b8a823a4d869a08bd5"
+    },
+    {
+      "from": "Expected_utility/previews/pdf_contact_sheet_v02.jpg",
+      "to": "archive/deliveries/expected-utility-v02/previews/pdf_contact_sheet_v02.jpg",
+      "sha256": "a11c78b53ca7e750e518bb79058d6fa319cad3e9b008d776a50a7e5ae2b47bae"
+    },
+    {
+      "from": "Expected_utility/previews/web_desktop_v02.png",
+      "to": "archive/deliveries/expected-utility-v02/previews/web_desktop_v02.png",
+      "sha256": "ae9374d5647ef35e97c5a6cb9645edaa65516905df348e7e9e6cb5909e91620f"
+    },
+    {
+      "from": "Expected_utility/previews/web_mobile_v02.png",
+      "to": "archive/deliveries/expected-utility-v02/previews/web_mobile_v02.png",
+      "sha256": "473a3af1f485007ec8b5b589bf086fb5b85495003a161122a3bc1d8e7b3178e7"
+    },
+    {
+      "from": "Expected_utility/scripts/build_v02.py",
+      "to": "archive/deliveries/expected-utility-v02/scripts/build_v02.py",
+      "sha256": "60bb7732ecac211b28f5077210ec8919974e0ee3e6b54182d6b7cf67664ac626"
+    },
+    {
+      "from": "Expected_utility/social/facebook_landscape.jpg",
+      "to": "archive/deliveries/expected-utility-v02/social/facebook_landscape.jpg",
+      "sha256": "646ee7e7dadb5115c19c7fa20e67651fdc2a1f8ca85edae06abadf4653400d65"
+    },
+    {
+      "from": "Expected_utility/social/instagram/poster_3x4.jpg",
+      "to": "archive/deliveries/expected-utility-v02/social/instagram/poster_3x4.jpg",
+      "sha256": "afbc4050f8da6b746bc24c69679e42bc4defcc77abfa6eb9831f217faae46b78"
+    },
+    {
+      "from": "Expected_utility/social/instagram/slide_01_3x4.jpg",
+      "to": "archive/deliveries/expected-utility-v02/social/instagram/slide_01_3x4.jpg",
+      "sha256": "1ff825839995ae50253d31e5fdac3ddb5c2ea94bac8971c674377119c68d6baf"
+    },
+    {
+      "from": "Expected_utility/social/instagram/slide_02_3x4.jpg",
+      "to": "archive/deliveries/expected-utility-v02/social/instagram/slide_02_3x4.jpg",
+      "sha256": "a312bbde1a2fbaabd1cb8bc6dc3c2cd2f4c685fc64dfe78f9f73c399bf3dea4a"
+    },
+    {
+      "from": "Expected_utility/social/instagram/slide_03_3x4.jpg",
+      "to": "archive/deliveries/expected-utility-v02/social/instagram/slide_03_3x4.jpg",
+      "sha256": "63d6ee950d50fcdc2024841f48375795c04cbdaa95da2176c34c3a206596565e"
+    },
+    {
+      "from": "Expected_utility/social/instagram/slide_04_3x4.jpg",
+      "to": "archive/deliveries/expected-utility-v02/social/instagram/slide_04_3x4.jpg",
+      "sha256": "8878a8b0d29b95796901ece9ced327e60df0e44b6a11e85c60ec4af147623356"
+    },
+    {
+      "from": "Expected_utility/social/instagram/slide_05_3x4.jpg",
+      "to": "archive/deliveries/expected-utility-v02/social/instagram/slide_05_3x4.jpg",
+      "sha256": "65a63dec97c5a445cb751ec44b8c3418cd48d7cd9dbee588632ed0fd26430f5b"
+    },
+    {
+      "from": "Expected_utility/social/youtube_thumbnail.jpg",
+      "to": "archive/deliveries/expected-utility-v02/social/youtube_thumbnail.jpg",
+      "sha256": "50f5636b5c8ea223e43834a0e10991cd9d3c6248c853e90b1dc84b6b912d68ef"
+    },
+    {
+      "from": "Expected_utility/video/expected_utility_poster_animatic_9x16.mp4",
+      "to": "archive/deliveries/expected-utility-v02/video/expected_utility_poster_animatic_9x16.mp4",
+      "sha256": "df7e48e49dfbf433ba207957ac4a478e9fb0cc81370f4c86722bac19105b5fb6"
+    },
+    {
+      "from": "Expected_utility/video/stills/scene_01.jpg",
+      "to": "archive/deliveries/expected-utility-v02/video/stills/scene_01.jpg",
+      "sha256": "8efdbc896b33edfc525f39bab6d7d1e6e2148ee31d4ffdfcac7fe84b19a6756c"
+    },
+    {
+      "from": "Expected_utility/video/stills/scene_02.jpg",
+      "to": "archive/deliveries/expected-utility-v02/video/stills/scene_02.jpg",
+      "sha256": "cabd579b6bf240e9beacb12dcf10146340f1ea4f9854c8f162bfa3e2583d0ecb"
+    },
+    {
+      "from": "Expected_utility/video/stills/scene_03.jpg",
+      "to": "archive/deliveries/expected-utility-v02/video/stills/scene_03.jpg",
+      "sha256": "e9117e5942ebfce1f5a61ee79975a134c4dd58abe470541977f360576dd561a7"
+    },
+    {
+      "from": "Expected_utility/video/stills/scene_04.jpg",
+      "to": "archive/deliveries/expected-utility-v02/video/stills/scene_04.jpg",
+      "sha256": "fbe51815c3692adfd29e03fbea52302df8d6029ca03c162fa433f19db78c39c3"
+    },
+    {
+      "from": "Expected_utility/video/stills/scene_05.jpg",
+      "to": "archive/deliveries/expected-utility-v02/video/stills/scene_05.jpg",
+      "sha256": "ff0d0a5b6e24d4789c6b1c69d1d06466abc55906b021afb8c5d8374dbe3fd576"
+    },
+    {
+      "from": "Expected_utility/video/stills/scene_06.jpg",
+      "to": "archive/deliveries/expected-utility-v02/video/stills/scene_06.jpg",
+      "sha256": "7834122f9f7cda0918db12f3d2607c766753d24c7975f845d2bcea55c4a1c14f"
+    },
+    {
+      "from": "Expected_utility/web/assets/decision_tree_paper.jpg",
+      "to": "archive/deliveries/expected-utility-v02/web/assets/decision_tree_paper.jpg",
+      "sha256": "aceeb865209ab201e1753ab53891147fbb3bb037be838ce7c5f80e7c789fb289"
+    },
+    {
+      "from": "Expected_utility/web/assets/hero_wide.jpg",
+      "to": "archive/deliveries/expected-utility-v02/web/assets/hero_wide.jpg",
+      "sha256": "efead34d68f5ebee144329b621754778f2986982062764ac43c1dbead22f9aab"
+    },
+    {
+      "from": "Expected_utility/web/assets/poster_preview_640.jpg",
+      "to": "archive/deliveries/expected-utility-v02/web/assets/poster_preview_640.jpg",
+      "sha256": "2b12a1cdfb1ba3b84c0cfb386b0e9643eb353310f523122ce5c04cd330d63b22"
+    },
+    {
+      "from": "Expected_utility/web/index.html",
+      "to": "archive/deliveries/expected-utility-v02/web/index.html",
+      "sha256": "174b119bcba614e89574d49cf8998fd01907af193236c5b6ed4cac4ef80b461d"
+    },
+    {
+      "from": "PROJECT_UPDATE.md",
+      "to": "archive/legacy-v01/PROJECT_UPDATE.md",
+      "sha256": "1b100e85d78d6fc4aa2ad6d5223c07ade572cd6269fb35405def94af0b8812d8"
+    },
+    {
+      "from": "assets/kitchen_memory_provisional.png",
+      "to": "archive/legacy-v01/assets/kitchen_memory_provisional.png",
+      "sha256": "c3773cc7860ec448602c4f70ba3734c7b3b3f0c432ec76294a36347fc56566b6"
+    },
+    {
+      "from": "book/07_com_nguoi_A5_PROOF.pdf",
+      "to": "archive/legacy-v01/book/07_com_nguoi_A5_PROOF.pdf",
+      "sha256": "b4fabd2df3e3babd42c68cf8502c5bbd9b9d055574110282cca09fcee78a7d97"
+    },
+    {
+      "from": "content/EDIT_NOTES.md",
+      "to": "archive/legacy-v01/content/EDIT_NOTES.md",
+      "sha256": "0c7a9185f93857ba9d7d15f1a4e78cc183884811987d1f96c3332f887b1b62c0"
+    },
+    {
+      "from": "content/chapters/expected-utility/EDIT_NOTES.md",
+      "to": "archive/legacy-v01/content/chapters/expected-utility/EDIT_NOTES.md",
+      "sha256": "697c4049dfed9cda2fb3935a9775276fb92aac1f1466fd24f2b4a7e89d81ccc1"
+    },
+    {
+      "from": "content/chapters/expected-utility/original.md",
+      "to": "archive/legacy-v01/content/chapters/expected-utility/original.md",
+      "sha256": "c6aba63af4ca851b80bb05459c775394aaefad10d2d9e0be83cebff7122f3957"
+    },
+    {
+      "from": "content/chapters/expected-utility/proposed-edit.md",
+      "to": "archive/legacy-v01/content/chapters/expected-utility/proposed-edit.md",
+      "sha256": "2dca0e5bc9ae9590508a5bc6880a61619a6b3d4f964c31f589d4ced21dfcca32"
+    },
+    {
+      "from": "content/original.md",
+      "to": "archive/legacy-v01/content/original.md",
+      "sha256": "12c758c190c83e16b9b37127b6b9191fb3f283f1b4d0fc23d5e91466e46fe6b3"
+    },
+    {
+      "from": "content/proposed-edit.md",
+      "to": "archive/legacy-v01/content/proposed-edit.md",
+      "sha256": "d957b592dc2317aa34196dd25ab42a3fe4a7938d3aee5a1121ab173214bf76f9"
+    },
+    {
+      "from": "digital/assets/kitchen_memory_provisional.png",
+      "to": "archive/legacy-v01/digital/assets/kitchen_memory_provisional.png",
+      "sha256": "c3773cc7860ec448602c4f70ba3734c7b3b3f0c432ec76294a36347fc56566b6"
+    },
+    {
+      "from": "digital/assets/room_tone.wav",
+      "to": "archive/legacy-v01/digital/assets/room_tone.wav",
+      "sha256": "c2160520920b12612de76c63c1a90b52dd04d9c9c412199923d585f3e0a6d119"
+    },
+    {
+      "from": "digital/assets/two_bowls.svg",
+      "to": "archive/legacy-v01/digital/assets/two_bowls.svg",
+      "sha256": "48233c198918b9b553b910574c457af6572e5cbfd5a39385689ba2400bc1b3f6"
+    },
+    {
+      "from": "digital/chapters/expected-utility/assets/late_night_desk.svg",
+      "to": "archive/legacy-v01/digital/chapters/expected-utility/assets/late_night_desk.svg",
+      "sha256": "7450114faa07b230f92a4783c2478546f94e254767e2f77c0ef30b3690ddfe0d"
+    },
+    {
+      "from": "digital/chapters/expected-utility/assets/poster_illustration_v02.svg",
+      "to": "archive/legacy-v01/digital/chapters/expected-utility/assets/poster_illustration_v02.svg",
+      "sha256": "1bddd7a9b24a8ef09ef9e5b634af3ef7c400dd07ef06c11b5d8b24813ed6b449"
+    },
+    {
+      "from": "digital/chapters/expected-utility/index.html",
+      "to": "archive/legacy-v01/digital/chapters/expected-utility/index.html",
+      "sha256": "a223a3a60be46a110f32d95cd8452b625fb63c04d081eabcdfc30a251838b354"
+    },
+    {
+      "from": "digital/index.html",
+      "to": "archive/legacy-v01/digital/index.html",
+      "sha256": "5be2aca2532e3bf74b619a22e6f080d768145215afc9a79ffad453e38327a685"
+    },
+    {
+      "from": "docs/CHANNEL_LAUNCH.md",
+      "to": "archive/legacy-v01/docs/CHANNEL_LAUNCH.md",
+      "sha256": "370e38ed923b35227e8f5971be03185d7046fb7684930e2d338323fbedb2ab0c"
+    },
+    {
+      "from": "docs/CHAPTER_PRODUCTION_PLAYBOOK.md",
+      "to": "archive/legacy-v01/docs/CHAPTER_PRODUCTION_PLAYBOOK.md",
+      "sha256": "29844ae81324713120398839fbb3e8c20ba0d9b39d97129d8e14727b7305ebe4"
+    },
+    {
+      "from": "docs/CHECKLIST.csv",
+      "to": "archive/legacy-v01/docs/CHECKLIST.csv",
+      "sha256": "481b353af7e1aea13a6cc0645bfe68231df40e152ae47662b624436f71284572"
+    },
+    {
+      "from": "docs/CHECKLIST_PRINTABLE.pdf",
+      "to": "archive/legacy-v01/docs/CHECKLIST_PRINTABLE.pdf",
+      "sha256": "f02023ca3a2626e5092d798382926df659db5ffa320584a11c9aef384d617469"
+    },
+    {
+      "from": "docs/CREATIVE_BRIEF.md",
+      "to": "archive/legacy-v01/docs/CREATIVE_BRIEF.md",
+      "sha256": "ebd21482e36c181c851440e3a911296212ad4b3d16818186d0a2c1c3f7a47a21"
+    },
+    {
+      "from": "docs/FULL_CHECKLIST.md",
+      "to": "archive/legacy-v01/docs/FULL_CHECKLIST.md",
+      "sha256": "165db741f06034f937e6380391c1cc2404e4537346e02eeaf28282a91d192e97"
+    },
+    {
+      "from": "docs/LAUNCH_REVIEW.md",
+      "to": "archive/legacy-v01/docs/LAUNCH_REVIEW.md",
+      "sha256": "e13b8b2458a839e5772eb2688b16725b2cf7f972e3bce10d9518d3d18a18f29a"
+    },
+    {
+      "from": "docs/PROJECT_BOARD.html",
+      "to": "archive/legacy-v01/docs/PROJECT_BOARD.html",
+      "sha256": "954f31ad39c690be14464858247c5b2d87c7f3fea750d6fdce9970fc4efacc06"
+    },
+    {
+      "from": "docs/QA_REPORT.md",
+      "to": "archive/legacy-v01/docs/QA_REPORT.md",
+      "sha256": "a1f9ba55128b319acb3bd203dea2cddd5b14b5c1bfd3b563a7ba7ae469e2a8cc"
+    },
+    {
+      "from": "docs/chapter-metadata.json",
+      "to": "archive/legacy-v01/docs/chapter-metadata.json",
+      "sha256": "3f25fbbb49f127b481580ea55c7001ec04f3d04dddc51d7021bc622c2920fa2a"
+    },
+    {
+      "from": "docs/chapters/expected-utility/BINARY_IMPORT.md",
+      "to": "archive/legacy-v01/docs/chapters/expected-utility/BINARY_IMPORT.md",
+      "sha256": "e7b1ca2df2332de446124103227cd286ddcaa63f44b177fc372c2ed7e9345023"
+    },
+    {
+      "from": "docs/chapters/expected-utility/BUNDLE_INVENTORY.json",
+      "to": "archive/legacy-v01/docs/chapters/expected-utility/BUNDLE_INVENTORY.json",
+      "sha256": "95de4361bd06558a0ba120bc7903d8827617341e41d1e2b670bd5a479f34f797"
+    },
+    {
+      "from": "docs/chapters/expected-utility/CREATIVE_BRIEF.md",
+      "to": "archive/legacy-v01/docs/chapters/expected-utility/CREATIVE_BRIEF.md",
+      "sha256": "79f1022aeca38bb9d4635b84b308257a49ce96ff965f8b89896da53eade39554"
+    },
+    {
+      "from": "docs/chapters/expected-utility/RELEASE.md",
+      "to": "archive/legacy-v01/docs/chapters/expected-utility/RELEASE.md",
+      "sha256": "229aebaf56a66245135cc300038a639a5b61b7b9f4613f66d1542d7b1fdb66ef"
+    },
+    {
+      "from": "docs/chapters/expected-utility/RELEASE_QA.md",
+      "to": "archive/legacy-v01/docs/chapters/expected-utility/RELEASE_QA.md",
+      "sha256": "ee1e9d73ebf77565332cb577bbc034bac8cd24185abb1cd026d92fccb8cffa4e"
+    },
+    {
+      "from": "docs/chapters/expected-utility/STATUS.md",
+      "to": "archive/legacy-v01/docs/chapters/expected-utility/STATUS.md",
+      "sha256": "af2a7ee92dd2b4a50c199adf54a54a93c3ef793109183d15a649bdec5881c6f9"
+    },
+    {
+      "from": "docs/history/2026-10-16-before-expected-utility-release.md",
+      "to": "archive/legacy-v01/docs/history/2026-10-16-before-expected-utility-release.md",
+      "sha256": "9df1d67e6ef2a0b63833c4dc6fb1546ba14caa9c17bca3183373d80128efd6ef"
+    },
+    {
+      "from": "previews/book_contact_sheet.png",
+      "to": "archive/legacy-v01/previews/book_contact_sheet.png",
+      "sha256": "49684456d344a8cec652fdd7ab918c8b3219d1f0a6384c7a4a3fca6f1d6685ad"
+    },
+    {
+      "from": "previews/mobile_screen.png",
+      "to": "archive/legacy-v01/previews/mobile_screen.png",
+      "sha256": "782f33efecef0f4350bf0a2de0a2e65bdf37692728e31c5403d2ad33e16053fb"
+    },
+    {
+      "from": "previews/video_frame.png",
+      "to": "archive/legacy-v01/previews/video_frame.png",
+      "sha256": "313e588f3bd381b2a57f1095f98d85b7c976c37d74cba0d552d6e08128de5ac2"
+    },
+    {
+      "from": "scripts/build_checklists.py",
+      "to": "archive/legacy-v01/scripts/build_checklists.py",
+      "sha256": "b4d0533bfd41f067e24417f5180e9ef5ddee664d3ed766599578139971110016"
+    },
+    {
+      "from": "scripts/build_expected_utility.py",
+      "to": "archive/legacy-v01/scripts/build_expected_utility.py",
+      "sha256": "10a480d920fc68b2f6259f5595cbe1944e1a52965daa84e61aa59a1985a95070"
+    },
+    {
+      "from": "scripts/build_site.py",
+      "to": "archive/legacy-v01/scripts/build_site.py",
+      "sha256": "c7f2642dd1b9de8ebcd4ef6eae6492a9c2d8b1963f127b96f17536c4b14ef74a"
+    },
+    {
+      "from": "scripts/check_site.py",
+      "to": "archive/legacy-v01/scripts/check_site.py",
+      "sha256": "1a153f771e623b9660a5d0ba4daa89a694ceed803f43de3c386038aaf16b7c3f"
+    },
+    {
+      "from": "social/expected-utility/facebook-post.md",
+      "to": "archive/legacy-v01/social/expected-utility/facebook-post.md",
+      "sha256": "b80e04b4fa8ada369036cb35b2e0d01e7ee171b220bab0dcc8b96f3c6a1ee99f"
+    },
+    {
+      "from": "social/expected-utility/instagram-caption.md",
+      "to": "archive/legacy-v01/social/expected-utility/instagram-caption.md",
+      "sha256": "dd0894ffd2adcf288eee3784bb79f42eab9f925cb00b3ff33a991873614a5fed"
+    },
+    {
+      "from": "social/expected-utility/tiktok-and-youtube.md",
+      "to": "archive/legacy-v01/social/expected-utility/tiktok-and-youtube.md",
+      "sha256": "f49291d4fe05dfcf5361460fe0db2cde5cf3314c86dbf9b416860c46d9682f36"
+    },
+    {
+      "from": "video/NARRATION.md",
+      "to": "archive/legacy-v01/video/NARRATION.md",
+      "sha256": "e455266b8ac996843e1adf26489e0ddf79baf4e9016ff3fb5d9c69bb90b3f4d1"
+    },
+    {
+      "from": "video/STORYBOARD.md",
+      "to": "archive/legacy-v01/video/STORYBOARD.md",
+      "sha256": "4e32c01e29da723573c77e10922013315c2b53e42700dc074629f4cf0aa2d373"
+    },
+    {
+      "from": "video/com_nguoi_animatic_v01.mp4",
+      "to": "archive/legacy-v01/video/com_nguoi_animatic_v01.mp4",
+      "sha256": "9f0664f97bb89edc486a6ace6c419b70b5c72f1035f3b76dd944533a92191fe1"
+    },
+    {
+      "from": "video/expected-utility/NARRATION.md",
+      "to": "archive/legacy-v01/video/expected-utility/NARRATION.md",
+      "sha256": "552abdd295b71f5677fa73d3a604202436dbfb1e7c25c6f6aa0ff489d068723c"
+    },
+    {
+      "from": "video/expected-utility/STORYBOARD.md",
+      "to": "archive/legacy-v01/video/expected-utility/STORYBOARD.md",
+      "sha256": "23c644eb5f4b4e3c951ff98a1626e47aacd6026ea34862c073a9c6dede101d60"
+    },
+    {
+      "from": "video/narration-script.txt",
+      "to": "archive/legacy-v01/video/narration-script.txt",
+      "sha256": "2a7f3083c8680fa0c9ca269fdb7f34e331efbb65aae171ff34e2402282e52be1"
+    },
+    {
+      "from": "video/room_tone.wav",
+      "to": "archive/legacy-v01/video/room_tone.wav",
+      "sha256": "c2160520920b12612de76c63c1a90b52dd04d9c9c412199923d585f3e0a6d119"
+    },
+    {
+      "from": "video/stills/scene_01.jpg",
+      "to": "archive/legacy-v01/video/stills/scene_01.jpg",
+      "sha256": "5cc17631fe9dbf7391f2212113894ccd592ac29e899912cd283b632e2439cf57"
+    },
+    {
+      "from": "video/stills/scene_02.jpg",
+      "to": "archive/legacy-v01/video/stills/scene_02.jpg",
+      "sha256": "5f97019f198d8689fcbb481d18a81b3989be31069752ba86a05f89fc0e4fa91e"
+    },
+    {
+      "from": "video/stills/scene_03.jpg",
+      "to": "archive/legacy-v01/video/stills/scene_03.jpg",
+      "sha256": "4dde340652490aa5962668cdb5b60cffc7feeaea268da8a94719ed44744c2daa"
+    },
+    {
+      "from": "video/stills/scene_04.jpg",
+      "to": "archive/legacy-v01/video/stills/scene_04.jpg",
+      "sha256": "c4ada504bd9ecafd8e73d74f9781f2e377d29f62b4adeab87b4bfacdec3d3a82"
+    },
+    {
+      "from": "video/stills/scene_05.jpg",
+      "to": "archive/legacy-v01/video/stills/scene_05.jpg",
+      "sha256": "cf7b5c3b2d9b3839c1479e43e22fd074643cde922e00e4caee4b9a2a63c8048c"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "slug": "replace-me",
+  "number": "00",
+  "title": "New chapter",
+  "subtitle": "",
+  "publish": false,
+  "language": "vi",
+  "theme": [],
+  "palette": {"dark": "#102a2c", "paper": "#f3ead5", "accent": "#d39b72", "ink": "#182a2a"},
+  "artifact": "memory",
+  "canonical_text": "source/approved.md",
+  "canonical_path": "chapters/00/",
+  "aliases": [],
+  "illustration": "artwork/source/approved-illustration.png",
+  "illustration_provenance": "Record the actual source before production.",
+  "narration": {"status": "awaiting-author-recording", "file": null, "synthetic_voice": false},
+  "video_mode": "edit cuts awaiting recorded narration",
+  "print_status": "not built",
+  "qr_status": "deferred",
+  "location": null
+}

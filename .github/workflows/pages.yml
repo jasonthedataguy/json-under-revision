@@ -3,15 +3,6 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
-    inputs:
-      manuscript:
-        description: Author-selected manuscript
-        required: true
-        default: proposed-edit
-        type: choice
-        options:
-          - proposed-edit
-          - original
 permissions:
   contents: read
 concurrency:
@@ -26,13 +17,11 @@ jobs:
         with:
           python-version: '3.12'
       - name: Build public files
-        env:
-          MANUSCRIPT: ${{ inputs.manuscript || 'proposed-edit' }}
-        run: python scripts/build_site.py --text "$MANUSCRIPT"
+        run: python scripts/build_site.py
+      - name: Test chapter scaffolding
+        run: python -m unittest discover -s tests
       - name: Validate public files
-        env:
-          MANUSCRIPT: ${{ inputs.manuscript || 'proposed-edit' }}
-        run: python scripts/check_site.py --text "$MANUSCRIPT"
+        run: python scripts/check_site.py
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site

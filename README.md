@@ -1,38 +1,58 @@
 # .json — Jason, under revision
 
-A chapter archive with the story, interactive artifacts, and downloadable production media.
+A book with a version history. Each chapter is a complete story with an optional memory archive and a consistent product set.
 
-- [Read Expected_utility — chapter 04](https://jasonthedataguy.github.io/json-under-revision/chapters/04/)
-- [Read Cơm nguội — chapter 07](https://jasonthedataguy.github.io/json-under-revision/chapters/07/)
-- [Open the archive](https://jasonthedataguy.github.io/json-under-revision/)
+| Chapter | Read | Product folder | Production board |
+|---|---|---|---|
+| 04 — Expected_utility | [Online](https://jasonthedataguy.github.io/json-under-revision/chapters/04/) | [chapters/expected-utility](chapters/expected-utility/) | [Board](chapters/expected-utility/previews/product-board.jpg) |
+| 07 — Cơm nguội | [Online](https://jasonthedataguy.github.io/json-under-revision/chapters/07/) | [chapters/com-nguoi](chapters/com-nguoi/) | [Board](chapters/com-nguoi/previews/product-board.jpg) |
 
-## Selected chapter package
+## Repository
 
-`Expected_utility/` is the author's selected final artifact, imported in full from `Expected_utility_poster_v02_full_chapter` on 16 October 2026. All 37 supplied files are preserved unchanged. Its original review-only labels are historical; the author explicitly authorized push and deployment. See the [release record](docs/chapters/expected-utility/RELEASE.md) and [file inventory](docs/chapters/expected-utility/BUNDLE_INVENTORY.json).
+`book.json` is the ordered registry. Each `chapters/<slug>/` contains its metadata, production recipe, preserved original and selected prose, artwork source/crops, A5 proof, web page, audio, video cuts, channel packs, documentation and previews. Shared design and website templates live in `shared/`; builders live in `scripts/`. See [architecture](docs/ARCHITECTURE.md) and [design review](docs/PRODUCT_REVIEW.md).
 
-The public chapter keeps the supplied poster design, selected prose and interactive decision tree, with navigation, downloads and small responsive/accessibility fixes. All media is available individually or in the complete chapter ZIP. The PDF is an eight-page A5 layout proof; the video is a 24-second ambient-only animatic. Those formats remain accurately labeled after publication. Social assets are ready to download; platform posts are managed by the author.
+Earlier work remains under `archive/`, with a checksum-verified [migration map](docs/MIGRATION.json). The complete prior Expected_utility delivery is unchanged. Existing chapter URLs and earlier media download URLs remain supported. Private ignored voice scratch was neither moved into the archive nor included in product ZIPs.
 
-Cơm nguội uses the previously selected edit in `content/proposed-edit.md`; the original manuscript is preserved separately. Its existing PDF and ambient-only animatic are linked from the chapter page. Future narrated videos require Jason's actual recording; voice generation remains stopped. A custom domain and print QR are deferred.
+## Build the website
 
-## Build and deploy
-
-Python 3.12 is used by CI; the site build has no third-party dependencies.
+Requires Python 3.12 in CI; standard library only. Finished product assets are committed.
 
 ```sh
-python scripts/build_site.py --text proposed-edit
+python scripts/build_site.py
 python scripts/check_site.py
+python -m unittest discover -s tests
 python -m http.server 8765 --directory site --bind 127.0.0.1
 ```
 
-`--text original` selects the Cơm nguội original; pass the same option to `check_site.py`. Expected_utility always uses the author's selected package. The build cleans and recreates only `site/`. Pushes to `main` build, validate and deploy that directory through GitHub Pages. Manual deployment remains available in the Actions workflow.
+GitHub Pages builds, tests and validates on pushes to `main`; manual dispatch is retained. Only `site/` is deployed.
 
-The supplied media builder, `Expected_utility/scripts/build_v02.py`, is preserved as provenance. It requires Pillow, ReportLab, ffmpeg and the Linux fonts specified in its source. Deploying the website uses the finished media and does not rerender it.
+## Add a chapter
 
-## Production records
+```sh
+python scripts/new_chapter.py --slug new-memory --number 09 --title "New memory"
+```
 
-- [Current project update](PROJECT_UPDATE.md)
-- [Expected_utility release and QA](docs/chapters/expected-utility/RELEASE.md)
-- [Earlier project state](docs/history/2026-10-16-before-expected-utility-release.md)
-- [Reusable chapter production playbook](docs/CHAPTER_PRODUCTION_PLAYBOOK.md)
+The scaffold starts with `publish: false`. Add the original and selected prose, supplied artwork, palette and artifact metadata. Fill `production.json` with scene crops, five carousel excerpts, print placements and film segments. Memory artifacts take their moments from the same recipe. Production builders never insert another chapter's text. Set `publish: true` after the chapter is authorized for public release.
 
-The repository is public by author choice, including drafts and production notes. Public access is not a license to reuse the author's prose or artwork. Historical documents describe earlier milestones; the current release record supersedes their pending approval and import statements.
+## Rebuild products
+
+Install `requirements-production.txt`, provide ffmpeg on PATH, and use Times/Arial on Windows or DejaVu TTF fonts on Linux. Set `CHAPTER_FONT_DIR` for another installation of those fonts.
+
+```sh
+python scripts/build_products.py --chapter com-nguoi --video
+python scripts/verify_products.py --ffmpeg /path/to/ffmpeg
+python scripts/build_site.py
+# After capturing web screenshots in each chapter's previews/:
+python scripts/build_board.py
+python scripts/build_inventory.py
+python scripts/build_site.py
+python scripts/check_site.py
+```
+
+Omit `--video` to rebuild print/social assets and timing notes without re-encoding cuts. `production.json` controls provisional film timing. MP4 outputs are 1080×1920 (discovery and YouTube) and 1080×1440 (feed). SRT/VTT describe the existing on-screen card timing; they are not a recorded narration transcript.
+
+## Current production decision
+
+The author chose **supplied artwork and crops** and **edit cuts prepared for his recorded narration**. There is no generated voice. All six cuts are playable edit previews, awaiting the actual recording and retiming. The source images limit close-up and print detail; the PDFs are A5 editorial proofs. Printer-certified production, real-device/screen-reader review and author-managed social uploads remain separate. QR remains deferred.
+
+The boards' checkmarks, illustrative probabilities, sample durations, locations and QR graphics are references, not verified product facts. The strategy's commercial assumptions are not prices or checkout commitments. No store, payment flow or social post has been created.
