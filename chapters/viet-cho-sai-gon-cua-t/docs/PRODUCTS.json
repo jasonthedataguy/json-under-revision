@@ -1,37 +1,131 @@
 {
   "chapter": "viet-cho-sai-gon-cua-t",
-  "release_stage": "reader",
   "products": [
     {
-      "product": "Selected manuscript",
-      "state": "ready for publication",
+      "product": "Selected prose",
+      "state": "ready",
       "path": "source/approved.md"
     },
     {
-      "product": "Responsive chapter website and memory journey",
-      "state": "ready for publication",
-      "path": "web/index.html"
-    },
-    {
-      "product": "Homepage and chapter artwork",
-      "state": "supplied-art derivative",
-      "path": "artwork/exports/hero.jpg"
-    },
-    {
-      "product": "Scene crop provenance",
-      "state": "documented",
+      "product": "Source illustration and scene crops",
+      "state": "ready as supplied-art derivatives",
       "path": "artwork/scenes/index.json"
     },
     {
-      "product": "Supplied project board",
-      "state": "preserved reference",
-      "path": "references/project-board-v01/PROJECT_BOARD.html"
+      "product": "Illustrated A5 chapter",
+      "state": "editorial proof",
+      "path": "book/chapter-A5-proof.pdf"
+    },
+    {
+      "product": "Interactive website",
+      "state": "ready for deployment",
+      "path": "web/index.html"
+    },
+    {
+      "product": "Instagram carousel (five 3:4 cards)",
+      "state": "ready",
+      "path": "social/instagram/slide-01.jpg"
+    },
+    {
+      "product": "Facebook image and copy",
+      "state": "ready",
+      "path": "social/facebook/post.jpg"
+    },
+    {
+      "product": "YouTube thumbnail and description",
+      "state": "ready",
+      "path": "social/youtube/thumbnail.jpg"
+    },
+    {
+      "product": "TikTok cover and caption",
+      "state": "ready",
+      "path": "social/tiktok/cover.jpg"
+    },
+    {
+      "product": "9:16 discovery cut",
+      "state": "edit preview; author narration pending",
+      "path": "video/discovery-9x16.mp4"
+    },
+    {
+      "product": "9:16 YouTube cut",
+      "state": "edit preview; author narration pending",
+      "path": "video/youtube-9x16.mp4"
+    },
+    {
+      "product": "3:4 feed cut",
+      "state": "edit preview; author narration pending",
+      "path": "video/feed-3x4.mp4"
+    },
+    {
+      "product": "SRT/VTT text timings",
+      "state": "provisional; retime to recorded narration",
+      "path": "video/timeline.json"
+    },
+    {
+      "product": "Author reading script",
+      "state": "ready for recording",
+      "path": "audio/reading-script.md"
+    },
+    {
+      "product": "Editable cover layout",
+      "state": "editable SVG type with separate supplied-art crop",
+      "path": "artwork/exports/cover-a5.svg"
+    },
+    {
+      "product": "15-second vertical teaser",
+      "state": "edit preview; author narration pending",
+      "path": "video/teaser-9x16.mp4"
+    },
+    {
+      "product": "Landscape essay film",
+      "state": "edit preview; author narration pending",
+      "path": "video/essay-16x9.mp4"
+    },
+    {
+      "product": "Instagram story 1",
+      "state": "ready",
+      "path": "social/instagram/story-01.jpg"
+    },
+    {
+      "product": "Instagram story 2",
+      "state": "ready",
+      "path": "social/instagram/story-02.jpg"
+    },
+    {
+      "product": "Instagram story 3",
+      "state": "ready",
+      "path": "social/instagram/story-03.jpg"
+    },
+    {
+      "product": "Instagram highlight",
+      "state": "ready",
+      "path": "social/instagram/highlight.jpg"
+    },
+    {
+      "product": "Source-grounded timeline",
+      "state": "ready",
+      "path": "source/TIMELINE.md"
+    },
+    {
+      "product": "Recording script for the discovery cut",
+      "state": "verbatim excerpt sequence",
+      "path": "audio/discovery-9x16-script.md"
+    },
+    {
+      "product": "Recording script for the landscape essay",
+      "state": "verbatim excerpt sequence",
+      "path": "audio/essay-16x9-script.md"
+    },
+    {
+      "product": "Social launch brief",
+      "state": "prepared; posting remains author-managed",
+      "path": "social/BRIEF.md"
     }
   ],
   "remaining": [
-    "A5 proof and print production",
-    "Video edit cuts, author-recorded narration and captions",
-    "Social platform packs; posting remains author-managed",
-    "QR remains deferred"
+    "Jason recorded narration and final timing/mix",
+    "Printer specifications and high-resolution art for certified print production",
+    "Physical-device and human screen-reader review",
+    "Author-managed social uploads; QR remains deferred"
   ]
 }

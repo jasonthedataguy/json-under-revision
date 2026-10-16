@@ -40,6 +40,6 @@ def safe_path(base, relative):
 
 def artifact_hash(path):
     data=path.read_bytes()
-    if path.suffix.lower() in {'.md','.html','.json','.srt','.vtt','.log','.css','.js','.txt'}:
+    if path.suffix.lower() in {'.md','.html','.json','.srt','.vtt','.log','.css','.js','.txt','.svg'}:
         data=data.replace(b'\r\n',b'\n')
     return hashlib.sha256(data).hexdigest()

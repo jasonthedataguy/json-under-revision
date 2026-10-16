@@ -22,7 +22,7 @@ from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.enums import TA_LEFT
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak, Image as PDFImage
 from reportlab.lib.pagesizes import A5
-from common import ROOT, chapters, paragraphs, plain, read_json, write_json
+from common import ROOT, chapters, paragraphs, plain, read_json, write_json, safe_path
 
 
 def font_files():
@@ -89,6 +89,18 @@ def crop_scenes(folder,meta):
 def card(meta,image,text,size=(1080,1440),number=None,cover_card=False):
     w,h=size; palette=meta['palette']; margin=round(w*.065)
     result=Image.new('RGB',size,palette['paper']); draw=ImageDraw.Draw(result)
+    if w>h:
+        # Landscape films keep the scene and reading area beside one another.
+        left=round(w*.47);x=left+round(w*.04);width=w-x-round(w*.04)
+        result.paste(cover(image,(left,h)),(0,0))
+        draw=ImageDraw.Draw(result)
+        draw.text((x,round(h*.07)),f'.json / {meta["number"]} / {number or "CHAPTER"}',font=font(round(h*.028),3),fill=palette['dark'])
+        face=font(round(h*.062))
+        while len(lines(text,face,width))*face.size*1.3>h*.62 and face.size>24:
+            face=font(face.size-2)
+        text_block(draw,text,(x,round(h*.23)),width,face,palette['dark'],1.3)
+        text_block(draw,meta['title'],(x,round(h*.89)),width,font(round(h*.024),3),palette['dark'])
+        return result
     draw.rectangle((margin//2,margin//2,w-margin//2,h-margin//2),outline=palette['dark'],width=2)
     draw.text((margin,margin),'.json',font=font(round(w*.052),2),fill=palette['dark'])
     draw.text((w-margin-round(w*.20),margin+14),f'{meta["number"]} / {number or "CHAPTER"}',font=font(round(w*.017),3),fill=palette['dark'])
@@ -107,7 +119,7 @@ def artwork(folder,meta,source,scenes):
     hero=Image.open(folder/scenes[0]['path'])
     production=read_json(folder/'production.json')
     save(cover(hero,(1600,960)),folder/'artwork/exports/hero.jpg')
-    mobile=cover(hero,(900,1200),(.58,.5))
+    mobile=cover(hero,tuple(production.get('hero_mobile_size',[900,1200])),(.58,.5))
     if production.get('mobile_composition')=='preserve-wide-scene':
         mobile=Image.new('RGB',(900,1200),meta['palette']['dark'])
         scene=cover(hero,(900,600),(.58,.5))
@@ -229,6 +241,9 @@ def film_plan(folder,meta,scenes,quotes):
             vtt.append(f'{timecode(seg["start"],True)} --> {timecode(seg["end"],True)}\n{wrapped}\n')
         (folder/f'video/{name}.srt').write_text('\n'.join(srt),encoding='utf-8')
         (folder/f'video/{name}.vtt').write_text('\n'.join(vtt),encoding='utf-8')
+        script=['# '+meta['title']+' — '+name,'','Recording script: exact text-card excerpts, in sequence. Timings are provisional; record naturally and retime the edit to the recording.','']
+        script.extend(segment['text']+'\n' for segment in timeline)
+        (folder/f'audio/{name}-script.md').write_text('\n'.join(script),encoding='utf-8')
     write_json(folder/'video/timeline.json',variants)
     storyboard=['# '+meta['title']+' — film storyboard','','EDIT PREVIEWS — awaiting Jason’s recorded narration. The current text-card timings and ambient mix are provisional. Retime the cuts and regenerate speech subtitles after importing the author’s recording. The 3:4 feed cut is distinct from the 9:16 platform cuts.','']
     for variant in variants:
@@ -238,6 +253,31 @@ def film_plan(folder,meta,scenes,quotes):
     (folder/'audio/NARRATION.md').write_text('# Narration\n\nVoice generation remains stopped. These films use on-screen manuscript excerpts and synthetic ambience. For a narrated edition, record the approved text or discovery excerpt with Jason, then retime the cut and speech captions to that actual recording. Existing SRT/VTT tracks describe the text-card timing; they are not a narration transcript.\n',encoding='utf-8')
     shutil.copy2(folder/meta['canonical_text'],folder/'audio/reading-script.md')
     return variants
+
+def supplemental_products(folder,meta,scenes):
+    """Optional channel formats declared by an individual production board."""
+    recipe=read_json(folder/'production.json').get('supplemental',{})
+    alts=[]
+    for item in recipe.get('cards',[]):
+        source=Image.open(folder/scenes[item['scene']]['path'])
+        save(card(meta,source,item['text'],tuple(item['size']),number=item.get('label')),safe_path(folder,item['path']))
+        alts.append({'file':item['path'],'alt':item['alt']})
+    alts.extend(recipe.get('alt_text',[]))
+    if alts:write_json(folder/'social/alt-text.json',alts)
+    for relative,text in recipe.get('copy',{}).items():
+        path=safe_path(folder,relative);path.parent.mkdir(parents=True,exist_ok=True)
+        path.write_text(text.rstrip()+'\n',encoding='utf-8')
+    if recipe.get('editable_cover'):
+        title_lines=lines(meta['title'],font(110,2),1280)
+        spans=''.join(f'<tspan x="100" dy="{0 if i==0 else 138}">{html.escape(line)}</tspan>' for i,line in enumerate(title_lines))
+        svg=f'''<svg xmlns="http://www.w3.org/2000/svg" width="1480" height="2100" viewBox="0 0 1480 2100" role="img" aria-label="{html.escape(meta['title'])}">
+<rect width="1480" height="2100" fill="{meta['palette']['paper']}"/>
+<rect x="48" y="48" width="1384" height="2004" fill="none" stroke="{meta['palette']['dark']}" stroke-width="3"/>
+<g font-family="Georgia,serif" fill="{meta['palette']['dark']}"><text x="100" y="170" font-size="76">.json</text><text x="100" y="245" font-size="28">CHAPTER {meta['number']} / JASON, UNDER REVISION</text>
+<image href="../scenes/{Path(scenes[0]['path']).name}" x="100" y="320" width="1280" height="950" preserveAspectRatio="xMidYMid slice"/>
+<text x="100" y="1460" font-size="110" font-style="italic">{spans}</text>
+<text x="100" y="1890" font-size="40">{html.escape(meta['subtitle'])}</text></g></svg>'''
+        (folder/'artwork/exports/cover-a5.svg').write_text(svg,encoding='utf-8')
 
 def render_film(folder,meta,variant,ffmpeg):
     size=tuple(variant['size']);w,h=size
@@ -294,6 +334,7 @@ def main():
         pdf(folder,meta,scenes);ambience(folder)
         variants=film_plan(folder,meta,scenes,quotes)
         copy_and_notes(folder,meta,scenes,quotes)
+        supplemental_products(folder,meta,scenes)
         if args.video:
             for variant in variants:render_film(folder,meta,variant,args.ffmpeg)
         print('Built product assets:',meta['slug'],flush=True)

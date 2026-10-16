@@ -19,7 +19,7 @@ def render_chapter(folder,meta,config,next_meta):
     reader=reader_release(meta)
     supplied=meta.get('release_stage')=='supplied'
     name='chapter-reader.html' if reader else 'chapter.html'
-    template_path=safe_path(folder,meta['web_template']) if supplied else ROOT/'shared'/name
+    template_path=safe_path(folder,meta['web_template']) if meta.get('web_template') else ROOT/'shared'/name
     template=Template(template_path.read_text(encoding='utf-8'))
     prose=paragraphs(safe_path(folder,meta['canonical_text']))
     history=meta.get('history_text','source/original.md')

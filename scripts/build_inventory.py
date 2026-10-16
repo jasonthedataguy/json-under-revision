@@ -59,6 +59,7 @@ for folder,meta in chapters():
        {'product':'SRT/VTT text timings','state':'provisional; retime to recorded narration','path':'video/timeline.json'},
        {'product':'Author reading script','state':'ready for recording','path':'audio/reading-script.md'},
     ]
+    products.extend(read_json(folder/'production.json').get('supplemental',{}).get('products',[]))
     for product in products:
         if not (folder/product['path']).is_file():product['state']='missing'
     write_json(folder/'docs/PRODUCTS.json',{'chapter':meta['slug'],'products':products,'remaining':['Jason recorded narration and final timing/mix','Printer specifications and high-resolution art for certified print production','Physical-device and human screen-reader review','Author-managed social uploads; QR remains deferred']})

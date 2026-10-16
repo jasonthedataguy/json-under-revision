@@ -1,9 +1,11 @@
 """Compose review boards from the files that actually exist in each product set."""
+import argparse
 from PIL import Image,ImageDraw
 from common import chapters,read_json
 from build_products import cover,font,save,text_block
 
-for folder,meta in chapters():
+parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--chapter');args=parser.parse_args()
+for folder,meta in chapters(args.chapter):
     if not meta['publish'] or meta.get('release_stage','multimedia')!='multimedia':continue
     W,H=2400,1760;palette=meta['palette']
     image=Image.new('RGB',(W,H),palette['paper']);draw=ImageDraw.Draw(image)
@@ -27,7 +29,8 @@ for folder,meta in chapters():
         image.paste(art,(x1+(x2-x1-art.width)//2,y1+47+(y2-y1-60-art.height)//2))
     draw=ImageDraw.Draw(image)
     draw.text((1320,1380),'09 / PRODUCT STATE',font=font(23,1),fill=palette['dark'])
-    text='Ready: selected text, scene crops, web artifact,\n5-card carousel, poster and platform copy.\nA5: editorial proof; source art limits print detail.\nVideo: three playable cuts + provisional SRT/VTT.\nNext: Jason recording → retime → mix → review.'
+    films=len(read_json(folder/'video/timeline.json'))
+    text=f'Ready: selected text, scene crops, web artifact,\n5-card carousel, poster and platform copy.\nA5: editorial proof; source art limits print detail.\nVideo: {films} playable cuts + provisional SRT/VTT.\nNext: Jason recording → retime → mix → review.'
     text_block(draw,text,(1320,1425),1000,font(24),palette['dark'],1.55)
     save(image,folder/'previews/product-board.jpg')
     print('Composed product board:',meta['slug'])

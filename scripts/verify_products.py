@@ -7,8 +7,8 @@ import pymupdf
 from PIL import Image
 from common import ROOT,chapters,paragraphs,plain,read_json,write_json
 
-parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--ffmpeg',required=True);args=parser.parse_args()
-for folder,meta in chapters():
+parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--ffmpeg',required=True);parser.add_argument('--chapter');args=parser.parse_args()
+for folder,meta in chapters(args.chapter):
     if not meta['publish'] or meta.get('release_stage','multimedia')!='multimedia':continue
     images=[p for directory in ['artwork','social','previews'] for p in (folder/directory).rglob('*') if p.suffix in ['.jpg','.png']]
     for path in images:

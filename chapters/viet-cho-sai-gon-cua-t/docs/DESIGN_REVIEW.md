@@ -1,11 +1,9 @@
-# Chapter 03 design and source review
+# Sài Gòn — production board implementation
 
-The published text is the author's original essay, supplied on 2026-10-16 to correct the assistant's earlier board-derived rewrite. `source/original.md` and `source/approved.md` preserve the supplied bytes exactly. The text's T/t voice, slang, dialogue, names, events and paragraph order are unchanged.
+The Landmark picnic, Gấu, pink cap, gingham blanket, bridge and skyline come from the supplied poster. Eight documented crops provide visual continuity across the A5 book, social pack, five film edits and eight-stop memory journey. No invented Christmas or workplace scene is presented as a new illustration.
 
-The reader remains Chapter 03 at `/chapters/03/`; the attachment's original `# 1.` heading is preserved in the source files. `chapter.json` records this stable route and the original-source checksum. All eight memory excerpts are verbatim substrings of the supplied essay. The homepage subtitle and closing quotation also use the author's words.
+The original essay remains byte-identical. Carousel, film and story-card excerpts are checked against it. The complete A5 proof retains all 20 paragraphs and Vietnamese diacritics. Its 03 numbering follows the registry; the original source heading and historical board are untouched.
 
-The responsive design, Landmark artwork and four documented crops remain in place. They are views of a supplied illustration, not separate factual depictions of the narrated events. The original poster's provisional Chapter 01 lettering stays outside the web crops; the image source remains unchanged.
+The reader keeps its existing split hero and memory journey, adding actual PDF, media, social and bundle downloads. Audio is synthetic ambience without speech. The 60-second discovery cut, 45-second feed, 15-second teaser, longer vertical cut and separately laid-out landscape essay are prepared for the author’s recorded narration. SRT/VTT timing is provisional.
 
-The 12 supplied project-board files remain historical design references with their exact checksums. Their earlier claims about source availability and their task statuses do not override the author's actual manuscript. The assistant's superseded draft and notes are stored under `archive/superseded/saigon-board-derived-draft-v01/`, outside the reader deployment.
-
-The current release includes the full reader chapter, responsive artwork, eight memory controls, an original-text version-history panel and manuscript download. Print, video, narration and social products remain separate work; no finished products are implied by the reference board.
+The supplied art is 1254 × 1254 pixels, so cropped details are proof-quality. The editable cover separates type from a raster illustration; it does not claim new illustration layers. Certified print production needs printer specifications and higher-resolution artwork. QR remains deferred. Social pack files are prepared, not posted.

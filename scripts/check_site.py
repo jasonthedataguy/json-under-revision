@@ -75,10 +75,18 @@ def check_site():
             assert len(original)==source['bytes'],f'Author original byte count changed: {meta["slug"]}'
             assert hashlib.sha256(original).hexdigest()==source['sha256'],f'Author original changed: {meta["slug"]}'
             assert safe_path(folder,meta['canonical_text']).read_bytes()==original,f'Published text differs from author original: {meta["slug"]}'
+            recording_script=folder/'audio/reading-script.md'
+            if recording_script.exists():assert recording_script.read_bytes()==original,f'Recording script differs from author original: {meta["slug"]}'
             if meta['artifact']=='memory':
                 manuscript=original.decode('utf-8').replace('\r\n','\n')
                 for moment in read_json(folder/'production.json')['memory']['moments']:
                     assert moment['quote'] in manuscript,f'Memory excerpt is not in author original: {moment["title"]}'
+                recipe=read_json(folder/'production.json')
+                if recipe.get('excerpts_verbatim'):
+                    excerpts=[item['text'] for item in recipe.get('carousel',[])]
+                    excerpts += [segment['text'] for film in recipe.get('films',[]) for segment in film['segments']]
+                    excerpts += [item['text'] for item in recipe.get('supplemental',{}).get('cards',[])]
+                    for excerpt in excerpts:assert excerpt in manuscript,f'Product excerpt is not in author original: {excerpt}'
         expected=[normalize(plain(p)) for p in paragraphs(safe_path(folder,meta['canonical_text']))]
         actual=pages[(site/meta['canonical_path']/'index.html').resolve()].story
         assert [normalize(p) for p in actual]==expected,f'Manuscript changed: {meta["slug"]}'
