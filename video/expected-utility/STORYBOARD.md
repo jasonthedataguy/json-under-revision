@@ -1,6 +1,6 @@
 # Expected_utility — 6-beat poster animatic v0.2
 
-**Current proof:** 24 seconds, 720×1280, H.264/AAC with synthetic ambient room tone only. No approved voice, finished animation, or timed subtitles. This file is in the downloadable production ZIP, not yet committed to GitHub.
+**Current proof:** 24 seconds, 720×1280, H.264/AAC with synthetic ambient room tone only. No approved voice, finished animation, or timed subtitles. The selected media is committed at `Expected_utility/video/expected_utility_poster_animatic_9x16.mp4` and downloadable from the chapter page.
 
 | Time | Visual / motif | Beat |
 |---|---|---|

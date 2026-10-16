@@ -1,0 +1,29 @@
+{
+  "version": "v0.2-poster",
+  "canonical_status": "proposed edit; approval required",
+  "visual_identity": {
+    "name": "Rough Print / Green & Pink",
+    "palette": {
+      "green": "#0c2c24",
+      "pink": "#e78fac",
+      "cream": "#f4ead5"
+    },
+    "primary_image": "assets/poster_original.png",
+    "subject": "young developer debugging at laptop, stack of books, coffee, city at night"
+  },
+  "deliverables": {
+    "print_proof": "book/04_expected_utility_POSTER_A5_PROOF.pdf",
+    "web_local": "web/index.html",
+    "decision_tree": "assets/decision_tree_dark.png",
+    "video_proof": "video/expected_utility_poster_animatic_9x16.mp4",
+    "instagram_carousel": "social/instagram/slide_01_3x4.jpg through slide_05_3x4.jpg"
+  },
+  "release_gates": [
+    "author approves proposed text",
+    "approve illustration and symbolic fictitious outcomes",
+    "narrator audio and timed Vietnamese captions",
+    "printer specs and PDF/X",
+    "mobile QA, permanent URL + QR",
+    "release permission for public site/social"
+  ]
+}

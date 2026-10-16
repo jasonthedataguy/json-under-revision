@@ -1,6 +1,6 @@
 # Expected_utility — illustrated poster direction v0.2
 
-**Status:** Visual direction selected; artwork still requires factual/privacy and commercial release approval. **Working number:** 04. **Slug:** `expected-utility`.
+**Status:** Selected final chapter package; push and website deployment authorized on 16 October 2026. See [RELEASE.md](RELEASE.md). **Working number:** 04. **Slug:** `expected-utility`.
 
 ## Core scene and motifs
 A young developer staring at a laptop debugging code, AirPods, a cup of coffee, and a physical stack of Game Theory / Behavioral Economics / Decision Making / Probability books. Nighttime city through a window. The unresolved face is NOT a specific person's portrait and must remain symbolic.
@@ -15,19 +15,19 @@ Reference selected by Jason: a textured, imperfect, screen-printed indie album p
 ## Main illustration
 The user-selected *Expected_utility: A Night of Decisions* poster is the artwork to use in final print/web/social media. Its handwritten numerical outcome doodles are imaginary decorations; **never interpret them as real probability estimates**.
 
-A lightweight companion vector `digital/chapters/expected-utility/assets/poster_illustration_v02.svg` is committed to keep the web preview complete before binary media upload. Do not mistake it for the full-resolution master.
+A lightweight companion vector `digital/chapters/expected-utility/assets/poster_illustration_v02.svg` is committed as an archived earlier prototype. Do not mistake it for the full-resolution master.
 
 ## Decision tree
 Two choices: *Nói ra* vs *Im lặng*. The four symbolic possible outcomes have **P = ?**. User selects a branch; no fabricated probabilities, scores, or magical alternate timelines. This is a literary artifact, not scientific decision support.
 
-## Deliverables created outside GitHub
+## Deliverables imported into `Expected_utility/`
 - Original poster PNG
 - 8-page A5 full-essay illustrated PDF proof
 - Web full chapter experience with decision tree
 - 5 × Instagram 1080×1440 (3:4) cards
 - 24s 720×1280 (9:16) ambient-only animatic; story stills
 - Facebook landscape image and YouTube landscape thumbnail
-All above provided as a downloadable ZIP. The binary assets are NOT part of this PR yet; upload after author release review.
+All of these are now imported in the complete selected package. The website exposes both individual media and a full ZIP download.
 
 ## Final QA/release gates
 Approved manuscript, illustration/identity review, licensed narration and timed captions, final 1080×1920 narrated social video, printer specs/PDF-X, permanent QR domain, phone and accessibility QA. Public release not authorized solely by approval of design.

@@ -1,9 +1,11 @@
-"""Build a public chapter candidate without exposing private production files."""
+"""Build the author-selected chapters and their downloadable artifacts."""
 import argparse
 import html
 import re
 import shutil
+import stat
 from pathlib import Path
+from build_expected_utility import build_expected_utility, build_landing
 
 ROOT = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser()
@@ -33,12 +35,24 @@ memory_line = ('“Tớ để ý rằng bố luôn là người ăn hết tô c�
                '“Tớ để ý bố luôn là người ăn hết tô cơm ấy, còn phần cơm nóng thì để mẹ và tớ ăn.”')
 page = page.replace('“Tớ để ý bố luôn là người ăn hết tô cơm ấy.”', memory_line)
 page = page.replace('</title>', '</title><meta name="description" content="Cơm nguội — một ký ức gia đình trong .json / Jason, under revision.">', 1)
+page = page.replace('</style>', 'audio{max-width:100%}</style>', 1)
 out = ROOT / 'site'
+if out.resolve() != ROOT.resolve() / 'site':
+    raise ValueError('site must be a real directory inside the repository')
+def remove_readonly(function, path, error):
+    if not isinstance(error[1], PermissionError):
+        raise error[1]
+    Path(path).chmod(stat.S_IWRITE | stat.S_IREAD | stat.S_IEXEC)
+    function(path)
+
+if out.exists():
+    shutil.rmtree(out, onerror=remove_readonly)
 chapter = out / 'chapters/07'
 (chapter / 'assets').mkdir(parents=True, exist_ok=True)
 for name in ['two_bowls.svg', 'room_tone.wav']:
     shutil.copy2(ROOT / 'digital/assets' / name, chapter / 'assets' / name)
 (chapter / 'index.html').write_text(page, encoding='utf-8')
-(out / 'index.html').write_text('''<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>.json — Jason, under revision</title><style>body{margin:12vh auto;padding:24px;max-width:640px;background:#f5efe5;color:#202a3a;font:20px/1.8 Georgia}a{color:inherit}</style><main><h1>.json</h1><p>Jason, under revision</p><p>Một cuốn sách với lịch sử phiên bản.</p><a href="chapters/07/">Đọc Cơm nguội →</a></main></html>''', encoding='utf-8')
 (out / '.nojekyll').touch()
+build_expected_utility(ROOT, out)
+build_landing(out)
 print(f'Built candidate from {args.text}: {chapter}')

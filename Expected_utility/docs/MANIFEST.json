@@ -1,0 +1,15 @@
+{
+  "title": "Expected_utility",
+  "slug": "expected-utility",
+  "version": "0.2.0",
+  "source": "content/original.md",
+  "proposed": "content/proposed-edit.md",
+  "visual_theme": "forest green, muted pink, cream; rough printed poster",
+  "asset_origin": "author-supplied illustration generated in earlier conversation",
+  "artifact_status": "PROOF / AUTHOR REVIEW",
+  "ebook_print_status": "7+ page A5 editorial proof, not PDF/X",
+  "website_status": "local static prototype, not deployed",
+  "video_status": "24-second ambient-only animatic (9:16), no narrator or synchronized captions",
+  "social_status": "3:4 Instagram, 9:16 video stills, landscape thumbnails; drafts not posted",
+  "rights_note": "Do not present decorative numbers in original poster as estimated probabilities."
+}

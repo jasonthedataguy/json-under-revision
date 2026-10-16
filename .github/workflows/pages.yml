@@ -1,10 +1,13 @@
 name: Publish chapter archive
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
     inputs:
       manuscript:
         description: Author-selected manuscript
         required: true
+        default: proposed-edit
         type: choice
         options:
           - proposed-edit
@@ -24,8 +27,12 @@ jobs:
           python-version: '3.12'
       - name: Build public files
         env:
-          MANUSCRIPT: ${{ inputs.manuscript }}
+          MANUSCRIPT: ${{ inputs.manuscript || 'proposed-edit' }}
         run: python scripts/build_site.py --text "$MANUSCRIPT"
+      - name: Validate public files
+        env:
+          MANUSCRIPT: ${{ inputs.manuscript || 'proposed-edit' }}
+        run: python scripts/check_site.py --text "$MANUSCRIPT"
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site

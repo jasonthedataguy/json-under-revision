@@ -5,3 +5,5 @@
 *.wav binary
 *.mp4 binary
 *.md whitespace=-blank-at-eol
+# Preserve the selected delivery byte-for-byte, including its original newlines.
+Expected_utility/** -text

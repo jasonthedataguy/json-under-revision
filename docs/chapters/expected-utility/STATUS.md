@@ -1,31 +1,18 @@
-# Expected_utility v0.2 — asset truth table
+# Expected_utility — current release status
 
-**Git branch:** `design/expected-utility-poster-v02` — proposal only.
-**Release:** HOLD / author review. **The Cơm nguội site stays unchanged.**
+The author selected the complete folder as the final chapter artifact on 16 October 2026 and authorized push and deployment. This supersedes the former proposal-branch hold. See [RELEASE.md](RELEASE.md) for the current record.
 
-| Deliverable | Status | Evidence |
-|---|---|---|
-| Original and edited chapter | READY as drafts | `content/chapters/expected-utility/{original,proposed-edit}.md` |
-| Poster artwork | PROOF in downloadable ZIP | User-selected rough poster image; binary not committed |
-| SVG lightweight poster illustration | READY as repository visual fallback | `digital/chapters/expected-utility/assets/poster_illustration_v02.svg` |
-| A5 illustrated book | PROOF outside GitHub | 8-page PDF, visually reviewed; not PDF/X or press-ready |
-| Website / interactive decision tree | READY as branch code, NOT DEPLOYED | `digital/chapters/expected-utility/index.html`; text fetched from public manuscript source |
-| Instagram 3:4 carousel | PROOF outside GitHub | 5 × 1080×1440 JPEG |
-| Facebook / YouTube thumbnails | PROOF outside GitHub | 1600×900, 1280×720 image exports |
-| TikTok/Reels/Short portrait | PROOF outside GitHub | 24s 720×1280 MP4 with original synthesized ambient only |
-| Narrated final video and captions | MISSING | No licensed narration, synchronized subtitle track or 1080×1920 export |
-| Press-ready PDF/QR | BLOCKED | Printer, final permissions, owned URL |
-| Social posts / live chapter | NOT PUBLISHED | No uploaded media nor verified public release |
+| Deliverable | Location / status |
+|---|---|
+| Selected full package | `Expected_utility/` — all 37 supplied files imported unchanged |
+| Selected prose and original | `Expected_utility/content/` — both preserved |
+| Poster and decision tree | `Expected_utility/assets/` — full raster media present |
+| A5 PDF | `Expected_utility/book/04_expected_utility_POSTER_A5_PROOF.pdf` — 8-page layout proof |
+| Website | Built from `Expected_utility/web/` at `/chapters/04/` |
+| Carousel and thumbnails | `Expected_utility/social/` — 5 slides plus poster, Facebook and YouTube images |
+| Video | `Expected_utility/video/expected_utility_poster_animatic_9x16.mp4` — 24s, 720×1280, H.264/AAC, synthetic ambience |
+| Complete download | `/chapters/04/files/Expected_utility.zip` — all supplied files and current release note |
+| Narrated video / press PDF | Not supplied; no narration, synchronized captions or PDF/X claim |
+| Social posts | Downloadable copy/media; platform uploads remain with the author |
 
-## QA
-- [x] A5 PDF was rendered: 8 pages, complete Vietnamese proposed text, last line preserved.
-- [x] Video probed: 720×1280, 24 sec; no human/synthetic narrator.
-- [x] Carousel images: 1080×1440, 5 cards.
-- [x] Repo preview illustration needs no external image host.
-- [ ] Test updated GitHub HTML in a real browser on mobile, including live raw manuscript fetch.
-- [ ] Test screen readers, contrast, iOS/Android audio & video.
-- [ ] Verify PDF/X with printer; produce physical proof.
-- [ ] Copy vetted binary package to repo via authorized local git/Codex workflow.
-- [ ] Obtain explicit content, third-party privacy and commercial release approvals.
-
-**Never claim the assets are deployed, print-ready, or narrated based on the design-board illustration.**
+The older SVG prototype remains in Git history and its assets remain archived. The source preview redirects to the selected package. Original package documentation retains its delivery-time labels for provenance.

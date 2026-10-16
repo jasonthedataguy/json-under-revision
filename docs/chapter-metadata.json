@@ -2,25 +2,20 @@
   "id": "07-com-nguoi",
   "title": "Cơm nguội",
   "series": ".json — Jason, under revision",
-  "content_status": "author_review",
-  "illustration_status": "provisional_generated_concept",
+  "content_status": "author_selected_edit",
+  "illustration_status": "author-approved treatment; print master pending",
   "book_format": "A5 layout proof; not press ready",
-  "digital_status": "original manuscript published on GitHub Pages; HTTPS browser checks passed",
+  "digital_status": "selected edit published; two-chapter release configured",
   "video_status": "24-second room-tone animatic; required narrator audio pending",
-  "qr_status": "blocked_pending_live_domain",
+  "qr_status": "deferred_by_author",
   "source": "Author-provided 8-essay manuscript set; original unchanged",
-  "canonical_text": "pending_author_approval",
+  "canonical_text": "content/proposed-edit.md",
   "rights": "Author must review and approve original artwork and third-party content before commercial use",
   "artifact_rule": "Add feeling/context/contradiction; do not make the chapter incomplete without the archive",
   "source_strategy": "json_immersive_product_strategy.pdf (21-page deck), pages 3-8, 17-19",
   "narration": {
     "required": true,
-    "reference_requested": "healwayssmile",
-    "reference_url": "https://www.youtube.com/watch?v=Q-HcJBSspHQ",
-    "reference_title": "Phim ngắn: True Love - Tôi không cần yêu!!!",
-    "reference_uploader": "TrungTrau",
-    "status": "pending speaker selection, permitted use and recording/generation method",
-    "script": "video/narration-script.txt",
+    "status": "awaiting Jason recording; voice generation stopped",
     "audio_file": null
   },
   "repository": {
@@ -32,10 +27,8 @@
   },
   "public_url": "https://jasonthedataguy.github.io/json-under-revision/chapters/07/",
   "deployment": {
-    "workflow_url": "https://github.com/jasonthedataguy/json-under-revision/actions/runs/38878045413",
-    "commit": "6adbe7512d8a81285e311097c757c1b0a20e6d43",
-    "manuscript": "original",
-    "status": "success",
-    "verified": "2026-10-16"
+    "workflow": ".github/workflows/pages.yml",
+    "manuscript": "proposed-edit",
+    "previous_successful_run": "https://github.com/jasonthedataguy/json-under-revision/actions/runs/38883115962"
   }
 }

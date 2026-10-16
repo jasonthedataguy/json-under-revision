@@ -1,51 +1,38 @@
-# .json / 07 — Cơm nguội | build kit v0.1
+# .json — Jason, under revision
 
-This is the **first complete vertical-slice prototype** for a memoir chapter: book, digital artifact, short-form video.
+A chapter archive with the story, interactive artifacts, and downloadable production media.
 
-## Read online
+- [Read Expected_utility — chapter 04](https://jasonthedataguy.github.io/json-under-revision/chapters/04/)
+- [Read Cơm nguội — chapter 07](https://jasonthedataguy.github.io/json-under-revision/chapters/07/)
+- [Open the archive](https://jasonthedataguy.github.io/json-under-revision/)
 
-[Read Cơm nguội](https://jasonthedataguy.github.io/json-under-revision/chapters/07/) — original manuscript, published through GitHub Pages. The source repository is public by author choice.
+## Selected chapter package
 
-## Open it
+`Expected_utility/` is the author's selected final artifact, imported in full from `Expected_utility_poster_v02_full_chapter` on 16 October 2026. All 37 supplied files are preserved unchanged. Its original review-only labels are historical; the author explicitly authorized push and deployment. See the [release record](docs/chapters/expected-utility/RELEASE.md) and [file inventory](docs/chapters/expected-utility/BUNDLE_INVENTORY.json).
 
-- `book/07_com_nguoi_A5_PROOF.pdf`: printable **layout proof** (four A5 pages). Not final press-ready art or PDF/X.
-- `digital/index.html`: mobile-first **local** chapter experience. Open in any modern browser; it does not require a server. Tabs, three memory buttons, and room-tone playback work offline.
-- `video/com_nguoi_animatic_v01.mp4`: a vertical **animatic proof**, not a finished film. Includes original low-volume synthetic room tone; no recording or author voiceover.
-- `video/STORYBOARD.md`: all shots, texts, audio and decisions.
-- `docs/FULL_CHECKLIST.md` / `docs/CHECKLIST.csv`: detailed, staged production tasks with owners, dependencies and acceptance criteria.
-- `content/original.md`, `content/proposed-edit.md`, `content/EDIT_NOTES.md`: original remains untouched; editorial changes are **not author-approved**.
-- `docs/CREATIVE_BRIEF.md`, `docs/chapter-metadata.json`: creative guidelines and asset states.
+The public chapter keeps the supplied poster design, selected prose and interactive decision tree, with navigation, downloads and small responsive/accessibility fixes. All media is available individually or in the complete chapter ZIP. The PDF is an eight-page A5 layout proof; the video is a 24-second ambient-only animatic. Those formats remain accurately labeled after publication. Social assets are ready to download; platform posts are managed by the author.
 
-## What is provisional
+Cơm nguội uses the previously selected edit in `content/proposed-edit.md`; the original manuscript is preserved separately. Its existing PDF and ambient-only animatic are linked from the chapter page. Future narrated videos require Jason's actual recording; voice generation remains stopped. A custom domain and print QR are deferred.
 
-The father-child family scene is a **reconstruction** with a not necessarily accurate city view and lighting. The book PDF has lower-than-print-standard artwork; the last page has a **QR SLOT, not a scannable QR**. The original-text chapter is live on GitHub Pages; the local editorial prototype remains available separately. Video is an animatic and cannot substitute for final animated art, voice, mix and captions.
+## Build and deploy
 
-## Steps to release
+Python 3.12 is used by CI; the site build has no third-party dependencies.
 
-1. Approve or amend the edited text.
-2. Approve the visual storytelling interpretation; clarify any inaccurate invented objects in the provisional art.
-3. Create layered production art, print-size exports and social edits.
-4. Complete mobile accessibility/performance checks and choose the lasting owned domain; GitHub Pages hosting is already live.
-5. Create and device-test a QR only **after** the domain is final. Replace print PDF QR slot.
-6. Proof final book sample with printer; complete required video narration and synchronized subtitles.
-7. Check permissions, get test reader feedback and release after gates.
+```sh
+python scripts/build_site.py --text proposed-edit
+python scripts/check_site.py
+python -m http.server 8765 --directory site --bind 127.0.0.1
+```
 
-## Strategy alignment
+`--text original` selects the Cơm nguội original; pass the same option to `check_site.py`. Expected_utility always uses the author's selected package. The build cleans and recreates only `site/`. Pushes to `main` build, validate and deploy that directory through GitHub Pages. Manual deployment remains available in the Actions workflow.
 
-Implements the source 21-page `.json immersive product strategy`: **book canonical; chapter artifact adds feeling, context or contradiction; read/explore/revisit; one URL per chapter; test three hero chapters before scaling**.
+The supplied media builder, `Expected_utility/scripts/build_v02.py`, is preserved as provenance. It requires Pillow, ReportLab, ffmpeg and the Linux fonts specified in its source. Deploying the website uses the finished media and does not rerender it.
 
-## License & privacy
+## Production records
 
-Memoir prose stays the author's content. The author chose a **public** repository on 16 October 2026, including drafts and production notes. Public access does not imply approval of provisional art, final print production, or a license to reuse the work.
+- [Current project update](PROJECT_UPDATE.md)
+- [Expected_utility release and QA](docs/chapters/expected-utility/RELEASE.md)
+- [Earlier project state](docs/history/2026-10-16-before-expected-utility-release.md)
+- [Reusable chapter production playbook](docs/CHAPTER_PRODUCTION_PLAYBOOK.md)
 
-## Release preparation — 16 October 2026
-
-See [launch review](docs/LAUNCH_REVIEW.md) for inspection findings and outstanding dependencies, and [channel copy](docs/CHANNEL_LAUNCH.md) for prepared YouTube/TikTok descriptions.
-
-Build a public candidate with `python scripts/build_site.py --text original`. Preview it with `python -m http.server 8765 --directory site --bind 127.0.0.1`. The website export contains only the selected chapter assets; the full source kit is also public in GitHub. The [manual Pages workflow](https://github.com/jasonthedataguy/json-under-revision/actions/runs/38878045413) successfully deployed the original text. Channels have not yet been created.
-
-## Required narrator track and checklist updates
-
-Narration is required for the next video export. See the [audio brief](video/NARRATION.md) and [reading draft](video/narration-script.txt). The healwayssmile reference URL is recorded; the existing MP4 still has room tone only.
-
-The [CSV checklist](docs/CHECKLIST.csv) is the status source of truth. Run `python scripts/build_checklists.py` to update Markdown and browser views. With `reportlab` installed, add `--pdf --font /path/to/Unicode.ttf` to regenerate the printable checklist.
+The repository is public by author choice, including drafts and production notes. Public access is not a license to reuse the author's prose or artwork. Historical documents describe earlier milestones; the current release record supersedes their pending approval and import statements.

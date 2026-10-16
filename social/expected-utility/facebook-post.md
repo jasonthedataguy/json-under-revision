@@ -6,6 +6,6 @@ Nhưng chuyện tình cảm có một bug rất khó sửa: mình có thể tư�
 
 Không có alternate timeline nào gửi email về mỗi sáng để kể rằng lẽ ra mình nên nói ra hay im lặng.
 
-**Expected_utility**, một chương trong * .json — Jason, under revision*. Link chính thức sẽ cập nhật sau khi duyệt phát hành.
+**Expected_utility**, một chương trong * .json — Jason, under revision*. Đọc chương tại: https://jasonthedataguy.github.io/json-under-revision/chapters/04/
 
-Art direction: desk, coffee, code, no identifying third-party photograph. Draft only.
+Art direction: desk, coffee, code, no identifying third-party photograph. Selected chapter artwork: `Expected_utility/social/facebook_landscape.jpg`. Post not yet uploaded.
