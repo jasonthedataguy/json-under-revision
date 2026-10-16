@@ -10,7 +10,8 @@
     "play-to-win",
     "com-nguoi",
     "dating-algorithm",
-    "three-meeting-theory"
+    "three-meeting-theory",
+    "dating-102"
   ],
   "design": "shared/design.json"
 }

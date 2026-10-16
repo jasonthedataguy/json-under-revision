@@ -29,4 +29,8 @@ chapters/three-meeting-theory/source/original.md -text -whitespace
 chapters/three-meeting-theory/source/approved.md -text -whitespace
 chapters/three-meeting-theory/audio/reading-script.md -text -whitespace
 chapters/three-meeting-theory/**/*.csv -text -whitespace
+chapters/dating-102/source/original.md -text -whitespace
+chapters/dating-102/source/approved.md -text -whitespace
+chapters/dating-102/audio/reading-script.md -text -whitespace
+chapters/dating-102/**/*.csv -text -whitespace
 docs/chapters/choi-de-khong-thua/source/*.md -text -whitespace
