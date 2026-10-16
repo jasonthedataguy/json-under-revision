@@ -1,12 +1,14 @@
-# Expected_utility — animatic storyboard
-**Current proof:** 25 seconds, 9:16 720×1280 H.264 + synthesized ambience. No voice or synchronized captions. **NOT a final video.**
+# Expected_utility — 6-beat poster animatic v0.2
 
-| Time | Frame | Text beat |
+**Current proof:** 24 seconds, 720×1280, H.264/AAC with synthetic ambient room tone only. No approved voice, finished animation, or timed subtitles. This file is in the downloadable production ZIP, not yet committed to GitHub.
+
+| Time | Visual / motif | Beat |
 |---|---|---|
-| 00–05 | Late-night laptop / coffee | A thought that interrupts code |
-| 05–10 | Debugging routine | Cà phê. AirPods. Code. |
-| 10–15 | Decision-model thought experiment | Expected utility? |
-| 15–20 | Diverging branches | Imagination is not a probability distribution |
-| 20–25 | Warm reflected light; unseen face | Vẫn là đôi mắt buồn long lanh dưới ánh đèn mờ |
+| 00–04 | Poster crop: boy, laptop, books | Cà phê. AirPods. Code. |
+| 04–08 | Laptop in night room | Cô ấy vẫn xuất hiện. |
+| 08–12 | Notebook / self-designed utility model | Benefit, Cost, Utility. |
+| 12–16 | Outcome tree, all probabilities unknown | Imagination ≠ probability distribution. |
+| 16–20 | Divergent paths over pink/green art | Một branch duy nhất. |
+| 20–24 | Return to pink-lit eyes/city and desk | Vẫn là đôi mắt ấy. |
 
-**Next:** record/authorize narration, time actual SRT/VTT, compose at 1080×1920, check on phone, approve and publish. Do not fabricate a photo, historical room recording or the girl's identity.
+Next: narration by Jason or appropriately licensed voice, subtitles timed to *actual audio*, 1080×1920, original layered art/motion, 40–70s discovery cut if voice timing supports it, phone safe-zone QA. Do not use unauthorized third-party voice imitation.
