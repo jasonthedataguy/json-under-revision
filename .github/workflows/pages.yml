@@ -7,8 +7,8 @@ on:
         required: true
         type: choice
         options:
-          - original
           - proposed-edit
+          - original
 permissions:
   contents: read
 concurrency:

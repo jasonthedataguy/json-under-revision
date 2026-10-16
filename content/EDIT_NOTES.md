@@ -1,6 +1,6 @@
 # Cơm nguội — Edit notes v0.1
 
-Status: **copyedited / author review pending**. The published version is not approved.
+Status: **author-selected edit, 16 October 2026**. Jason chose the proposed edit for publication. The original remains unchanged in the archive.
 
 1. **Opening:** `các cậu sẽ thấy hơi ngạc nhiên` → `các cậu sẽ hơi ngạc nhiên`, slightly tighter; `cho dù` → `dù`.
 2. **Second paragraph:** split the run-on after `vậy cả` to restore the joke's rhythm; retain `rõ ràng ngon hơn chứ`.
@@ -12,9 +12,9 @@ Status: **copyedited / author review pending**. The published version is not app
 - An explicit line saying `Bố hy sinh cho con`, a moral, or an explanation of the final sentence.
 - A claim that cold rice is medically harmful (the phrase exists only as a parent's line).
 
-## Questions for author review
+## Editorial choices retained
 - Is `tô` the intended regional/household word, or would you prefer `bát`? Keep `tô` by default.
 - Should the earlier reference to `lò vi sóng` remain tied to a particular year or generation? No date was inferred.
 
 
-REVIEW STATUS: AUTHOR REVIEW / NOT FINAL.
+REVIEW STATUS: EDIT APPROVED. Print production and family privacy checks remain separate checklist tasks.
