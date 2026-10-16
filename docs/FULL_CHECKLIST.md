@@ -73,10 +73,10 @@ A complete, approved chapter manuscript; final-resolution illustrated book pages
   Owner: Engineer · Depends: D05 · Pass: Real 4G phone load target <3s where feasible
 - [ ] **D08 · Confirm privacy and analytics consent decisions** — `TODO`  
   Owner: Jason · Depends: E05 · Pass: No personal data capture without explicit policy
-- [ ] **D09 · Publish to a real owned domain** — `BLOCKED`  
-  Owner: Engineer · Depends: D06,D07,D08 · Pass: HTTPS and permanent human-readable chapter URL working
-- [ ] **D10 · Confirm final chapter permalink and redirects** — `BLOCKED`  
-  Owner: Engineer · Depends: D09 · Pass: Permalink documented, backup/redirect behavior checked
+- [ ] **D09 · Publish to a real owned domain** — `IN PROGRESS`  
+  Owner: Engineer · Depends: D06,D07,D08 · Pass: GitHub Pages HTTPS chapter is live; owned custom domain and remaining mobile accessibility/performance work pending
+- [ ] **D10 · Confirm final chapter permalink and redirects** — `IN PROGRESS`  
+  Owner: Engineer · Depends: D09 · Pass: Live /json-under-revision/chapters/07/ path documented; long-term owned domain and print QR destination still to confirm
 - [ ] **D11 · Test archive access from final printed QR** — `BLOCKED`  
   Owner: QA · Depends: B05,D10 · Pass: iOS/Android camera opens exact chapter page
 - [ ] **D12 · Optionally record author voiceover and captions** — `TODO`  
@@ -86,7 +86,9 @@ A complete, approved chapter manuscript; final-resolution illustrated book pages
 - [x] **D14 · Verify local HTTP and responsive layout** — `DONE`  
   Owner: Assistant · Depends: D13 · Pass: 10 source paragraphs preserved; image/audio loaded; memory button updates; no overflow at 390/820/1440px
 - [x] **D15 · Prepare manual Pages deployment workflow** — `DONE`  
-  Owner: Assistant · Depends: D13 · Pass: Workflow publishes only site/ on manual dispatch; no remote deployment run yet
+  Owner: Assistant · Depends: D13 · Pass: Manual Pages workflow configured and successfully run; artifact contains only site/; original manuscript selected
+- [x] **D16 · Deploy and verify public HTTPS chapter** — `DONE`  
+  Owner: Assistant · Depends: D13,D15,G04 · Pass: Workflow 38878045413 succeeded; https://jasonthedataguy.github.io/json-under-revision/chapters/07/ preserves all original paragraphs; image/audio/landing load; memory control works; no overflow at 390/820/1440px
 
 ## Video
 - [x] **V01 · Write 5-beat short-form storyboard** — `DONE`  
@@ -119,10 +121,10 @@ A complete, approved chapter manuscript; final-resolution illustrated book pages
   Owner: Assistant · Depends: — · Pass: Initial commit 3daa919 on main with GitHub noreply identity
 - [x] **G02 · Create remote repository and connect origin** — `DONE`  
   Owner: Jason + Assistant · Depends: G01 · Pass: jasonthedataguy/json-under-revision created; HTTPS origin configured; empty remote inspected
-- [ ] **G03 · Choose public repository publication scope** — `NEEDS APPROVAL`  
-  Owner: Jason · Depends: G02 · Pass: Choose private full kit, public website only, or explicit public release of drafts and notes
-- [ ] **G04 · Push selected files and verify upstream** — `BLOCKED`  
-  Owner: Assistant · Depends: G03 · Pass: GitHub main contains intended files; local and remote commits match
+- [x] **G03 · Choose public repository publication scope** — `DONE`  
+  Owner: Jason · Depends: G02 · Pass: Author confirmed public repository on 16 October 2026 after disclosure that drafts and production notes are included
+- [x] **G04 · Push selected files and verify upstream** — `DONE`  
+  Owner: Assistant · Depends: G03 · Pass: main pushed to public origin; upstream configured; 0 ahead and 0 behind after initial push
 
 ## Channels
 - [x] **C01 · Prepare channel identity and launch copy** — `DONE`  
@@ -136,7 +138,7 @@ A complete, approved chapter manuscript; final-resolution illustrated book pages
 - [ ] **R01 · Compare source/edit against exported PDF/web/video** — `IN PROGRESS`  
   Owner: Editor + QA · Depends: B01,D01,V03 · Pass: Original prose matches public web candidate; PDF still uses proposed edit; final narrated-video consistency pending
 - [ ] **R02 · Run visual QA on PDF and mobile preview** — `IN PROGRESS`  
-  Owner: QA · Depends: B01,D01 · Pass: Previous PDF contact-sheet inspection recorded; local HTTP page checked at 390/820/1440px with no overflow; final-art and device QA pending
+  Owner: QA · Depends: B01,D01 · Pass: Prior PDF contact sheet inspected; local and live HTTPS page checked at 390/820/1440px with no overflow; final-art, screen-reader and real-device QA pending
 - [ ] **R03 · Ask 5 test readers about emotional impact** — `TODO`  
   Owner: Jason · Depends: E03,D01 · Pass: Log feedback without leading respondents
 - [ ] **R04 · Run pilot with permissioned/paid intent metrics** — `BLOCKED`  

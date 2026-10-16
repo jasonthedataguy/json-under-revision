@@ -8,7 +8,7 @@
 - Source is preserved separately. The text on the PDF is the *proposed edited version*, not approved canonical manuscript.
 
 ## Not verified / outstanding
-- Follow-up local HTTP checks passed at 390/820/1440px: ten original paragraphs, image/audio loading, memory switching and no horizontal overflow. Live HTTPS remains **untested**.
+- Follow-up local HTTP checks passed at 390/820/1440px: ten original paragraphs, image/audio loading, memory switching and no horizontal overflow. Equivalent live HTTPS checks now pass at [the published chapter](https://jasonthedataguy.github.io/json-under-revision/chapters/07/): original prose, images, audio HTTP response, landing response, memory state and no overflow at the same widths. Real-device audio playback is still unverified.
 - No iOS/Android real-device test, screen-reader test, performance audit or QR test.
 - Final original-layer artwork, 300-dpi/CMYK preparation and printer preflight absent.
 - Narration, licensed music, final motion graphics and social exports absent.

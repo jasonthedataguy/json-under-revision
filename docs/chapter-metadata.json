@@ -5,7 +5,7 @@
   "content_status": "author_review",
   "illustration_status": "provisional_generated_concept",
   "book_format": "A5 layout proof; not press ready",
-  "digital_status": "public candidate built and locally HTTP-tested; not deployed",
+  "digital_status": "original manuscript published on GitHub Pages; HTTPS browser checks passed",
   "video_status": "24-second room-tone animatic; required narrator audio pending",
   "qr_status": "blocked_pending_live_domain",
   "source": "Author-provided 8-essay manuscript set; original unchanged",
@@ -27,6 +27,15 @@
     "url": "https://github.com/jasonthedataguy/json-under-revision",
     "visibility": "public",
     "initial_local_commit": "3daa919",
-    "push_status": "pending publication scope choice"
+    "push_status": "main pushed; upstream synchronized",
+    "public_scope_confirmed": "2026-10-16"
+  },
+  "public_url": "https://jasonthedataguy.github.io/json-under-revision/chapters/07/",
+  "deployment": {
+    "workflow_url": "https://github.com/jasonthedataguy/json-under-revision/actions/runs/38878045413",
+    "commit": "6adbe7512d8a81285e311097c757c1b0a20e6d43",
+    "manuscript": "original",
+    "status": "success",
+    "verified": "2026-10-16"
   }
 }

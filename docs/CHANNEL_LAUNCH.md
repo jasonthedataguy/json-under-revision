@@ -6,7 +6,7 @@ Status: prepared copy; accounts and handle availability unverified. No uploads p
 
 - Channel name: .json — Jason, under revision
 - Handle candidate: @jsonunderrevision
-- Repository candidate: json-under-revision (private source)
+- Repository: [json-under-revision](https://github.com/jasonthedataguy/json-under-revision) (public by author choice)
 - Alternative handle if unavailable: @jasonunderrevisionbook
 
 ## YouTube description
@@ -17,7 +17,7 @@ Những câu chuyện về ký ức, gia đình và những điều mình vẫn 
 
 Một cuốn sách với lịch sử phiên bản.
 
-Add the verified chapter URL as a channel link after deployment. Do not promise a release date, sales availability or recordings that do not exist.
+Chapter link, verified live: https://jasonthedataguy.github.io/json-under-revision/chapters/07/ Do not promise a release date, sales availability or recordings that do not exist.
 
 ## TikTok bio
 
@@ -37,12 +37,12 @@ Có những thói quen mình giữ lại lâu hơn cả lý do bắt đầu chú
 
 #ComNguoi #JsonUnderRevision #KyUc #GiaDinh
 
-After deployment, add a verified chapter link to the YouTube description. Disclose illustrated reconstructions in the description and use the platforms' applicable synthetic-content disclosure when uploading. If sharing the existing animatic, explicitly title it “Cơm nguội — bản phác thảo hình ảnh” and describe the synthetic ambience and absence of author narration.
+Add the verified chapter link to the YouTube description: https://jasonthedataguy.github.io/json-under-revision/chapters/07/ Disclose illustrated reconstructions in the description and use the platforms' applicable synthetic-content disclosure when uploading. If sharing the existing animatic, explicitly title it “Cơm nguội — bản phác thảo hình ảnh” and describe the synthetic ambience and absence of author narration.
 
 ## Release order
 
 1. Create channels under author-controlled accounts; enable account recovery and select available handles.
-2. Deploy the chapter and verify reading, images, sound and keyboard controls on the live URL.
+2. Completed: deploy and verify chapter text, image/audio loading and memory controls. Complete real-device sound and full keyboard checks before the final social release.
 3. Upload the approved video privately first, check phone framing, Vietnamese text and audio, then publish.
 4. Link to the chapter; record actual URLs and publication dates in the release review.
 
