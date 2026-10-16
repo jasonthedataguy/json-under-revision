@@ -1,0 +1,16 @@
+{
+  "id": "07-com-nguoi",
+  "title": "Cơm nguội",
+  "series": ".json — Jason, under revision",
+  "content_status": "author_review",
+  "illustration_status": "provisional_generated_concept",
+  "book_format": "A5 layout proof; not press ready",
+  "digital_status": "local functional prototype, not deployed",
+  "video_status": "animatic, not fully produced short film",
+  "qr_status": "blocked_pending_live_domain",
+  "source": "Author-provided 8-essay manuscript set; original unchanged",
+  "canonical_text": "pending_author_approval",
+  "rights": "Author must review and approve original artwork and third-party content before commercial use",
+  "artifact_rule": "Add feeling/context/contradiction; do not make the chapter incomplete without the archive",
+  "source_strategy": "json_immersive_product_strategy(1).pdf (21-page deck), pages 3-8, 17-19"
+}
