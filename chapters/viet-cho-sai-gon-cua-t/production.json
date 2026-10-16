@@ -41,56 +41,56 @@
   "print_scenes": [],
   "films": [],
   "memory": {
-    "heading": "Một thành phố, những chặng ở lại.",
-    "intro": "Tám đoạn trong một hành trình. Chạm vào một chặng để đọc lại những câu còn đọng.",
+    "heading": "Nhưng t thì vẫn ở đây.",
+    "intro": "Những đoạn trong bài viết, từ cầu Ba Son đến cuộc sống ở Sài Gòn.",
     "moments": [
       {
         "title": "01 / Ba Son, tuổi 26",
         "image": "artwork/scenes/02-bridge.jpg",
         "alt": "Góc cắt cây cầu và đường chân trời từ minh họa Sài Gòn.",
-        "quote": "Đi qua cầu Ba Son, tôi tự hỏi liệu mình có thuộc về nơi này không."
+        "quote": "Lúc chạy qua cầu Ba Son, nhìn thành phố hiện đại nằm dọc bên sông, lòng t rộn ràng một cảm giác rất khó tả. T tự hỏi liệu đây có phải là nơi t thuộc về."
       },
       {
         "title": "02 / Một cơ hội",
         "image": "artwork/scenes/03-skyline.jpg",
         "alt": "Những tòa nhà trong minh họa Sài Gòn.",
-        "quote": "Rồi tôi có offer. Rồi tôi mất nó."
+        "quote": "T mất offer của Grab, phần lớn là vì sự ngu ngốc, trẻ trâu và thiếu hiểu biết của chính t."
       },
       {
         "title": "03 / Phương án backup",
         "image": "artwork/scenes/03-skyline.jpg",
         "alt": "Góc cắt đường chân trời Sài Gòn từ cùng hình minh họa.",
-        "quote": "Có lẽ tôi đã mong một công việc trả lời hộ mình hơi nhiều thứ."
+        "quote": "T không cảm nhận được mình thuộc về nơi đó."
       },
       {
         "title": "04 / Lời tạm biệt dang dở",
         "image": "artwork/scenes/02-bridge.jpg",
         "alt": "Cây cầu trong hình minh họa, diễn giải một chặng của câu chuyện.",
-        "quote": "Trong lúc loay hoay, tôi cũng có những lần không biết dành chỗ cho người khác."
+        "quote": "Đáng ra t có thể cho em một lời giải thích. Đáng ra t có thể làm tốt hơn mà, đúng không."
       },
       {
         "title": "05 / Những người bạn",
         "image": "artwork/scenes/01-landmark.jpg",
         "alt": "Bãi cỏ và những nhóm người trong minh họa Landmark.",
-        "quote": "Một hội bạn chơi PES. Cầu lông. Những lần tham gia một hoạt động chung mà mình thấy vui."
+        "quote": "T bắt đầu thân với mọi người trong team đó, rồi dần có lại cái cảm giác mà trước đó t thiếu: thích đi làm chỉ vì muốn lên công ty gặp mọi người."
       },
       {
         "title": "06 / Landmark và Gấu",
         "image": "artwork/scenes/04-gau.jpg",
         "alt": "Góc cắt Gấu trên tấm khăn picnic trong minh họa.",
-        "quote": "Một người ở cạnh mình, một con chó, một bãi cỏ, những việc nhỏ mà khi nhớ lại tôi vẫn thấy thương."
+        "quote": "Đêm Giáng sinh em mang bánh quy qua cho Gấu. Ngày đầu năm t với em chui xuống gầm bàn ăn hết 12 trái nho."
       },
       {
         "title": "07 / Một người ở lại",
         "image": "artwork/scenes/01-landmark.jpg",
         "alt": "Người đội mũ hồng và Gấu trong minh họa picnic.",
-        "quote": "Phần tôi biết là sự có mặt ấy, và việc mình đã được ở cạnh một người cả khi bản thân không dễ chịu cho lắm."
+        "quote": "T chỉ biết t không muốn đánh mất em, vì em còn hơn thế rất nhiều."
       },
       {
         "title": "08 / Sài Gòn của tôi",
         "image": "artwork/scenes/01-landmark.jpg",
         "alt": "Toàn cảnh picnic tại Landmark từ hình minh họa đã chọn.",
-        "quote": "Sài Gòn, cảm ơn vì tất cả."
+        "quote": "Sài Gòn cho t nhiều thứ quá, chẳng biết nói gì hơn ngoài cảm ơn."
       }
     ]
   },

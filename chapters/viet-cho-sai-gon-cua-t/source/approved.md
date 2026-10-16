@@ -1,73 +1,41 @@
-# Viết cho Sài Gòn của t
+# 1. Viết cho Sài Gòn của t
 
-Tôi đến Sài Gòn năm hai mươi sáu tuổi, với năm mươi triệu, một khoản nợ và chiếc thẻ tín dụng có hạn mức một trăm triệu.
+T đặt chân tới thành phố này vào đúng ngày sinh nhật 26 tuổi, với hành trang là vỏn vẹn 50 triệu trong tài khoản, một khoản nợ trên đầu và một cái thẻ tín dụng hạn mức 100 triệu. Không công việc, không nơi ở, người bạn duy nhất t có ở thành phố này lại là bạn đại học cũ. Bạn đánh xe qua đón rồi đưa t đi thăm thú Sài Gòn. Lúc chạy qua cầu Ba Son, nhìn thành phố hiện đại nằm dọc bên sông, lòng t rộn ràng một cảm giác rất khó tả. T tự hỏi liệu đây có phải là nơi t thuộc về.
 
-Kể cả hạn mức thẻ vào hành trang nghe có vẻ hơi gian lận. Tiền ấy có phải của mình đâu. Nhưng ở tuổi hai mươi sáu, có thêm một con số để nhìn vào cũng khiến người ta thấy mình chuẩn bị tương đối ổn cho một cuộc đời mới. Còn khoản nợ thì tôi đã mang theo rồi, đâu thể để nó ở Hà Nội và hẹn khi nào thành công sẽ quay lại đón.
+Mục tiêu đầu tiên của t ở Sài Gòn lúc đó là Grab. Với đủ nhiệt huyết, đam mê và công sức hơn một tháng trời, cuối cùng t cũng chinh phục được nó. T vui lắm. T cảm ơn Sài Gòn biết bao, t còn nghĩ kiểu okay, SG cho t nhà cửa, cho t công việc mơ ước rồi, giờ cho thêm cô bạn gái nữa là hết ý :)). Nhưng rồi mọi chuyện không như ý. T mất offer của Grab, phần lớn là vì sự ngu ngốc, trẻ trâu và thiếu hiểu biết của chính t. T buồn, t thất vọng vô cùng. Trong một phút giây t còn thầm trách Sài Gòn sao lại đối xử với t như thế, sao cho t đúng thứ t mong ước rồi lại lấy nó đi vậy?
 
-Đi qua cầu Ba Son, tôi tự hỏi liệu mình có thuộc về nơi này không.
+Anw, buồn thì cũng phải lo cái bụng đói trước. T biết nếu tháng tiếp theo vẫn không có job thì t thực sự không biết mình sẽ sống kiểu gì, nên t chấp nhận backup plan của mình là Masan, với một mức đãi ngộ mơ ước của hàng tá người và vô vàn quyền lợi khác. Ở đó t dần chứng tỏ được bản thân, trở thành ngôi sao của team, nổi tiếng đến mức gần như ai trên tầng 18 cũng biết t. Mỗi lần đi ngang qua là cảm giác có hàng chục ánh mắt nhìn mình — hoặc cũng có thể đơn giản vì t chuyên gia đi làm muộn một hai tiếng lol. Có lúc t còn thấy buồn cười vì mọi người hình như chả biết sếp t là ai. Ai mới join mà giới thiệu làm team data, người ta toàn hỏi: “À, team của Mạnh à?”
 
-Lúc ấy tôi chưa biết phải làm gì với một câu hỏi như thế. Tôi có thể nghĩ về công việc, về tiền, về những việc cần làm để sống được ở một thành phố khác. Còn cảm giác thuộc về thì mơ hồ quá. Tôi cứ nghĩ mình đến trước, tìm được việc, làm tốt, rồi những thứ còn lại sẽ dần đâu vào đấy. Kiểu gì cũng phải bắt đầu từ một chỗ nào đó chứ.
+Các b thử nghĩ xem, lúc đó t có thiếu cái gì không. Đẹp trai, nổi tiếng, nhiều tiền. Ít nhất lúc ấy t thực sự nghĩ như vậy. Nhưng t cứ thấy sao sao. T không cảm nhận được mình thuộc về nơi đó. Cảm xúc càng ngày càng tiêu cực, t mất dần động lực rồi bắt đầu ghét chính những thứ mình đang làm. Cuối cùng t quyết định nghỉ việc. Một tháng cuối phần lớn t chả làm cái mẹ gì; t với đứa đồng nghiệp Ấn Độ toàn trốn làm, chạy ra Passio phía sau Sofitel smoke pot.
 
-Với tôi, chỗ đó là một công việc ở Grab.
+Rồi một cô bé mới join team để thay t. Amser, Ivy League, một profile đáng ngưỡng mộ. Em hay join mấy session trốn làm smoke pot cuối giờ chiều của tụi t, ngồi kể những câu chuyện phiếm, rồi có hôm high tới mức đi lòng vòng trong cái 7-Eleven ở góc tòa nhà Prudential chẳng để làm gì. Em hay call t buổi tối nhờ t chỉ việc, tiện thể kể đủ thứ chuyện của em: chuyện dating, chuyện trên công ty, mấy chuyện linh tinh. Một tối thứ Sáu em đòi qua nhà t chơi. Yah, we smoked pot and watched *Howl’s Moving Castle*. So innocent )).
 
-Tôi dành một tháng theo đuổi nó. Một tháng không quá dài, nhưng đủ để cái tên ấy chiếm một phần khá lớn trong hình dung của tôi về Sài Gòn. Tôi muốn công việc đó, và cũng muốn trở thành phiên bản của mình có được công việc đó. Dream job mà. Khi dùng chữ ấy, người ta thường gửi vào trong đó nhiều mong đợi hơn những gì một offer có thể chứa.
+Dần dần t với em thân nhau hơn, và t bắt đầu nhận ra có gì đó khác từ phía mình. T từng bảo em là typical girl “trung tâm sở thú”, vậy mà chẳng hiểu sao t lại muốn trở thành trung tâm sở thú của em. Câu chuyện thật đẹp đúng k, kiểu đã có lúc t thực sự tưởng mình đã tìm được Mary Jane của đời mình rồi. Nhưng rồi một vài chuyện xảy ra. Em chẳng thể tìm t mãi mỗi lần t biến mất, cũng chẳng thể initiate convo mãi được; mối quan hệ nào rồi cũng cần effort từ hai phía. T với em dần không còn gặp hay nói chuyện nữa.
 
-Rồi tôi có offer. Rồi tôi mất nó.
+Ngày cuối cùng, em bảo muốn sang chơi với Gấu một hôm cuối. Em hỏi t nhìn em có thấy khác gì không. T ôm em rồi bảo rằng nhìn mặt em t không còn thấy thân quen nữa. Giống như hôm trước khi t sang nhà em: mọi đồ đạc vẫn nằm ở đó, nhưng không hiểu sao căn nhà lại có cảm giác như một ngôi nhà mới. Nhưng cảm giác ôm em thì vẫn vậy.
 
-Đến giờ, kể lại bằng hai câu vẫn thấy hơi cụt. Tôi đã đi một đoạn vòng vèo để tới đó, nhưng câu chuyện chẳng vì thế mà chịu dài thêm cho đỡ tiếc. Có phần lỗi của tôi trong chuyện ấy. Có những sai lầm mà mình rất muốn gọi là tuổi trẻ, vì nghe như thế còn có chút gì có thể thông cảm. Tôi cũng muốn thông cảm cho mình. Chỉ là việc tìm được một cách gọi dễ chịu hơn không khiến tôi bớt tiếc cái offer đã mất.
+Sáng hôm sau, t gần như trở thành một con người khác. T không dám nhìn vào mắt em dù chỉ một lần, cold theo kiểu như t không hề quen biết người này. Lúc đó t cũng chẳng giải thích nổi vì sao mình lại như vậy. Chỉ biết cứ mỗi lần một thứ gì đó trở nên quá gần, phản xạ của t lại là biến mất. Xin lỗi em nhiều nhưng đó là cách 1 đứa avoidant như t vận hành. Đáng ra t có thể cho em một lời giải thích. Đáng ra t có thể làm tốt hơn mà, đúng không.
 
-Tôi đã đặt khá nhiều hy vọng vào một công việc khi vừa đến đây. Mất nó, tôi phải nghĩ tiếp. Sài Gòn vẫn là nơi tôi đang sống, và tôi còn cả một cuộc sống cần tìm cách lo liệu sau cái đoạn hụt chân ấy.
+Rồi t sang chỗ mới, gặp những người mới. Về công việc, thời gian đầu t thực sự không enjoy lắm. T nhảy sang đây chủ yếu vì đã quá chán chỗ cũ, chứ sang rồi cũng chẳng có mấy việc để làm, không có dự án nào đủ thú vị. Ở đây cũng toàn mấy đứa trẻ hơn nên t cảm giác chả biết nói chuyện gì với tụi nó. Nói science hay econs thì bọn nó không hiểu, nói mấy thứ khác thì bọn nó không quan tâm. Ít nhất lúc ấy t nhìn mọi thứ như thế. Việc đi làm của t gần như chỉ xoay quanh chuyện có mặt ở công ty đúng giờ, mở Slack check xem có con pipeline nào chết không, làm vài thứ linh tinh rồi ngồi chờ đến trưa đi ăn cùng mọi người.
 
-Masan ban đầu là phương án backup của tôi.
+Mà chỗ này lạ lắm. Mọi người đi ăn trưa là cắm mặt vào ăn thật sự, ít chia sẻ hay nói chuyện gì. Nhậu cũng thế, nhậu mà ai nấy vẫn chủ yếu cắm mặt ăn, lâu lâu nói với nhau được vài câu thì lại là order cái này, gọi thêm cái kia. Cho tới khi chị Lily xuất hiện. Chị mang team cũ của chị qua đây, có Giang, Đạt,... mọi người đều ngang tuổi t nên nói chuyện hợp hơn hẳn. T bắt đầu thân với mọi người trong team đó, rồi dần có lại cái cảm giác mà trước đó t thiếu: thích đi làm chỉ vì muốn lên công ty gặp mọi người. Sau đó thì mọc ra đủ thứ hội — hội đá PES, hội người cùng khổ, hội cầu lông, hội từ thiện. Mọi người còn tổ chức sinh nhật cho t nữa. T có cảm giác Cốc Cốc một lần nữa.
 
-Tôi thấy hơi buồn cười khi nhớ lại cách mình xếp hạng mọi thứ lúc ấy. Một bên là điều mình muốn đến mức gọi nó là dream job. Bên còn lại là phương án dự phòng, nghe như chỉ nên tồn tại trong trường hợp kế hoạch chính gặp sự cố. Đến khi sống bên trong phương án dự phòng ấy, tôi mới có một câu chuyện khác về nó: tôi làm tốt, được ghi nhận, rồi trở thành một người nổi bật trong team.
+Nhưng cuộc sống đâu chỉ xoay quanh mỗi công việc.
 
-Từ backup thành ngôi sao team. Nghe cũng được đấy chứ.
+T gặp em vào một ngày gần Giáng sinh. Em xuất hiện đúng kiểu một món quà của ông Santa vậy. Bọn mình ngồi trên bãi cỏ ở Landmark, trông em thật bình yên. T kể với em gần như tất cả mọi thứ, chuyện t đang chán chường ra sao, chuyện t từng phũ thế nào, những thứ bình thường t sẽ chẳng biết phải kể cho ai. Với em t không có cảm giác phải giấu gì cả. Tâm sự với em thật thoải mái.
 
-Công việc có đãi ngộ tốt, và tôi có những lý do rất rõ ràng để thấy mình đã ổn hơn. Nếu cần chứng minh quyết định vào Sài Gòn không quá tệ, chắc tôi có thể bắt đầu từ đó. Nhưng tôi vẫn thiếu cảm giác thuộc về. Điều này khiến tôi khó hiểu với chính mình. Tôi đang có một công việc tốt, đang làm được việc, còn muốn gì nữa?
+Đêm Giáng sinh em mang bánh quy qua cho Gấu. Ngày đầu năm t với em chui xuống gầm bàn ăn hết 12 trái nho. T reveal cho em về cái thế giới hippie của t, em kể cho t nghe những trauma trong quá khứ của em. Hai tâm hồn lạc lối tìm được nhau — lúc ấy t thực sự nghĩ chẳng phải như một sự sắp đặt của số phận sao.
 
-Tôi chưa trả lời được. Tôi chỉ biết câu hỏi trên cầu Ba Son vẫn còn đó, dù hoàn cảnh của tôi đã khác đi khá nhiều. Có lẽ tôi đã mong một công việc trả lời hộ mình hơi nhiều thứ.
+T biết rằng t không muốn đánh mất em. Dù có những lúc t ẩm ương, đau chân nửa năm trời không được đá bóng rồi khó chịu với cả thế giới; có lúc đốt tiền vào stock market xong ngồi buồn; có lúc cáu gắt vô lý, em vẫn ở cạnh. Vẫn nhẹ nhàng, ân cần chăm sóc t và Gấu. Em đi với t khắp nơi, làm đủ thứ để t vui cho dù chính em có khi sợ chết khiếp. Canyoneering chẳng hạn )).
 
-Ở Sài Gòn, tôi còn có những mối quan hệ mà đến giờ vẫn thấy khó kể cho trọn vẹn.
+Em không phải hình mẫu Mary Jane hay Robin Scherbatsky mà t từng nghĩ mình phải tìm. Hồi trước t cứ tưởng mình biết rất rõ type của mình là gì, người mình muốn yêu phải như thế nào, phải có những đặc điểm gì. T có cả một cái mental checklist mà chắc lúc đó t cũng chẳng nhận ra là mình đang dùng. Rồi cuối cùng người làm t hạnh phúc lại chẳng giống cái hình mẫu ấy cho lắm. T không biết điều đó chứng minh được gì, và lúc ấy chắc t cũng chẳng quan tâm. T chỉ biết t không muốn đánh mất em, vì em còn hơn thế rất nhiều.
 
-Tôi từng thân thiết với một người đồng nghiệp mới. Rồi tôi tránh né. Viết ra như thế nghe rất thiếu trách nhiệm, và tôi không có một cách kể nào đủ khéo để phần của mình trong câu chuyện ấy tự nhiên trở nên dễ coi hơn. Tôi có thể dành nhiều chữ để giải thích mình đã bối rối ra sao. Nhưng người ta đã phải ở phía bên kia sự tránh né ấy, còn những lời giải thích này đến sau.
+Năm mới đi nhiều nơi nữa nhé. Anh muốn cùng em tận hưởng mùa hè châu Âu, mùa đông Hokkaido, và New York City thì chắc chắn rồi.
 
-Tôi không biết lúc ấy mình sợ điều gì hơn: một sự gần gũi đang thành hình, hay việc phải nói rõ mình muốn gì. Có những câu trả lời tôi cũng chưa có cho bản thân. Tôi đã để sự lúng túng ấy kéo dài, và quãng thân thiết đó có một lời tạm biệt dang dở. Nghĩ lại, tôi thấy có những chuyện mình vẫn còn mắc ở đó, vì chưa biết nên nhìn nhận chúng thế nào cho công bằng với cả hai người.
+Mấy nay đọc báo thấy Hà Nội mưa ngập liên miên. Sài Gòn thì vẫn kiểu sáng nắng chang chang, tối mưa ào ào, thất thường giống t. Nhưng chẳng hiểu sao với t nó dễ chịu. T ít khi thấy cái nắng ở đây làm mình mệt, và trong trải nghiệm của t thì sống với thời tiết Sài Gòn vẫn nhẹ nhàng hơn Hà Nội rất nhiều. Đôi lúc cũng nhớ cái trời thu Hà Nội, gió lạnh lạnh xong có một tí nắng, cảm giác đó đúng là chẳng nơi nào thay được. Nhưng hỏi có muốn về hẳn không thì thôi cảm ơn ạ. Ngập lắm, bụi lắm, khó thở lắm. Đi du lịch thì được.
 
-Tôi đến một thành phố mới để tìm chỗ cho mình. Trong lúc loay hoay, tôi cũng có những lần không biết dành chỗ cho người khác.
+Ngày đầu tiên đi qua cầu Ba Son, t từng nhìn thành phố bên sông rồi tự hỏi liệu đây có phải nơi mình thuộc về không. Mấy năm trôi qua, t vẫn chẳng biết “thuộc về” chính xác là cái gì. T từng nghĩ nó là một công việc mình muốn có, rồi một nơi mình nổi tiếng, một team hợp cạ, một người mình thích, một người mình yêu. Có những thứ t có được rồi lại mất, có những thứ t từng tưởng rất quan trọng sau này lại chẳng còn quan trọng đến thế.
 
-Rồi có một team mới, và tôi lại trải qua cảm giác lạc lõng của người chưa thấy mình thuộc về đâu trong tập thể ấy.
+Nhưng t thì vẫn ở đây.
 
-Sau đó, tôi có bạn. Có hội PES, có cầu lông, có những hoạt động cùng nhau. Kể tên thì toàn những chuyện rất bình thường. Tôi cũng không nhớ một khoảnh khắc rõ ràng nào mà từ đó mình chính thức hết lạc lõng. Chỉ là khi nghĩ về quãng thời gian ấy, tôi bắt đầu nhớ đến những người bạn và niềm vui nhiều hơn.
-
-Hồi mới đến, tôi dành khá nhiều sự chú ý cho việc mình sẽ làm gì ở Sài Gòn. Đến đoạn này, thành phố có thêm những người mà tôi vui vì đã gặp. Cái cảm giác ấy khó đưa vào một bản kế hoạch, nhưng nó có thật, và nó làm quãng đời ở đây dễ chịu hơn rất nhiều.
-
-Tôi vẫn chưa tìm được một định nghĩa gọn gàng cho belonging. Bù lại, tôi có thêm vài chuyện cụ thể để nghĩ đến khi dùng từ ấy. Một hội bạn chơi PES. Cầu lông. Những lần tham gia một hoạt động chung mà mình thấy vui. Những điều nhỏ đến mức nếu chỉ kể chuyện đời mình bằng tên công ty và chức danh, chắc tôi đã bỏ sót gần hết.
-
-Rồi có một người mới xuất hiện trong cuộc sống của tôi.
-
-Người ấy không nằm trong cái mental checklist mà tôi từng mang theo khi nghĩ về chuyện tình cảm. Tôi đã có những hình dung về người mình muốn ở cạnh, như thể chuẩn bị đủ kỹ thì sau này sẽ bớt loay hoay. Nhưng khi nhớ về người ấy, những gì hiện lên lại rất cụ thể: bãi cỏ ở Landmark, Gấu, những chiếc bánh quy dành cho Gấu.
-
-Tôi nhớ cả Giáng sinh, và một kỷ niệm có mười hai trái nho dưới gầm bàn. Bây giờ viết xuống, tôi cũng thấy danh sách này hơi kỳ. Cầu Ba Son, công việc, một cái offer, hội PES, rồi đến bánh quy và mấy trái nho. Sài Gòn của tôi có những thứ như vậy, nằm cạnh nhau mà không cần theo một hệ thống nào cho lắm.
-
-Ở cạnh người ấy, tôi có những khoảng bình yên. Tôi muốn kể điều này vừa đúng với kích thước của nó. Một người ở cạnh mình, một con chó, một bãi cỏ, những việc nhỏ mà khi nhớ lại tôi vẫn thấy thương. Tôi không biết phải chấm chúng vào ô nào trong cái checklist cũ.
-
-Và tôi cũng có những khoảng thời gian rất khó ở.
-
-Cái phần này mà bỏ đi thì câu chuyện sẽ đẹp hơn, nhưng sẽ thiếu mất một điều tôi biết ơn: người ấy đã ở lại qua những lúc như thế. Tôi không muốn kể thay lý do của người ấy, cũng không biết người ấy đã nghĩ gì về tôi trong từng thời điểm. Phần tôi biết là sự có mặt ấy, và việc mình đã được ở cạnh một người cả khi bản thân không dễ chịu cho lắm.
-
-Tôi vẫn có lúc bối rối vì cuộc sống đang diễn ra khác với những gì mình từng hình dung. Nhưng bên cạnh sự bối rối ấy còn có tình cảm, sự gắn bó và những điều rất nhỏ mà tôi không muốn bỏ qua. Có lẽ vì thế mà khi viết về Sài Gòn, tôi cứ đi từ chuyện công việc sang chuyện con người, rồi dừng lại khá lâu ở bãi cỏ Landmark.
-
-Thành phố này có phần đời tôi đã cố lên kế hoạch, và cả những phần tôi không biết trước. Tôi đã có một cơ hội rồi đánh mất nó. Tôi đã làm tốt ở một nơi ban đầu chỉ được coi là backup. Tôi từng gần gũi rồi tránh né một người. Tôi có những người bạn, và có một người ở lại qua những lúc tôi khó ở. Những chuyện ấy khiến tôi vừa thấy thương quãng thời gian của mình ở đây, vừa có những đoạn chưa biết phải làm gì khi nhớ tới.
-
-Hà Nội và Sài Gòn vẫn cùng có mặt trong cách tôi nghĩ về mình. Tôi chưa biết phải xếp hai nơi ấy thế nào cho gọn, cũng chưa thấy cần ép mình chọn ra một câu trả lời chỉ để câu chuyện có cái kết rõ ràng hơn. Nhắc tới mỗi nơi, tôi lại nhớ những phần khác nhau của cuộc sống. Với Sài Gòn, tôi nhớ cả nắng, mưa và những người đã đi cùng mình qua một đoạn.
-
-Thỉnh thoảng, tôi nghĩ lại về mình năm hai mươi sáu tuổi, đi qua cầu Ba Son với một câu hỏi chưa có lời đáp. Khi ấy, tôi không biết sau này câu chuyện sẽ có Grab, Masan, những người bạn, Gấu, Landmark và mười hai trái nho dưới gầm bàn. Nếu kể trước, chắc tôi cũng chẳng hiểu tại sao phải nhớ kỹ mấy trái nho.
-
-Bây giờ thì tôi muốn giữ cả những chi tiết ấy khi viết về thành phố này.
-
-Tôi vẫn không chắc mình đã hiểu cảm giác thuộc về là gì. Có những ngày tôi thấy nó rất gần, rồi có những lúc tôi lại loay hoay với câu hỏi cũ. Tôi còn tiếc một vài chuyện, còn nghĩ về những lần mình đã có thể cư xử khác đi. Cùng lúc ấy, tôi biết mình đã nhận được nhiều điều ở đây: công việc, tình bạn, tình yêu, và những khoảng bình yên mà lúc mới đến tôi chưa biết mình sẽ cần đến thế.
-
-Viết cho Sài Gòn của tôi, cuối cùng tôi vẫn muốn nói lời cảm ơn trước. Phần còn lại, chắc tôi còn phải sống tiếp mới biết viết thế nào.
-
-Sài Gòn, cảm ơn vì tất cả.
+Sài Gòn cho t nhiều thứ quá, chẳng biết nói gì hơn ngoài cảm ơn.

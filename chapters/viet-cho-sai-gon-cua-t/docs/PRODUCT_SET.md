@@ -12,4 +12,4 @@ This release includes the selected reader chapter, supplied-art crops and the in
 
 Remaining: A5 proof and print production; Video edit cuts, author-recorded narration and captions; Social platform packs; posting remains author-managed; QR remains deferred.
 
-Inventory: 17 files; LF-normalized text and raw binary SHA-256 checksums. Supplied references retain their separate import manifest when present.
+Inventory: 16 files; LF-normalized text and raw binary SHA-256 checksums. Supplied references retain their separate import manifest when present.

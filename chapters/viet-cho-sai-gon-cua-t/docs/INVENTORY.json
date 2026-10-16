@@ -1,33 +1,28 @@
 [
   {
     "path": "source/approved.md",
-    "bytes_at_build": 11042,
-    "sha256_normalized_text_lf": "14ed44b5799700a14f58973ea19783afe80f6da5bf0d49b44355254cbe182058"
-  },
-  {
-    "path": "source/draft-v01.md",
-    "bytes_at_build": 11042,
-    "sha256_normalized_text_lf": "14ed44b5799700a14f58973ea19783afe80f6da5bf0d49b44355254cbe182058"
-  },
-  {
-    "path": "source/DRAFT_NOTES.md",
-    "bytes_at_build": 6632,
-    "sha256_normalized_text_lf": "8a56e46faf59e6a932a86e224e2e9b8f781a807bb1fdeaf79969df5bb9292504"
+    "bytes_at_build": 10658,
+    "sha256_normalized_text_lf": "8a5221cf4e50c269db2eace689865fb00ce63e64ad5d0aeeb567e913fbf9b7b8"
   },
   {
     "path": "source/edit-notes.md",
-    "bytes_at_build": 1496,
-    "sha256_normalized_text_lf": "228a3e4e348d8cf730547b9e7ee791bbe0c54dc31aca4f47eb142a8298654acf"
+    "bytes_at_build": 1958,
+    "sha256_normalized_text_lf": "b88494d72a34f3790faff08ffaedc4e330a25f57dc974bac6b05477fabb43cd9"
+  },
+  {
+    "path": "source/original.md",
+    "bytes_at_build": 10658,
+    "sha256_normalized_text_lf": "8a5221cf4e50c269db2eace689865fb00ce63e64ad5d0aeeb567e913fbf9b7b8"
   },
   {
     "path": "source/README.md",
-    "bytes_at_build": 1104,
-    "sha256_normalized_text_lf": "5e0455dc57c991e1fc3e8b2a8e05f56ce97bfd14de3355c9c96e4abc71b5f101"
+    "bytes_at_build": 972,
+    "sha256_normalized_text_lf": "fb5d43c204c21dceb02b88407e30efe78955fca5e2246fa51970b39d0708067c"
   },
   {
     "path": "source/revisions.log",
-    "bytes_at_build": 545,
-    "sha256_normalized_text_lf": "bf3afbe37f175ec37bb52a864bcf275d7a76affe581b3e1f82f745bc9f426988"
+    "bytes_at_build": 809,
+    "sha256_normalized_text_lf": "9d3fe5f02f644c4a2a344054ea009809ba4931c2e20732b06f4a64bf9bd97b15"
   },
   {
     "path": "artwork/exports/hero-mobile.jpg",
@@ -71,17 +66,17 @@
   },
   {
     "path": "web/index.html",
-    "bytes_at_build": 30693,
-    "sha256_normalized_text_lf": "ad5a9f8b98851f89196da3d310757cd5ed002fc8863a5f4cfee8be9c6509eab2"
+    "bytes_at_build": 30086,
+    "sha256_normalized_text_lf": "06009dbbbd43ffcfef219393b90f9dc5cf72cdfcf700ad61809a7761ec4ef345"
   },
   {
     "path": "previews/web-1440.png",
-    "bytes_at_build": 985220,
-    "sha256_normalized_text_lf": "0b44d3af5e35006b517ba9255a0cc0a9e1735e5e7b13336fbdfd9ae4b282615f"
+    "bytes_at_build": 945424,
+    "sha256_normalized_text_lf": "ba482d830667367ee924c01c124892a499795d2621af8c401bffe65dfec68883"
   },
   {
     "path": "previews/web-390.png",
-    "bytes_at_build": 292745,
-    "sha256_normalized_text_lf": "3deb16e94f8312d965434b142895d53e23a3795350977eca53eff0080cfa390a"
+    "bytes_at_build": 287914,
+    "sha256_normalized_text_lf": "daaa122074fe0c10bad3f4ad33322b2bf4666f22283f85a9c5eef985da246ad3"
   }
 ]

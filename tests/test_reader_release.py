@@ -20,6 +20,7 @@ class ReaderReleaseTests(unittest.TestCase):
             meta={'release_stage':'reader','canonical_text':'source/approved.md','history_text':'source/draft-v01.md','history_label':'First draft','title':'A chapter','subtitle':'A story','number':'03','canonical_path':'chapters/03/','palette':{'dark':'#123','paper':'#eee','accent':'#faa','ink':'#123'},'theme':['memory'],'artifact':'memory','revision_note':'Selected from the proposed draft.'}
             page,_=render_chapter(chapter,meta,{'public_url':'https://example.org/book/'},meta)
             self.assertIn('<p>A complete story.</p>',page)
+            self.assertIn('<p class="quiet">A complete story.</p>',page)
             self.assertIn('<summary>First draft</summary>',page)
             self.assertIn('<p>An earlier draft.</p>',page)
             self.assertIn('data-memory="0"',page)

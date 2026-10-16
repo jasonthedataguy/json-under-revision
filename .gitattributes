@@ -9,3 +9,6 @@
 archive/** -text -whitespace
 # Supplied chapter references retain their exact original bytes and newlines.
 chapters/*/references/** -text -whitespace
+# Preserve the author's original attachment, including its CRLF newlines.
+chapters/viet-cho-sai-gon-cua-t/source/original.md -text -whitespace
+chapters/viet-cho-sai-gon-cua-t/source/approved.md -text -whitespace

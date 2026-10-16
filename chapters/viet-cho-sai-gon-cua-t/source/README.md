@@ -1,7 +1,7 @@
-# Manuscript workspace
+# Author manuscript
 
-Read [the selected manuscript](approved.md), published at the author's request on 2026-10-16. It preserves [draft 01](draft-v01.md) byte-for-byte. That first draft was newly written from the project board's eight-part outline, in Vietnamese with light Vinglish. [DRAFT_NOTES.md](DRAFT_NOTES.md) preserves the original source map and editorial questions as drafting history.
+[original.md](original.md) is the exact attachment supplied by the author on 2026-10-16. [approved.md](approved.md) contains identical bytes and is the published source. No sentences, names, slang, dialogue or paragraph order have been edited. The attachment's heading `# 1. Viết cho Sài Gòn của t` is preserved; the existing book registry and reader URL remain Chapter 03.
 
-The supplied project-board folder has no complete earlier manuscript. If that essay is found, preserve it verbatim at `original.md`; this new prose is not a recovered original. `chapter.json` points to `approved.md` as canonical text and `draft-v01.md` for version history. The author selected this draft by requesting its deployment and homepage publication.
+[MANUSCRIPT_IMPORT.json](../docs/MANUSCRIPT_IMPORT.json) records the source checksum and byte count. The site validator checks both the attachment checksum and exact equality of original and published files. The website renders Markdown emphasis but preserves the complete text.
 
-The reference board mentions a source dated 2025/10/07. That is reported provenance from the board, not the date of this draft or a verified manuscript hash. Historical GitHub branch notes describe a separate full review ZIP; that ZIP is absent from this delivery. Record actual editorial changes in `edit-notes.md` and `revisions.log`.
+The assistant's earlier rewrite and drafting notes were rejected and moved to `archive/superseded/saigon-board-derived-draft-v01/`. They are no longer copied to the reader website or displayed as its version-history source. The version-history panel now shows the author's original.

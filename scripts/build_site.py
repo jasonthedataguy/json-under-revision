@@ -28,6 +28,7 @@ def render_chapter(folder,meta,config,next_meta):
       'minutes':str(max(1,math.ceil(sum(len(plain(p).split()) for p in prose)/220))),
       'tags':''.join(f'<span class="tag">{html.escape(tag)}</span>' for tag in meta['theme']),
       'story':''.join(f'<p>{inline(p)}</p>' for p in prose),
+      'closing_quote':inline(prose[-1]),
       'artifact':artifact(folder,meta),
       'film_note':'Những khoảnh khắc từ chương được đặt cạnh nhau, cùng chữ trên màn hình và âm thanh nền.',
       'original':''.join(f'<p>{inline(p)}</p>' for p in paragraphs(safe_path(folder,history))),

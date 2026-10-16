@@ -3,7 +3,7 @@
   "slug": "viet-cho-sai-gon-cua-t",
   "number": "03",
   "title": "Viết cho Sài Gòn của t",
-  "subtitle": "Về những con người, những ngã rẽ, và câu hỏi mình thuộc về đâu.",
+  "subtitle": "Nhưng t thì vẫn ở đây.",
   "publish": true,
   "language": "vi",
   "theme": [
@@ -37,19 +37,24 @@
   "qr_status": "deferred",
   "location": "Sài Gòn",
   "status": "published-reader",
-  "source_status": "author-selected board-derived manuscript; earlier essay not supplied",
+  "source_status": "author-supplied original; published verbatim",
   "reference_manifest": "docs/REFERENCE_IMPORT.json",
   "reference_board": "references/project-board-v01/PROJECT_BOARD.html",
-  "draft_text": "source/draft-v01.md",
-  "draft_notes": "source/DRAFT_NOTES.md",
   "release_stage": "reader",
-  "history_text": "source/draft-v01.md",
-  "history_label": "Bản thảo đầu tiên — 16.10.2026",
-  "revision_note": "Chương này được viết từ những chặng ký ức trong bản phác thảo, rồi được Jason chọn để xuất bản. Bản thảo đầu tiên được giữ lại ở đây.",
+  "history_text": "source/original.md",
+  "history_label": "Bản gốc của tác giả",
+  "revision_note": "Bản đang đọc giữ nguyên nội dung tác giả cung cấp. Bản viết lại trước đó đã được thay bằng bài gốc.",
   "hero_alt": "Minh họa người đội mũ hồng và Gấu trên khăn picnic ở Landmark, trước đường chân trời Sài Gòn.",
   "publication": {
     "selected_on": "2026-10-16",
-    "selected_from": "source/draft-v01.md",
-    "scope": "Publish the full chapter and show it on the book homepage; author request in this conversation."
+    "selected_from": "source/original.md",
+    "scope": "Author supplied the original essay and requested correction of the published rewrite. Restore the complete original verbatim."
+  },
+  "text_policy": "verbatim-author-original",
+  "manuscript_source": {
+    "path": "source/original.md",
+    "received_on": "2026-10-16",
+    "sha256": "911b174411dced9668dffd01c6860c079cc17e231c5235f5153666c6021d8b26",
+    "bytes": 10658
   }
 }
