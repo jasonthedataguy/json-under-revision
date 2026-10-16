@@ -95,6 +95,7 @@ def check_site():
                 recipe=read_json(folder/'production.json')
                 if recipe.get('excerpts_verbatim'):
                     excerpts=[item['text'] for item in recipe.get('carousel',[])]
+                    excerpts += [item['text'] for item in recipe.get('publish_media',{}).get('carousel',[])]
                     excerpts += [segment['text'] for film in recipe.get('films',[]) for segment in film['segments']]
                     excerpts += [item['text'] for item in recipe.get('supplemental',{}).get('cards',[]) if item.get('verbatim',True)]
                     for excerpt in excerpts:assert excerpt in manuscript,f'Product excerpt is not in author original: {excerpt}'
@@ -118,7 +119,8 @@ def check_site():
             assert not (site/meta['canonical_path']/'product-set.zip').exists()
             continue
         # Supplied cuts retain their own formats; generated cuts use the shared timeline.
-        plans=[] if meta.get('release_stage')=='supplied' else read_json(folder/'video/timeline.json')
+        timeline=folder/'video/timeline.json'
+        plans=[] if meta.get('release_stage')=='supplied' and not timeline.exists() else read_json(timeline)
         for plan in plans:
             assert plan['status']=='edit preview awaiting author narration'
             assert abs(plan['segments'][0]['start'])<.001

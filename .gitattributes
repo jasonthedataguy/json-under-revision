@@ -20,4 +20,9 @@ chapters/for-mother-russia/source/approved.md -text -whitespace
 chapters/play-to-win/source/original.md -text -whitespace
 chapters/play-to-win/source/approved.md -text -whitespace
 chapters/play-to-win/audio/reading-script.md -text -whitespace
+chapters/dating-algorithm/source/original.md -text -whitespace
+chapters/dating-algorithm/source/approved.md -text -whitespace
+chapters/dating-algorithm/audio/reading-script.md -text -whitespace
+chapters/dating-algorithm/**/*.csv -text -whitespace
+chapters/dating-algorithm/video/VISUAL_BEAT_CAPTIONS_NOT_VOICE.srt -text -whitespace
 docs/chapters/choi-de-khong-thua/source/*.md -text -whitespace

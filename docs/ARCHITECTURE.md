@@ -24,9 +24,11 @@ archive/                        # original deliveries and earlier work
 site/                           # ignored generated deployment only
 ```
 
-Canonical public number URLs are `/chapters/02/`, `/chapters/03/`, `/chapters/04/`, `/chapters/05/`, `/chapters/06/` and `/chapters/07/`. Slug URLs redirect there. Folder identity uses the stable slug so a future table-of-contents change does not require moving source assets. Add a chapter through the scaffold; metadata and the registry drive all builds. No chapter-specific conditionals belong in the site renderer; artifact types use their own small templates.
+Canonical public number URLs are `/chapters/02/` through `/chapters/08/`. Slug URLs redirect there. Folder identity uses the stable slug so a future table-of-contents change does not require moving source assets. Add a chapter through the scaffold; metadata and the registry drive all builds. No chapter-specific conditionals belong in the site renderer; artifact types use their own small templates.
 
 The website consumes finished exports, so deployment requires only Python's standard library. Offline production uses Pillow, ReportLab and ffmpeg; PDF QA uses PyMuPDF. All input paths are repo-relative and output writes are restricted to the chapter and generated site folders. The original Expected_utility delivery is retained byte-for-byte, while current products are versioned separately.
+
+Supplied chapters may opt into `build_supplied_media.py` with a `publish_media.carousel` recipe and ordinary `films`. The optional `scene_fit: contain` keeps a complete diagram inside each media frame; the default `cover` behavior stays unchanged for other chapters. Original imports remain in `references/`. Derived timelines receive the same continuity and source-excerpt checks as other generated media. Dating Algorithm uses this path for Chapter 08; its static template also preserves the full manuscript and empty table without JavaScript.
 
 Chapter 03 (`viet-cho-sai-gon-cua-t`) began as a reference-only intake. The assistant's board-derived rewrite was later rejected by the author, who supplied the original essay on 2026-10-16. `source/original.md` and `source/approved.md` now preserve the attachment byte-for-byte, and version history uses that original. The superseded draft is archived outside the deployment. The supplied source heading retains its original number 1; the book registry and existing public URL stay at Chapter 03.
 

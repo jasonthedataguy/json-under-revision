@@ -8,7 +8,8 @@
     "expected-utility",
     "for-mother-russia",
     "play-to-win",
-    "com-nguoi"
+    "com-nguoi",
+    "dating-algorithm"
   ],
   "design": "shared/design.json"
 }

@@ -246,8 +246,8 @@
   },
   {
     "path": "web/index.html",
-    "bytes_at_build": 11591,
-    "sha256_normalized_text_lf": "0d50ae1323d9dfa67d9927dce01208055e58c090f7999147ef6fe7a107997b1a"
+    "bytes_at_build": 11600,
+    "sha256_normalized_text_lf": "9e882859fb756ca89643753c2cafc27761c858d0a31bf5a5d47c2ab72400f284"
   },
   {
     "path": "previews/artwork.jpg",

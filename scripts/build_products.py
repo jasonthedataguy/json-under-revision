@@ -88,13 +88,20 @@ def crop_scenes(folder,meta):
     write_json(folder/'artwork/scenes/index.json',records)
     return source,records
 
-def card(meta,image,text,size=(1080,1440),number=None,cover_card=False):
+def card(meta,image,text,size=(1080,1440),number=None,cover_card=False,scene_fit='cover'):
     w,h=size; palette=meta['palette']; margin=round(w*.065)
     result=Image.new('RGB',size,palette['paper']); draw=ImageDraw.Draw(result)
+    def scene(size):
+        if scene_fit=='cover':return cover(image,size)
+        if scene_fit!='contain':raise ValueError('Unknown scene framing: '+scene_fit)
+        framed=Image.new('RGB',size,palette['dark'])
+        fitted=ImageOps.contain(image.convert('RGB'),size,Image.Resampling.LANCZOS)
+        framed.paste(fitted,((size[0]-fitted.width)//2,(size[1]-fitted.height)//2))
+        return framed
     if w>h:
         # Landscape films keep the scene and reading area beside one another.
         left=round(w*.47);x=left+round(w*.04);width=w-x-round(w*.04)
-        result.paste(cover(image,(left,h)),(0,0))
+        result.paste(scene((left,h)),(0,0))
         draw=ImageDraw.Draw(result)
         draw.text((x,round(h*.07)),f'.json / {meta["number"]} / {number or "CHAPTER"}',font=font(round(h*.028),3),fill=palette['dark'])
         face=font(round(h*.062))
@@ -108,7 +115,7 @@ def card(meta,image,text,size=(1080,1440),number=None,cover_card=False):
     label=f'{meta["number"]} / {number or "CHAPTER"}';label_font=font(round(w*.017),3)
     draw.text((w-margin-draw.textlength(label,font=label_font),margin+14),label,font=label_font,fill=palette['dark'])
     top=round(h*.14); bottom=round(h*(.65 if not cover_card else .61))
-    result.paste(cover(image,(w-2*margin,bottom-top)),(margin,top))
+    result.paste(scene((w-2*margin,bottom-top)),(margin,top))
     draw=ImageDraw.Draw(result)
     size_start=round(w*(.075 if cover_card else .055))
     face=font(size_start,2 if cover_card else 0)
@@ -242,6 +249,7 @@ def film_plan(folder,meta,scenes,quotes):
             timeline.append({'start':round(clock,3),'end':round(clock+duration,3),'text':text,'scene':segment['scene']})
             clock+=duration
         variant={'name':name,'size':size,'duration':round(clock,3),'segments':timeline,'status':'edit preview awaiting author narration','timing':'provisional; retime to supplied recording','audio':'synthetic ambience; no spoken narration','caption_kind':'on-screen text timing; not narration subtitles'}
+        if 'scene_fit' in plan:variant['scene_fit']=plan['scene_fit']
         variants.append(variant)
         srt=[];vtt=['WEBVTT','']
         for i,seg in enumerate(timeline,1):
@@ -324,7 +332,7 @@ def render_film(folder,meta,variant,ffmpeg):
     work=ROOT/'build/media'/meta['slug']/variant['name'];work.mkdir(parents=True,exist_ok=True)
     segments=[]
     for i,segment in enumerate(variant['segments']):
-        frame=card(meta,Image.open(folder/segment['scene']),segment['text'],size,number=f'{i+1:02d}')
+        frame=card(meta,Image.open(folder/segment['scene']),segment['text'],size,number=f'{i+1:02d}',scene_fit=variant.get('scene_fit','cover'))
         # Typography stays static while the still image gently fades at scene boundaries.
         still=work/f'{i:02d}.png';frame.save(still)
         output=work/f'{i:02d}.mp4';duration=segment['end']-segment['start']
