@@ -8,7 +8,39 @@ import stat
 from pathlib import Path
 from string import Template
 from zipfile import ZIP_DEFLATED, ZipFile
-from common import ROOT, chapters, inline, paragraphs, plain, read_json
+from common import ROOT, chapters, inline, paragraphs, plain, read_json, safe_path
+
+def reader_release(meta):
+    stage=meta.get('release_stage','multimedia')
+    if stage not in {'reader','multimedia'}:raise ValueError('Unknown chapter release stage: '+stage)
+    return stage=='reader'
+
+def render_chapter(folder,meta,config,next_meta):
+    reader=reader_release(meta)
+    name='chapter-reader.html' if reader else 'chapter.html'
+    template=Template((ROOT/'shared'/name).read_text(encoding='utf-8'))
+    prose=paragraphs(safe_path(folder,meta['canonical_text']))
+    history=meta.get('history_text','source/original.md')
+    values={
+      **meta['palette'],'title':html.escape(meta['title']),'subtitle':html.escape(meta['subtitle']),
+      'number':meta['number'],'url':config['public_url']+meta['canonical_path'],
+      'hero_alt':html.escape(meta.get('hero_alt',f'Minh họa chương {meta["title"]}')),
+      'minutes':str(max(1,math.ceil(sum(len(plain(p).split()) for p in prose)/220))),
+      'tags':''.join(f'<span class="tag">{html.escape(tag)}</span>' for tag in meta['theme']),
+      'story':''.join(f'<p>{inline(p)}</p>' for p in prose),
+      'artifact':artifact(folder,meta),
+      'film_note':'Những khoảnh khắc từ chương được đặt cạnh nhau, cùng chữ trên màn hình và âm thanh nền.',
+      'original':''.join(f'<p>{inline(p)}</p>' for p in paragraphs(safe_path(folder,history))),
+      'history_label':html.escape(meta.get('history_label','original.md — bản gốc')),
+      'revisions':html.escape((folder/'source/revisions.log').read_text(encoding='utf-8')),
+      'revision_note':html.escape(meta.get('revision_note','Bản đang đọc là bản tác giả đã chọn. Bản gốc được giữ lại để những thay đổi không biến mất.')),
+      'gallery':'',
+      'next_url':'../../'+next_meta['canonical_path'],'next_title':html.escape(next_meta['title']),
+    }
+    if not reader:
+        alts=read_json(folder/'social/instagram/alt-text.json')
+        values['gallery']=''.join(f'<a href="social/instagram/slide-{i:02d}.jpg" download><img src="social/instagram/slide-{i:02d}.jpg" alt="{html.escape(alts[i-1]["alt"])}" width="1080" height="1440" loading="lazy"></a>' for i in range(1,6))
+    return template.substitute(values),values
 
 def remove_readonly(function,path,error):
     if not isinstance(error[1],PermissionError):raise error[1]
@@ -36,43 +68,28 @@ def build_site():
     for name in ['site.css','site.js']:shutil.copy2(ROOT/'shared'/name,site/'assets'/name)
     published=[(f,m) for f,m in chapters() if m['publish']]
     if not published:raise ValueError('No published chapters in book.json')
-    template=Template((ROOT/'shared/chapter.html').read_text(encoding='utf-8'))
     cards=[]
     for index,(folder,meta) in enumerate(published):
         chapter=site/meta['canonical_path'];chapter.mkdir(parents=True)
         for name in ['artwork','book','audio','video','social','docs','previews','source']:
-            shutil.copytree(folder/name,chapter/name)
+            if (folder/name).is_dir():shutil.copytree(folder/name,chapter/name)
         shutil.copy2(folder/'chapter.json',chapter/'chapter.json')
-        prose=paragraphs(folder/meta['canonical_text'])
         next_meta=published[(index+1)%len(published)][1]
-        values={
-          **meta['palette'],'title':html.escape(meta['title']),'subtitle':html.escape(meta['subtitle']),
-          'number':meta['number'],'url':config['public_url']+meta['canonical_path'],
-          'hero_alt':f'Minh họa chương {html.escape(meta["title"])}',
-          'minutes':str(max(1,math.ceil(sum(len(plain(p).split()) for p in prose)/220))),
-          'tags':''.join(f'<span class="tag">{html.escape(tag)}</span>' for tag in meta['theme']),
-          'story':''.join(f'<p>{inline(p)}</p>' for p in prose),
-          'artifact':artifact(folder,meta),
-          'film_note':'Những khoảnh khắc từ chương được đặt cạnh nhau, cùng chữ trên màn hình và âm thanh nền.',
-          'original':''.join(f'<p>{inline(p)}</p>' for p in paragraphs(folder/'source/original.md')),
-          'revisions':html.escape((folder/'source/revisions.log').read_text(encoding='utf-8')),
-          'revision_note':'Bản đang đọc là bản tác giả đã chọn. Bản gốc được giữ lại để những thay đổi không biến mất.',
-          'gallery':''.join(f'<a href="social/instagram/slide-{i:02d}.jpg" download><img src="social/instagram/slide-{i:02d}.jpg" alt="{html.escape(read_json(folder/"social/instagram/alt-text.json")[i-1]["alt"])}" width="1080" height="1440" loading="lazy"></a>' for i in range(1,6)),
-          'next_url':'../../'+next_meta['canonical_path'],'next_title':html.escape(next_meta['title']),
-        }
-        page=template.substitute(values)
+        page,values=render_chapter(folder,meta,config,next_meta)
         (chapter/'index.html').write_text(page,encoding='utf-8')
         # A chapter's source preview works from both the repo and the downloadable ZIP.
         offline=re.sub(r'href="../../(?!assets/)',f'href="{config["public_url"]}',page)
         offline=offline.replace('../../assets/','../../../shared/')
-        for directory in ['artwork','audio','video','book','social']:
+        for directory in ['artwork','audio','video','book','social','source']:
             offline=re.sub(r'((?:href|src|srcset|data-image)=")'+directory+'/',r'\1../'+directory+'/',offline)
         offline=offline.replace('href="product-set.zip"',f'href="{values["url"]}product-set.zip"')
+        (folder/'web').mkdir(exist_ok=True)
         (folder/'web/index.html').write_text(offline,encoding='utf-8')
-        with ZipFile(chapter/'product-set.zip','w',ZIP_DEFLATED) as bundle:
-            for source in sorted(folder.rglob('*')):
-                if source.is_file():bundle.write(source,source.relative_to(ROOT))
-            for name in ['site.css','site.js']:bundle.write(ROOT/'shared'/name,'shared/'+name)
+        if not reader_release(meta):
+            with ZipFile(chapter/'product-set.zip','w',ZIP_DEFLATED) as bundle:
+                for source in sorted(folder.rglob('*')):
+                    if source.is_file():bundle.write(source,source.relative_to(ROOT))
+                for name in ['site.css','site.js']:bundle.write(ROOT/'shared'/name,'shared/'+name)
         for alias in meta['aliases']:redirect(site/alias/'index.html','../'+meta['number']+'/',values['url'])
         cards.append(f'<a class="chapter-card" href="{meta["canonical_path"]}"><img src="{meta["canonical_path"]}artwork/exports/hero.jpg" alt="{values["hero_alt"]}" width="1600" height="960"><div class="copy"><span class="eyebrow">CHAPTER {meta["number"]}</span><h2>{values["title"]}</h2><p>{values["subtitle"]}</p><span class="eyebrow">READ / EXPLORE / REVISIT →</span></div></a>')
     (site/'index.html').write_text('''<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content=".json — Jason, under revision. Những câu chuyện và những gì còn lại."><title>.json — Jason, under revision</title><link rel="stylesheet" href="assets/site.css"></head><body><header class="bar"><a class="brand" href="./">.json<small>JASON, UNDER REVISION</small></a><nav aria-label="Điều hướng"><a href="#chapters">Chapters</a><a href="about/">About</a></nav></header><main class="home"><div class="eyebrow">A BOOK WITH A VERSION HISTORY</div><h1>.json</h1><p class="home-intro">Một cuốn sách với lịch sử phiên bản.<br>Những câu chuyện, những ký ức, và những điều chưa thể biết.</p><div class="chapter-grid" id="chapters">'''+''.join(cards)+'''</div><p class="quiet">Câu chuyện nằm trọn trong từng chương. Phần còn lại là lời mời nhìn gần hơn.</p></main><footer class="footer"><span>© Jason / .json — Jason, under revision</span><a href="about/">Về cuốn sách →</a></footer></body></html>''',encoding='utf-8')

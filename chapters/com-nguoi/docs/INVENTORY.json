@@ -1,17 +1,17 @@
 [
   {
     "path": "source/approved.md",
-    "bytes_at_build": 1399,
+    "bytes_at_build": 1420,
     "sha256_normalized_text_lf": "d957b592dc2317aa34196dd25ab42a3fe4a7938d3aee5a1121ab173214bf76f9"
   },
   {
     "path": "source/edit-notes.md",
-    "bytes_at_build": 1360,
+    "bytes_at_build": 1380,
     "sha256_normalized_text_lf": "0c7a9185f93857ba9d7d15f1a4e78cc183884811987d1f96c3332f887b1b62c0"
   },
   {
     "path": "source/original.md",
-    "bytes_at_build": 1439,
+    "bytes_at_build": 1460,
     "sha256_normalized_text_lf": "12c758c190c83e16b9b37127b6b9191fb3f283f1b4d0fc23d5e91466e46fe6b3"
   },
   {
@@ -121,7 +121,7 @@
   },
   {
     "path": "audio/reading-script.md",
-    "bytes_at_build": 1399,
+    "bytes_at_build": 1420,
     "sha256_normalized_text_lf": "d957b592dc2317aa34196dd25ab42a3fe4a7938d3aee5a1121ab173214bf76f9"
   },
   {
@@ -246,8 +246,8 @@
   },
   {
     "path": "web/index.html",
-    "bytes_at_build": 11600,
-    "sha256_normalized_text_lf": "b3b367a5ae12ca8c41f557890184bb860336e98198b01ac76dc1445702b796ed"
+    "bytes_at_build": 11612,
+    "sha256_normalized_text_lf": "cd4a5f6eb93c95ffb37771840f15e9cf734e5a55205449c7f305548616ac30a9"
   },
   {
     "path": "previews/artwork.jpg",

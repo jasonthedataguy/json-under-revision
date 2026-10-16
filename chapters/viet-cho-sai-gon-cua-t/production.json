@@ -1,13 +1,115 @@
 {
-  "scenes": [],
+  "scenes": [
+    {
+      "id": "landmark",
+      "box": [
+        0.03,
+        0.36,
+        0.97,
+        0.97
+      ]
+    },
+    {
+      "id": "bridge",
+      "box": [
+        0.03,
+        0.35,
+        0.38,
+        0.63
+      ]
+    },
+    {
+      "id": "skyline",
+      "box": [
+        0.29,
+        0.35,
+        0.95,
+        0.6
+      ]
+    },
+    {
+      "id": "gau",
+      "box": [
+        0.38,
+        0.59,
+        0.78,
+        0.97
+      ]
+    }
+  ],
   "carousel": [],
   "print_scenes": [],
   "films": [],
   "memory": {
-    "heading": "Hành trình Sài Gòn",
-    "intro": "",
-    "moments": []
+    "heading": "Một thành phố, những chặng ở lại.",
+    "intro": "Tám đoạn trong một hành trình. Chạm vào một chặng để đọc lại những câu còn đọng.",
+    "moments": [
+      {
+        "title": "01 / Ba Son, tuổi 26",
+        "image": "artwork/scenes/02-bridge.jpg",
+        "alt": "Góc cắt cây cầu và đường chân trời từ minh họa Sài Gòn.",
+        "quote": "Đi qua cầu Ba Son, tôi tự hỏi liệu mình có thuộc về nơi này không."
+      },
+      {
+        "title": "02 / Một cơ hội",
+        "image": "artwork/scenes/03-skyline.jpg",
+        "alt": "Những tòa nhà trong minh họa Sài Gòn.",
+        "quote": "Rồi tôi có offer. Rồi tôi mất nó."
+      },
+      {
+        "title": "03 / Phương án backup",
+        "image": "artwork/scenes/03-skyline.jpg",
+        "alt": "Góc cắt đường chân trời Sài Gòn từ cùng hình minh họa.",
+        "quote": "Có lẽ tôi đã mong một công việc trả lời hộ mình hơi nhiều thứ."
+      },
+      {
+        "title": "04 / Lời tạm biệt dang dở",
+        "image": "artwork/scenes/02-bridge.jpg",
+        "alt": "Cây cầu trong hình minh họa, diễn giải một chặng của câu chuyện.",
+        "quote": "Trong lúc loay hoay, tôi cũng có những lần không biết dành chỗ cho người khác."
+      },
+      {
+        "title": "05 / Những người bạn",
+        "image": "artwork/scenes/01-landmark.jpg",
+        "alt": "Bãi cỏ và những nhóm người trong minh họa Landmark.",
+        "quote": "Một hội bạn chơi PES. Cầu lông. Những lần tham gia một hoạt động chung mà mình thấy vui."
+      },
+      {
+        "title": "06 / Landmark và Gấu",
+        "image": "artwork/scenes/04-gau.jpg",
+        "alt": "Góc cắt Gấu trên tấm khăn picnic trong minh họa.",
+        "quote": "Một người ở cạnh mình, một con chó, một bãi cỏ, những việc nhỏ mà khi nhớ lại tôi vẫn thấy thương."
+      },
+      {
+        "title": "07 / Một người ở lại",
+        "image": "artwork/scenes/01-landmark.jpg",
+        "alt": "Người đội mũ hồng và Gấu trong minh họa picnic.",
+        "quote": "Phần tôi biết là sự có mặt ấy, và việc mình đã được ở cạnh một người cả khi bản thân không dễ chịu cho lắm."
+      },
+      {
+        "title": "08 / Sài Gòn của tôi",
+        "image": "artwork/scenes/01-landmark.jpg",
+        "alt": "Toàn cảnh picnic tại Landmark từ hình minh họa đã chọn.",
+        "quote": "Sài Gòn, cảm ơn vì tất cả."
+      }
+    ]
   },
-  "status": "reference-only",
-  "reference_board": "references/project-board-v01/PROJECT_BOARD.html"
+  "status": "reader-release; multimedia-pending",
+  "reference_board": "references/project-board-v01/PROJECT_BOARD.html",
+  "reader_artwork": {
+    "hero.jpg": {
+      "scene": 0,
+      "size": [
+        1600,
+        960
+      ]
+    },
+    "hero-mobile.jpg": {
+      "scene": 0,
+      "size": [
+        900,
+        675
+      ]
+    }
+  }
 }

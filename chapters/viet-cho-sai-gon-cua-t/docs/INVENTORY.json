@@ -1,0 +1,87 @@
+[
+  {
+    "path": "source/approved.md",
+    "bytes_at_build": 11042,
+    "sha256_normalized_text_lf": "14ed44b5799700a14f58973ea19783afe80f6da5bf0d49b44355254cbe182058"
+  },
+  {
+    "path": "source/draft-v01.md",
+    "bytes_at_build": 11042,
+    "sha256_normalized_text_lf": "14ed44b5799700a14f58973ea19783afe80f6da5bf0d49b44355254cbe182058"
+  },
+  {
+    "path": "source/DRAFT_NOTES.md",
+    "bytes_at_build": 6632,
+    "sha256_normalized_text_lf": "8a56e46faf59e6a932a86e224e2e9b8f781a807bb1fdeaf79969df5bb9292504"
+  },
+  {
+    "path": "source/edit-notes.md",
+    "bytes_at_build": 1496,
+    "sha256_normalized_text_lf": "228a3e4e348d8cf730547b9e7ee791bbe0c54dc31aca4f47eb142a8298654acf"
+  },
+  {
+    "path": "source/README.md",
+    "bytes_at_build": 1104,
+    "sha256_normalized_text_lf": "5e0455dc57c991e1fc3e8b2a8e05f56ce97bfd14de3355c9c96e4abc71b5f101"
+  },
+  {
+    "path": "source/revisions.log",
+    "bytes_at_build": 545,
+    "sha256_normalized_text_lf": "bf3afbe37f175ec37bb52a864bcf275d7a76affe581b3e1f82f745bc9f426988"
+  },
+  {
+    "path": "artwork/exports/hero-mobile.jpg",
+    "bytes_at_build": 284667,
+    "sha256_normalized_text_lf": "add0210f1f69662f1821687e1daede9f7384da2119519e88bfd4d75d76277bf8"
+  },
+  {
+    "path": "artwork/exports/hero.jpg",
+    "bytes_at_build": 573507,
+    "sha256_normalized_text_lf": "b21d5a0bd201598e0da798885a72184d84eb8f201d558fbe45a8442552fb81d0"
+  },
+  {
+    "path": "artwork/scenes/01-landmark.jpg",
+    "bytes_at_build": 453937,
+    "sha256_normalized_text_lf": "59429885223cca0b3e61594f0e7d8a8f6fb3fa227ce92bade07233f012d01134"
+  },
+  {
+    "path": "artwork/scenes/02-bridge.jpg",
+    "bytes_at_build": 83642,
+    "sha256_normalized_text_lf": "e3c8cfebf301c95a3e489a5a7d2ea49b17b33a9390cc3c0526bfa83f2d182dc6"
+  },
+  {
+    "path": "artwork/scenes/03-skyline.jpg",
+    "bytes_at_build": 123987,
+    "sha256_normalized_text_lf": "ddb24bb431e4e8eb54869ead3af01dd09f0b7a056c4badeb467f8bf41530a202"
+  },
+  {
+    "path": "artwork/scenes/04-gau.jpg",
+    "bytes_at_build": 112758,
+    "sha256_normalized_text_lf": "f5f51176ccf5827976a0333f0a777bbc8db5cb2b92abe359b5c50d2fb8359470"
+  },
+  {
+    "path": "artwork/scenes/index.json",
+    "bytes_at_build": 1635,
+    "sha256_normalized_text_lf": "102770a4624f4e5df1abdcec4b72335c360994a6f93b6d5d0af30e8fb2fcae60"
+  },
+  {
+    "path": "artwork/source/README.md",
+    "bytes_at_build": 1506,
+    "sha256_normalized_text_lf": "89cc0ea37a4f6c30a276d2e56b39f14ec871cb399f76d21bbb3febb28facbd0e"
+  },
+  {
+    "path": "web/index.html",
+    "bytes_at_build": 30693,
+    "sha256_normalized_text_lf": "ad5a9f8b98851f89196da3d310757cd5ed002fc8863a5f4cfee8be9c6509eab2"
+  },
+  {
+    "path": "previews/web-1440.png",
+    "bytes_at_build": 985220,
+    "sha256_normalized_text_lf": "0b44d3af5e35006b517ba9255a0cc0a9e1735e5e7b13336fbdfd9ae4b282615f"
+  },
+  {
+    "path": "previews/web-390.png",
+    "bytes_at_build": 292745,
+    "sha256_normalized_text_lf": "3deb16e94f8312d965434b142895d53e23a3795350977eca53eff0080cfa390a"
+  }
+]

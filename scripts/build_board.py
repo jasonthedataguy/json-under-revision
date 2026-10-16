@@ -4,7 +4,7 @@ from common import chapters,read_json
 from build_products import cover,font,save,text_block
 
 for folder,meta in chapters():
-    if not meta['publish']:continue
+    if not meta['publish'] or meta.get('release_stage')=='reader':continue
     W,H=2400,1760;palette=meta['palette']
     image=Image.new('RGB',(W,H),palette['paper']);draw=ImageDraw.Draw(image)
     draw.rectangle((0,0,W,125),fill=palette['dark'])

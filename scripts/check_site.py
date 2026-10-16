@@ -7,6 +7,7 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 from zipfile import ZipFile
 from common import ROOT, artifact_hash, chapters, paragraphs, plain, read_json, safe_path
+from build_site import reader_release
 
 class Page(HTMLParser):
     def __init__(self,text):
@@ -67,11 +68,12 @@ def check_site():
                 assert not (site/route).exists(),f'Draft chapter route was published: {route}'
             continue
         count+=1
+        reader=reader_release(meta)
         expected=[normalize(plain(p)) for p in paragraphs(safe_path(folder,meta['canonical_text']))]
         actual=pages[(site/meta['canonical_path']/'index.html').resolve()].story
         assert [normalize(p) for p in actual]==expected,f'Manuscript changed: {meta["slug"]}'
         assert meta['narration']['file'] is None and meta['narration']['synthetic_voice'] is False
-        assert meta['video_mode']=='edit cuts awaiting author-recorded narration'
+        if not reader:assert meta['video_mode']=='edit cuts awaiting author-recorded narration'
         for item in read_json(folder/'docs/INVENTORY.json'):
             path=safe_path(folder,item['path'])
             assert path.is_file(),path
@@ -79,6 +81,13 @@ def check_site():
         for product in read_json(folder/'docs/PRODUCTS.json')['products']:
             assert product['state']!='missing',product
             assert safe_path(folder,product['path']).is_file(),product
+        home=pages[(site/'index.html').resolve()]
+        assert meta['canonical_path'] in home.links,f'Published chapter missing from homepage: {meta["slug"]}'
+        if reader:
+            page=(site/meta['canonical_path']/'index.html').read_text(encoding='utf-8')
+            assert '<video' not in page and '<audio' not in page,'Reader release advertises unfinished media'
+            assert not (site/meta['canonical_path']/'product-set.zip').exists()
+            continue
         for plan in read_json(folder/'video/timeline.json'):
             assert plan['status']=='edit preview awaiting author narration'
             assert abs(plan['segments'][0]['start'])<.001
@@ -99,6 +108,6 @@ def check_site():
     for item in migration['files']:
         assert hashlib.sha256((ROOT/item['to']).read_bytes()).hexdigest()==item['sha256'],f'Archived file changed: {item["to"]}'
     assert len(pages)==2+2*count, 'Expected index, about, chapter and slug alias pages'
-    print(f'PASS: {count} chapter product sets; {len(pages)} pages; links, manuscripts, inventories, ZIPs, edit timelines, {reference_count} supplied references and {len(migration["files"])} archived files; draft routes excluded')
+    print(f'PASS: {count} published chapters; {len(pages)} pages; homepage cards, links, manuscripts, inventories, available products, {reference_count} supplied references and {len(migration["files"])} archived files; draft routes excluded')
 
 if __name__=='__main__':check_site()

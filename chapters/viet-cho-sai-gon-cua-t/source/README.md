@@ -1,7 +1,7 @@
-# Manuscript intake
+# Manuscript workspace
 
-The supplied project-board folder contains narrative summaries and production specifications, but no complete chapter manuscript. Those summaries are references, not replacement prose.
+Read [the selected manuscript](approved.md), published at the author's request on 2026-10-16. It preserves [draft 01](draft-v01.md) byte-for-byte. That first draft was newly written from the project board's eight-part outline, in Vietnamese with light Vinglish. [DRAFT_NOTES.md](DRAFT_NOTES.md) preserves the original source map and editorial questions as drafting history.
 
-When the manuscript is supplied, preserve it verbatim at `original.md`. Keep an editorial proposal separate, and place the selected version at `approved.md` once selected by the author. `chapter.json` reserves that canonical path; the file deliberately does not exist yet. Record real changes in `edit-notes.md` and `revisions.log`.
+The supplied project-board folder has no complete earlier manuscript. If that essay is found, preserve it verbatim at `original.md`; this new prose is not a recovered original. `chapter.json` points to `approved.md` as canonical text and `draft-v01.md` for version history. The author selected this draft by requesting its deployment and homepage publication.
 
-The reference board mentions a source dated 2025/10/07. That is reported provenance from the board, not a verified manuscript hash. Historical GitHub branch notes also describe a separate full review ZIP; that ZIP is absent from this delivery and its claimed products are not counted as present.
+The reference board mentions a source dated 2025/10/07. That is reported provenance from the board, not the date of this draft or a verified manuscript hash. Historical GitHub branch notes describe a separate full review ZIP; that ZIP is absent from this delivery. Record actual editorial changes in `edit-notes.md` and `revisions.log`.

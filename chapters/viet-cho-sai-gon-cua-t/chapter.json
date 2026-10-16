@@ -3,8 +3,8 @@
   "slug": "viet-cho-sai-gon-cua-t",
   "number": "03",
   "title": "Viết cho Sài Gòn của t",
-  "subtitle": "Postcard from the city that kept giving.",
-  "publish": false,
+  "subtitle": "Về những con người, những ngã rẽ, và câu hỏi mình thuộc về đâu.",
+  "publish": true,
   "language": "vi",
   "theme": [
     "belonging",
@@ -36,8 +36,20 @@
   "print_status": "not supplied; A5 proof planned",
   "qr_status": "deferred",
   "location": "Sài Gòn",
-  "status": "reference-only",
-  "source_status": "not-supplied",
+  "status": "published-reader",
+  "source_status": "author-selected board-derived manuscript; earlier essay not supplied",
   "reference_manifest": "docs/REFERENCE_IMPORT.json",
-  "reference_board": "references/project-board-v01/PROJECT_BOARD.html"
+  "reference_board": "references/project-board-v01/PROJECT_BOARD.html",
+  "draft_text": "source/draft-v01.md",
+  "draft_notes": "source/DRAFT_NOTES.md",
+  "release_stage": "reader",
+  "history_text": "source/draft-v01.md",
+  "history_label": "Bản thảo đầu tiên — 16.10.2026",
+  "revision_note": "Chương này được viết từ những chặng ký ức trong bản phác thảo, rồi được Jason chọn để xuất bản. Bản thảo đầu tiên được giữ lại ở đây.",
+  "hero_alt": "Minh họa người đội mũ hồng và Gấu trên khăn picnic ở Landmark, trước đường chân trời Sài Gòn.",
+  "publication": {
+    "selected_on": "2026-10-16",
+    "selected_from": "source/draft-v01.md",
+    "scope": "Publish the full chapter and show it on the book homepage; author request in this conversation."
+  }
 }

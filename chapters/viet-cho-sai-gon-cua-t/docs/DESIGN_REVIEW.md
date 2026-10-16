@@ -22,18 +22,20 @@ The four shared website palette tokens are recorded in `chapter.json`; the compl
 
 | Board intention | Shared destination | Current evidence |
 |---|---|---|
-| Read the complete story | `source/`, `book/`, `web/` | Narrative outline only; manuscript absent |
-| Explore a non-geographic journey | `production.json` memory moments and shared memory template | Eight proposed stops in the board; populate only from the supplied manuscript |
+| Read the complete story | `source/`, `book/`, `web/` | Author-selected manuscript and full reader page; print production remains pending |
+| Explore a non-geographic journey | `production.json` memory moments and shared memory template | Eight keyboard-accessible stops with exact excerpts from the selected manuscript |
 | Revisit the story's evolution | `source/revisions.log` and editorial notes | Actual reference intake recorded |
-| Illustration family | `artwork/source`, `artwork/scenes`, `artwork/exports` | Square poster concept and SVG alternative preserved as references |
+| Illustration family | `artwork/source`, `artwork/scenes`, `artwork/exports` | Four documented crops and responsive reader artwork; square poster and SVG preserved as references |
 | Discovery / longer film / feed cut | `video/`, `audio/` | Planned; author-recorded narration workflow applies |
 | Instagram / Facebook / TikTok / YouTube | `social/<channel>/` | Format specifications only |
-| Review evidence | `previews/` and `docs/` | Supplied board screenshots only; no chapter QA claimed |
+| Review evidence | `previews/` and `docs/` | Actual reader screenshots and release checks; supplied board screenshots remain historical references |
 
-The board's proposed journey runs through arrival, career changes, an unfinished goodbye, friendship, Landmark/Christmas, growth and a return to the question of belonging. Preserve its uncertainty and gratitude. These are planning labels, not a substitute for the missing essay; no new dialogue or dates have been added.
+The board's proposed journey runs through arrival, career changes, an unfinished goodbye, friendship, Landmark/Christmas, growth and a return to the question of belonging. Draft 01 follows that arc and retains its uncertainty and gratitude. Its reflections and transitions are newly proposed prose, documented in [the source map](../source/DRAFT_NOTES.md); no new dialogue or dates have been added.
 
 ## Delivery boundaries
 
 The historical `planning/saigon-chapter-board-v01` branch at `b909b72` was inspected as context. It describes a separate full private review ZIP, but does not contain that delivery. No unavailable manuscript, nine-page PDF, eight scene postcards or 24-second animatic is claimed here. Its older repository layout was not merged over the shared structure.
 
-The original board's 75-task baseline and screenshots remain a historical snapshot. The current [product inventory](PRODUCT_SET.md) records what exists in this repository. `publish: false` reflects the absence of a complete reader chapter; committing references does not manufacture missing products.
+The original board's 75-task baseline and screenshots remain a historical snapshot. The current [product inventory](PRODUCT_SET.md) records actual files. Draft 01 was written from the board on 2026-10-16 at the author's request, then selected for deployment. The reader release publishes its full text and memory journey at `/chapters/03/` and adds the chapter to the homepage. Video, PDF and social products are separate remaining work, not prerequisites for reading the chapter.
+
+The web artwork uses the lower illustration area so the reference poster's embedded Chapter 01 label is omitted without changing the original. Four source crops support the eight memory stops; these are interpretive views of the supplied image, not separate factual depictions of workplaces or personal events. The scene index records native dimensions and exact crop boxes.

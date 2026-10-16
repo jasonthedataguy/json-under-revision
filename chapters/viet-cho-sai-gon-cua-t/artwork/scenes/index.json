@@ -1,0 +1,86 @@
+[
+  {
+    "path": "artwork/scenes/01-landmark.jpg",
+    "source": "references/project-board-v01/assets/saigon_landmark_poster_proof.png",
+    "box_normalized": [
+      0.03,
+      0.36,
+      0.97,
+      0.97
+    ],
+    "box_pixels": [
+      38,
+      451,
+      1216,
+      1216
+    ],
+    "native_dimensions": [
+      1178,
+      765
+    ],
+    "type": "crop of supplied illustration"
+  },
+  {
+    "path": "artwork/scenes/02-bridge.jpg",
+    "source": "references/project-board-v01/assets/saigon_landmark_poster_proof.png",
+    "box_normalized": [
+      0.03,
+      0.35,
+      0.38,
+      0.63
+    ],
+    "box_pixels": [
+      38,
+      439,
+      477,
+      790
+    ],
+    "native_dimensions": [
+      439,
+      351
+    ],
+    "type": "crop of supplied illustration"
+  },
+  {
+    "path": "artwork/scenes/03-skyline.jpg",
+    "source": "references/project-board-v01/assets/saigon_landmark_poster_proof.png",
+    "box_normalized": [
+      0.29,
+      0.35,
+      0.95,
+      0.6
+    ],
+    "box_pixels": [
+      364,
+      439,
+      1191,
+      752
+    ],
+    "native_dimensions": [
+      827,
+      313
+    ],
+    "type": "crop of supplied illustration"
+  },
+  {
+    "path": "artwork/scenes/04-gau.jpg",
+    "source": "references/project-board-v01/assets/saigon_landmark_poster_proof.png",
+    "box_normalized": [
+      0.38,
+      0.59,
+      0.78,
+      0.97
+    ],
+    "box_pixels": [
+      477,
+      740,
+      978,
+      1216
+    ],
+    "native_dimensions": [
+      501,
+      476
+    ],
+    "type": "crop of supplied illustration"
+  }
+]

@@ -1,7 +1,7 @@
 [
   {
     "path": "source/approved.md",
-    "bytes_at_build": 9999,
+    "bytes_at_build": 10070,
     "sha256_normalized_text_lf": "9ede9cdc721416cbc1f625d7a0df5f2ce1329a1050f8c7e6dab32785c595e5d4"
   },
   {
@@ -11,7 +11,7 @@
   },
   {
     "path": "source/original.md",
-    "bytes_at_build": 9888,
+    "bytes_at_build": 9959,
     "sha256_normalized_text_lf": "807cd926f9b7b9f03386f6d2811c93f35a9cff6504021751fc9e45c73d16812d"
   },
   {
@@ -91,7 +91,7 @@
   },
   {
     "path": "audio/reading-script.md",
-    "bytes_at_build": 9999,
+    "bytes_at_build": 10070,
     "sha256_normalized_text_lf": "9ede9cdc721416cbc1f625d7a0df5f2ce1329a1050f8c7e6dab32785c595e5d4"
   },
   {

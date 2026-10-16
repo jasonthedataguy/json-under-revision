@@ -1,9 +1,31 @@
 """Record actual artifact files and explicit remaining production work."""
 import hashlib
 from common import ROOT, chapters, read_json, write_json, artifact_hash
+from build_site import reader_release
 
 for folder,meta in chapters():
     if not meta['publish']:continue
+    if reader_release(meta):
+        inventory=[]
+        for directory in ['source','artwork','web','previews']:
+            for path in sorted((folder/directory).rglob('*')):
+                if path.is_file():inventory.append({'path':path.relative_to(folder).as_posix(),'bytes_at_build':path.stat().st_size,'sha256_normalized_text_lf':artifact_hash(path)})
+        write_json(folder/'docs/INVENTORY.json',inventory)
+        products=[
+            {'product':'Selected manuscript','state':'ready for publication','path':meta['canonical_text']},
+            {'product':'Responsive chapter website and memory journey','state':'ready for publication','path':'web/index.html'},
+            {'product':'Homepage and chapter artwork','state':'supplied-art derivative','path':'artwork/exports/hero.jpg'},
+            {'product':'Scene crop provenance','state':'documented','path':'artwork/scenes/index.json'},
+        ]
+        if meta.get('reference_board'):products.append({'product':'Supplied project board','state':'preserved reference','path':meta['reference_board']})
+        remaining=['A5 proof and print production','Video edit cuts, author-recorded narration and captions','Social platform packs; posting remains author-managed','QR remains deferred']
+        write_json(folder/'docs/PRODUCTS.json',{'chapter':meta['slug'],'release_stage':'reader','products':products,'remaining':remaining})
+        table=['# Product set — '+meta['title'],'','This release includes the selected reader chapter, supplied-art crops and the interactive memory journey. Multimedia products are tracked separately.','','| Product | Actual state | File |','|---|---|---|']
+        table += [f'| {p["product"]} | {p["state"]} | [{p["path"]}](../{p["path"]}) |' for p in products]
+        table += ['','Remaining: '+ '; '.join(remaining)+'.','',f'Inventory: {len(inventory)} files; LF-normalized text and raw binary SHA-256 checksums. Supplied references retain their separate import manifest when present.']
+        (folder/'docs/PRODUCT_SET.md').write_text('\n'.join(table)+'\n',encoding='utf-8')
+        print(meta['slug'],len(inventory),'reader files inventoried')
+        continue
     meta['video_mode']='edit cuts awaiting author-recorded narration'
     write_json(folder/'chapter.json',meta)
     inventory=[]

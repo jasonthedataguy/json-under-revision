@@ -286,6 +286,9 @@ def main():
     for folder,meta in chapters(args.chapter):
         if not meta['publish'] and not args.chapter:
             continue
+        if meta.get('release_stage')=='reader':
+            if args.chapter:parser.error('This chapter has a reader release. Complete its multimedia production recipe before building the full product set.')
+            continue
         source,scenes=crop_scenes(folder,meta)
         quotes=artwork(folder,meta,source,scenes)
         pdf(folder,meta,scenes);ambience(folder)

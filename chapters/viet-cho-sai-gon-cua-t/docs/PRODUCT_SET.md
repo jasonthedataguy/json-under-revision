@@ -1,22 +1,15 @@
-# Chapter 03 product inventory
+# Product set — Viết cho Sài Gòn của t
 
-This inventory describes files actually present after the reference import. Historical board checkmarks and branch descriptions are not completion evidence.
+This release includes the selected reader chapter, supplied-art crops and the interactive memory journey. Multimedia products are tracked separately.
 
 | Product | Actual state | File |
 |---|---|---|
-| Original offline project board | imported reference | [references/project-board-v01/PROJECT_BOARD.html](../references/project-board-v01/PROJECT_BOARD.html) |
-| Art direction and narrative production plan | imported reference | [references/project-board-v01/docs/PROJECT_BOARD.md](../references/project-board-v01/docs/PROJECT_BOARD.md) |
-| 75-task baseline | historical reference; not current completion | [references/project-board-v01/data/tasks.json](../references/project-board-v01/data/tasks.json) |
-| Poster concept and SVG alternative | imported design concepts | [references/project-board-v01/assets/saigon_landmark_poster_proof.png](../references/project-board-v01/assets/saigon_landmark_poster_proof.png) |
-| Board screenshots | supplied board previews; not chapter website QA | [references/project-board-v01/assets/desktop_preview.png](../references/project-board-v01/assets/desktop_preview.png) |
-| Complete manuscript and selected prose | not supplied | — |
-| Scene exports and final cover | not built | — |
-| Illustrated A5 proof | not supplied or built | — |
-| Reader website and memory journey | planned; chapter unpublished | — |
-| Social platform packs | not supplied or built | — |
-| Film edit cuts and caption timings | not supplied or built | — |
-| Author-recorded narration | awaiting author recording; no synthetic voice | — |
+| Selected manuscript | ready for publication | [source/approved.md](../source/approved.md) |
+| Responsive chapter website and memory journey | ready for publication | [web/index.html](../web/index.html) |
+| Homepage and chapter artwork | supplied-art derivative | [artwork/exports/hero.jpg](../artwork/exports/hero.jpg) |
+| Scene crop provenance | documented | [artwork/scenes/index.json](../artwork/scenes/index.json) |
+| Supplied project board | preserved reference | [references/project-board-v01/PROJECT_BOARD.html](../references/project-board-v01/PROJECT_BOARD.html) |
 
-All 12 reference files are listed in [REFERENCE_IMPORT.json](REFERENCE_IMPORT.json), with exact-byte SHA-256 checksums. The chapter is registered ahead of 04 and 07 in `book.json`; its future `/chapters/03/` route remains unpublished.
+Remaining: A5 proof and print production; Video edit cuts, author-recorded narration and captions; Social platform packs; posting remains author-managed; QR remains deferred.
 
-Next production input: the complete manuscript. The reference-only recipe intentionally contains no invented scenes, excerpts, film timings or manuscript text.
+Inventory: 17 files; LF-normalized text and raw binary SHA-256 checksums. Supplied references retain their separate import manifest when present.
