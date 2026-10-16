@@ -1,0 +1,33 @@
+{
+  "book": ".json",
+  "subtitle": "Jason, under revision",
+  "working_chapter": "02",
+  "slug": "fashion",
+  "title": "Fashion",
+  "part_candidate": "02_data_collection",
+  "source_date": "unknown",
+  "narrator_age": "unknown",
+  "status": "editorial_proof",
+  "rights_approved": false,
+  "publication_approved": false,
+  "visual": {
+    "concept": "wardrobe archaeology / wear as memory",
+    "palette": {
+      "midnight_indigo": "#233748",
+      "washed_denim": "#657E96",
+      "tobacco_suede": "#A16A4C",
+      "acid_stitch": "#D4CD8A",
+      "clay": "#C97864",
+      "old_paper": "#F3E9D7"
+    }
+  },
+  "artifacts": {
+    "pdf": "proof_in_review_zip",
+    "website": "offline_review_zip",
+    "interactive": "wardrobe_explorer",
+    "instagram": "five_3x4_cards_in_zip",
+    "video": "ambient_9x16_animatic_in_zip",
+    "social": "draft_only"
+  },
+  "public_text": "teaser_only"
+}
