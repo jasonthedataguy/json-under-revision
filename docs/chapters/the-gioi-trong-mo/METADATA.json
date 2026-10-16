@@ -1,0 +1,35 @@
+{
+  "chapter": "06",
+  "title": "Thế giới trong mơ của tôi",
+  "series": ".json / Jason, under revision",
+  "part_candidate": "02_data_collection",
+  "source_status": "unchanged manuscript in private author kit",
+  "release_status": "editorial_proof_only_not_published",
+  "narrative": {
+    "observed": "Paris Métro Line 5 to Bastille, two suitcases, two children, skateboard, old phone call",
+    "imagined": "family dinner and details unknown to narrator",
+    "afterimage": "yellow low-contrast film-like color",
+    "symbolic_only": "original small rooftop rat"
+  },
+  "palette": {
+    "petrol_navy": "#172B3A",
+    "sodium_amber": "#DAB073",
+    "paper_ivory": "#F4EADB"
+  },
+  "deliverables": {
+    "pdf_A5_pages": 5,
+    "poster_A4": "editorial proof",
+    "website": "offline full-text in author ZIP; teaser in this PR",
+    "website_body_paragraphs": 19,
+    "interactive": "Observed / Imagined / Afterimage + film color",
+    "video": "24s 720x1280 h264/aac ambient-only, no narrator",
+    "instagram": "5x1080x1440 images",
+    "tasks": 72
+  },
+  "approval": {
+    "canonical_text": false,
+    "rights": false,
+    "commercial_art": false,
+    "publish": false
+  }
+}
