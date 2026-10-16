@@ -4,12 +4,15 @@ A book with a version history. Each chapter is a complete story with an optional
 
 | Chapter | Read | Product folder | Production board |
 |---|---|---|---|
+| 03 — Viết cho Sài Gòn của t | Reference intake; reader chapter pending | [chapters/viet-cho-sai-gon-cua-t](chapters/viet-cho-sai-gon-cua-t/) | [Supplied board](chapters/viet-cho-sai-gon-cua-t/references/project-board-v01/PROJECT_BOARD.html) |
 | 04 — Expected_utility | [Online](https://jasonthedataguy.github.io/json-under-revision/chapters/04/) | [chapters/expected-utility](chapters/expected-utility/) | [Board](chapters/expected-utility/previews/product-board.jpg) |
 | 07 — Cơm nguội | [Online](https://jasonthedataguy.github.io/json-under-revision/chapters/07/) | [chapters/com-nguoi](chapters/com-nguoi/) | [Board](chapters/com-nguoi/previews/product-board.jpg) |
 
 ## Repository
 
 `book.json` is the ordered registry. Each `chapters/<slug>/` contains its metadata, production recipe, preserved original and selected prose, artwork source/crops, A5 proof, web page, audio, video cuts, channel packs, documentation and previews. Shared design and website templates live in `shared/`; builders live in `scripts/`. See [architecture](docs/ARCHITECTURE.md) and [design review](docs/PRODUCT_REVIEW.md).
+
+Chapter 03 currently contains the complete supplied Saigon project-board reference and a documented production plan. Its 12 original files are checksum-verified; the source board's provisional number 01 is superseded by Chapter 03 in current metadata. No complete manuscript was supplied, so this chapter remains `publish: false` and its product inventory records the missing deliverables.
 
 Earlier work remains under `archive/`, with a checksum-verified [migration map](docs/MIGRATION.json). The complete prior Expected_utility delivery is unchanged. Existing chapter URLs and earlier media download URLs remain supported. Private ignored voice scratch was neither moved into the archive nor included in product ZIPs.
 

@@ -41,7 +41,7 @@ def check_site():
             if target.is_dir():target/= 'index.html'
             assert target.is_file(),f'Broken link: {path.relative_to(site)} => {link}'
             if parsed.fragment and target in pages:assert unquote(parsed.fragment) in pages[target].ids,f'Broken anchor: {link}'
-    urls=set();numbers=set();count=0
+    urls=set();numbers=set();count=0;reference_count=0
     for folder,meta in chapters():
         assert meta['schema_version']==1
         assert re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*',meta['slug'])
@@ -50,7 +50,22 @@ def check_site():
         for route in [meta['canonical_path'],*meta['aliases']]:
             assert route not in urls;urls.add(route)
             assert re.fullmatch(r'chapters/[a-z0-9-]+/',route)
-        if not meta['publish']:continue
+        if meta.get('reference_manifest'):
+            manifest=read_json(safe_path(folder,meta['reference_manifest']))
+            imported=set()
+            for item in manifest['files']:
+                path=safe_path(folder,item['path'])
+                assert path not in imported,f'Duplicate reference path: {path}'
+                imported.add(path)
+                assert path.is_file(),f'Missing supplied reference: {path}'
+                data=path.read_bytes()
+                assert len(data)==item['bytes'],f'Reference size changed: {path}'
+                assert hashlib.sha256(data).hexdigest()==item['sha256'],f'Supplied reference changed: {path}'
+                reference_count+=1
+        if not meta['publish']:
+            for route in [meta['canonical_path'],*meta['aliases']]:
+                assert not (site/route).exists(),f'Draft chapter route was published: {route}'
+            continue
         count+=1
         expected=[normalize(plain(p)) for p in paragraphs(safe_path(folder,meta['canonical_text']))]
         actual=pages[(site/meta['canonical_path']/'index.html').resolve()].story
@@ -84,6 +99,6 @@ def check_site():
     for item in migration['files']:
         assert hashlib.sha256((ROOT/item['to']).read_bytes()).hexdigest()==item['sha256'],f'Archived file changed: {item["to"]}'
     assert len(pages)==2+2*count, 'Expected index, about, chapter and slug alias pages'
-    print(f'PASS: {count} chapter product sets; {len(pages)} pages; links, manuscripts, inventories, ZIPs, edit timelines and {len(migration["files"])} archived files')
+    print(f'PASS: {count} chapter product sets; {len(pages)} pages; links, manuscripts, inventories, ZIPs, edit timelines, {reference_count} supplied references and {len(migration["files"])} archived files; draft routes excluded')
 
 if __name__=='__main__':check_site()

@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "slug": "viet-cho-sai-gon-cua-t",
+  "number": "03",
+  "title": "Viết cho Sài Gòn của t",
+  "subtitle": "Postcard from the city that kept giving.",
+  "publish": false,
+  "language": "vi",
+  "theme": [
+    "belonging",
+    "Saigon",
+    "memory",
+    "friendship",
+    "uncertainty"
+  ],
+  "palette": {
+    "dark": "#1D2A3A",
+    "paper": "#F6EBD7",
+    "accent": "#E9A7B4",
+    "ink": "#1D2A3A"
+  },
+  "artifact": "memory",
+  "canonical_text": "source/approved.md",
+  "canonical_path": "chapters/03/",
+  "aliases": [
+    "chapters/viet-cho-sai-gon-cua-t/"
+  ],
+  "illustration": "references/project-board-v01/assets/saigon_landmark_poster_proof.png",
+  "illustration_provenance": "Supplied project-board concept based on author-provided photographs, as described by the board. Imported as a design reference, not a final cover or documentary photograph. The source photographs are not in this delivery.",
+  "narration": {
+    "status": "awaiting-author-recording",
+    "file": null,
+    "synthetic_voice": false
+  },
+  "video_mode": "planned edit cuts awaiting author-recorded narration",
+  "print_status": "not supplied; A5 proof planned",
+  "qr_status": "deferred",
+  "location": "Sài Gòn",
+  "status": "reference-only",
+  "source_status": "not-supplied",
+  "reference_manifest": "docs/REFERENCE_IMPORT.json",
+  "reference_board": "references/project-board-v01/PROJECT_BOARD.html"
+}

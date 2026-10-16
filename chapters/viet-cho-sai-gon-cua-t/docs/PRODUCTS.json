@@ -1,0 +1,76 @@
+{
+  "chapter": "viet-cho-sai-gon-cua-t",
+  "status": "reference-only",
+  "products": [
+    {
+      "product": "Original offline project board",
+      "state": "imported reference",
+      "path": "references/project-board-v01/PROJECT_BOARD.html"
+    },
+    {
+      "product": "Art direction and narrative production plan",
+      "state": "imported reference",
+      "path": "references/project-board-v01/docs/PROJECT_BOARD.md"
+    },
+    {
+      "product": "75-task baseline",
+      "state": "historical reference; not current completion",
+      "path": "references/project-board-v01/data/tasks.json"
+    },
+    {
+      "product": "Poster concept and SVG alternative",
+      "state": "imported design concepts",
+      "path": "references/project-board-v01/assets/saigon_landmark_poster_proof.png"
+    },
+    {
+      "product": "Board screenshots",
+      "state": "supplied board previews; not chapter website QA",
+      "path": "references/project-board-v01/assets/desktop_preview.png"
+    },
+    {
+      "product": "Complete manuscript and selected prose",
+      "state": "not supplied",
+      "path": null
+    },
+    {
+      "product": "Scene exports and final cover",
+      "state": "not built",
+      "path": null
+    },
+    {
+      "product": "Illustrated A5 proof",
+      "state": "not supplied or built",
+      "path": null
+    },
+    {
+      "product": "Reader website and memory journey",
+      "state": "planned; chapter unpublished",
+      "path": null
+    },
+    {
+      "product": "Social platform packs",
+      "state": "not supplied or built",
+      "path": null
+    },
+    {
+      "product": "Film edit cuts and caption timings",
+      "state": "not supplied or built",
+      "path": null
+    },
+    {
+      "product": "Author-recorded narration",
+      "state": "awaiting author recording; no synthetic voice",
+      "path": null
+    }
+  ],
+  "next_inputs": [
+    "Complete chapter manuscript",
+    "Selection of prose and artwork for production"
+  ],
+  "production_preferences": [
+    "Supplied artwork and crops",
+    "Cuts prepared for author-recorded narration",
+    "QR deferred",
+    "Author-managed social posting"
+  ]
+}

@@ -7,3 +7,5 @@
 *.md whitespace=-blank-at-eol
 # Preserve the selected delivery byte-for-byte, including its original newlines.
 archive/** -text -whitespace
+# Supplied chapter references retain their exact original bytes and newlines.
+chapters/*/references/** -text -whitespace
