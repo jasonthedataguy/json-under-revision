@@ -1,0 +1,19 @@
+{
+  "mode": "local",
+  "widths": [
+    320,
+    390,
+    820,
+    1440
+  ],
+  "homepage_cards": 6,
+  "chapter": "06",
+  "title": "Play to Win, Don’t Play Not to Lose",
+  "original_paragraphs": 41,
+  "original_sha256": "a15ad441628a0c232fdeea52ba4c3e53a53da36cd5a7e81b7558c63136a1c3e1",
+  "matrix": "both phases, all four cells, keyboard, reset, original excerpts passed",
+  "no_javascript": "full prose and default matrix passed",
+  "downloads": "original and retitled manuscript verified byte-for-byte",
+  "existing_chapters": "all five manuscripts and interactions passed",
+  "errors": []
+}

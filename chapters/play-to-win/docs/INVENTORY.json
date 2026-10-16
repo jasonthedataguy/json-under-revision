@@ -1,0 +1,97 @@
+[
+  {
+    "path": "source/approved.md",
+    "bytes_at_build": 15534,
+    "sha256_normalized_text_lf": "22ab15b4a013f9c99765af358070c12133280a9c9960c1280341524fcb9dab65"
+  },
+  {
+    "path": "source/original.md",
+    "bytes_at_build": 15519,
+    "sha256_normalized_text_lf": "b23d8dd32aabf650ceb7d58e3482516c56601e9ab5be0c5e67a3997810f9234f"
+  },
+  {
+    "path": "source/revisions.log",
+    "bytes_at_build": 260,
+    "sha256_normalized_text_lf": "3a9939b88b96f1f3e383d6deafaa4c4fd9aeafbfda4923f039292fa85eede875"
+  },
+  {
+    "path": "artwork/exports/hero-mobile.jpg",
+    "bytes_at_build": 155508,
+    "sha256_normalized_text_lf": "53b06ce0eb47774e852968e07088306476d30f63c469233d78772e1c032857ac"
+  },
+  {
+    "path": "artwork/exports/hero.jpg",
+    "bytes_at_build": 225889,
+    "sha256_normalized_text_lf": "d4680d3af23281958e671d21a424f8615765bd485f97be51c958bcca1076420b"
+  },
+  {
+    "path": "artwork/scenes/index.json",
+    "bytes_at_build": 2220,
+    "sha256_normalized_text_lf": "b494f3cb8d9e4808c689e3a5c25636f61461a3d694a02134ff9b262db726fe72"
+  },
+  {
+    "path": "artwork/source/01-eight-bamboo.svg",
+    "bytes_at_build": 5243,
+    "sha256_normalized_text_lf": "1e054e53d6763d8b5380eb4c429ac72030864d0d4b3da60272fff247e2c98338"
+  },
+  {
+    "path": "artwork/source/02-poker.svg",
+    "bytes_at_build": 3548,
+    "sha256_normalized_text_lf": "5d7bc181ad4164b7e25d0f1aa552464b842eff68ae758a54b7726164b5806832"
+  },
+  {
+    "path": "artwork/source/03-two-seats.svg",
+    "bytes_at_build": 3779,
+    "sha256_normalized_text_lf": "4c3800a385d29760d4b6f2617244ff73857831e6d3d3a367af4946cc608df46a"
+  },
+  {
+    "path": "artwork/source/04-beliefs.svg",
+    "bytes_at_build": 3640,
+    "sha256_normalized_text_lf": "41e38f59d7c93bc37ee3849e2b75ac4dfe3286e6319fe40627929437a0b5c746"
+  },
+  {
+    "path": "artwork/source/05-meeting.svg",
+    "bytes_at_build": 3792,
+    "sha256_normalized_text_lf": "7852a02562fafe1d9d5838c564f305ae2a24917431bd3d4810ffc633d899e157"
+  },
+  {
+    "path": "artwork/source/06-open-book.svg",
+    "bytes_at_build": 3788,
+    "sha256_normalized_text_lf": "ce0b37af12243d2905aa5a0375ace19df4dabf4dcd8d2444f4e826c4c6a12789"
+  },
+  {
+    "path": "web/assets/chapter.css",
+    "bytes_at_build": 3547,
+    "sha256_normalized_text_lf": "bc19466eca257ff963dcdb1b460ad495093681f40d316ffa0ee4135c6c5878d3"
+  },
+  {
+    "path": "web/assets/chapter.js",
+    "bytes_at_build": 4237,
+    "sha256_normalized_text_lf": "45946ac7450e80622173b423ac380846af797829b61df3247628033b8cf6aebe"
+  },
+  {
+    "path": "web/index.html",
+    "bytes_at_build": 40843,
+    "sha256_normalized_text_lf": "3dcc96a7950d85ed7509cd09d66da79ec71dc9366b868303903d3db698bb7521"
+  },
+  {
+    "path": "web/template.html",
+    "bytes_at_build": 4985,
+    "sha256_normalized_text_lf": "81988fcd5beeecb3b17541304c1fd4f019b3e967bc2c8636de1ad07c007b71aa"
+  },
+  {
+    "path": "previews/project-board.png",
+    "bytes_at_build": 2109954,
+    "sha256_normalized_text_lf": "5e8f62d64b80ce20d6b64a65411e3316e5b51f8f2191e7c428c1a6145379fa40"
+  },
+  {
+    "path": "previews/web-1440.png",
+    "bytes_at_build": 745216,
+    "sha256_normalized_text_lf": "89e3ca8afd54a493ef7ab62fe5b15ce57b45b9422d4da63161dec66efbe166c6"
+  },
+  {
+    "path": "previews/web-390.png",
+    "bytes_at_build": 173375,
+    "sha256_normalized_text_lf": "082109a77804bb3d4107b0083ef5244dcf83b3a96a1e59995783625a7bb552d0"
+  }
+]

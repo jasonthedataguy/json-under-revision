@@ -1,0 +1,37 @@
+{
+  "chapter": "play-to-win",
+  "release_stage": "reader",
+  "products": [
+    {
+      "product": "Selected manuscript",
+      "state": "ready for publication",
+      "path": "source/approved.md"
+    },
+    {
+      "product": "Responsive reader and qualitative beliefs explorer",
+      "state": "ready for publication",
+      "path": "web/index.html"
+    },
+    {
+      "product": "Homepage and chapter artwork",
+      "state": "author-approved vector artwork and raster exports",
+      "path": "artwork/exports/hero.jpg"
+    },
+    {
+      "product": "Artwork provenance",
+      "state": "documented",
+      "path": "artwork/scenes/index.json"
+    },
+    {
+      "product": "Supplied project board",
+      "state": "preserved reference",
+      "path": "previews/project-board.png"
+    }
+  ],
+  "remaining": [
+    "A5 proof and print production",
+    "Video edit cuts, author-recorded narration and captions",
+    "Social platform packs; posting remains author-managed",
+    "QR remains deferred"
+  ]
+}

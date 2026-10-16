@@ -24,14 +24,14 @@ for folder,meta in chapters():
         write_json(folder/'docs/INVENTORY.json',inventory)
         products=[
             {'product':'Selected manuscript','state':'ready for publication','path':meta['canonical_text']},
-            {'product':'Responsive chapter website and memory journey','state':'ready for publication','path':'web/index.html'},
-            {'product':'Homepage and chapter artwork','state':'supplied-art derivative','path':'artwork/exports/hero.jpg'},
-            {'product':'Scene crop provenance','state':'documented','path':'artwork/scenes/index.json'},
+            {'product':meta.get('reader_product_name','Responsive chapter website and memory journey'),'state':'ready for publication','path':'web/index.html'},
+            {'product':'Homepage and chapter artwork','state':meta.get('artwork_status','supplied-art derivative'),'path':'artwork/exports/hero.jpg'},
+            {'product':'Artwork provenance','state':'documented','path':'artwork/scenes/index.json'},
         ]
         if meta.get('reference_board'):products.append({'product':'Supplied project board','state':'preserved reference','path':meta['reference_board']})
         remaining=['A5 proof and print production','Video edit cuts, author-recorded narration and captions','Social platform packs; posting remains author-managed','QR remains deferred']
         write_json(folder/'docs/PRODUCTS.json',{'chapter':meta['slug'],'release_stage':'reader','products':products,'remaining':remaining})
-        table=['# Product set — '+meta['title'],'','This release includes the selected reader chapter, supplied-art crops and the interactive memory journey. Multimedia products are tracked separately.','','| Product | Actual state | File |','|---|---|---|']
+        table=['# Product set — '+meta['title'],'','This release includes the selected reader chapter, artwork and interactive artifact. Multimedia products are tracked separately.','','| Product | Actual state | File |','|---|---|---|']
         table += [f'| {p["product"]} | {p["state"]} | [{p["path"]}](../{p["path"]}) |' for p in products]
         table += ['','Remaining: '+ '; '.join(remaining)+'.','',f'Inventory: {len(inventory)} files; LF-normalized text and raw binary SHA-256 checksums. Supplied references retain their separate import manifest when present.']
         (folder/'docs/PRODUCT_SET.md').write_text('\n'.join(table)+'\n',encoding='utf-8')

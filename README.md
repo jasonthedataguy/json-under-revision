@@ -8,6 +8,7 @@ A book with a version history. Each chapter is a complete story with an optional
 | 03 — Viết cho Sài Gòn của t | [Online](https://jasonthedataguy.github.io/json-under-revision/chapters/03/) | [chapters/viet-cho-sai-gon-cua-t](chapters/viet-cho-sai-gon-cua-t/) | [Supplied board](chapters/viet-cho-sai-gon-cua-t/references/project-board-v01/PROJECT_BOARD.html) |
 | 04 — Expected_utility | [Online](https://jasonthedataguy.github.io/json-under-revision/chapters/04/) | [chapters/expected-utility](chapters/expected-utility/) | [Board](chapters/expected-utility/previews/product-board.jpg) |
 | 05 — For Mother Russia | [Online](https://jasonthedataguy.github.io/json-under-revision/chapters/05/) | [chapters/for-mother-russia](chapters/for-mother-russia/) | [Supplied board](chapters/for-mother-russia/references/mother-russia-v01/docs/PROJECT_BOARD.html) |
+| 06 — Play to Win, Don’t Play Not to Lose | [Online](https://jasonthedataguy.github.io/json-under-revision/chapters/06/) | [chapters/play-to-win](chapters/play-to-win/) | [Approved board](docs/chapters/choi-de-khong-thua/PROJECT_BOARD.html) |
 | 07 — Cơm nguội | [Online](https://jasonthedataguy.github.io/json-under-revision/chapters/07/) | [chapters/com-nguoi](chapters/com-nguoi/) | [Board](chapters/com-nguoi/previews/product-board.jpg) |
 
 ## Repository
@@ -21,6 +22,8 @@ Chapter 03 publishes the author's original manuscript, eight supplied-art crops 
 Chapter 05 publishes For Mother Russia's original 25-paragraph essay, supplied winter design, seven-node Memory Graph and nine-scene gallery. Its four uploaded ZIPs are preserved as 68 unique reference files; the duplicate video is byte-identical. The author selected 05 because 03 already belongs to Sài Gòn. Supplied PDFs, artwork and filenames retain their working 03 labels; the A5 download is identified as a proposed-edit proof. The 24-second video awaits author narration.
 
 Earlier work remains under `archive/`, with a checksum-verified [migration map](docs/MIGRATION.json). The complete prior Expected_utility delivery is unchanged. Existing chapter URLs and earlier media download URLs remain supported. Private ignored voice scratch was neither moved into the archive nor included in product ZIPs.
+
+Chapter 06 publishes all 41 original paragraphs of Play to Win, Don’t Play Not to Lose with the approved jade/table illustrations and a qualitative before/after beliefs matrix. The author authorized a new title and chapter number; validation permits that heading change and requires the body to remain byte-identical. The current release is the reader and interactive artifact. Print, video, narration and social production remain separately tracked.
 
 ## Build the website
 

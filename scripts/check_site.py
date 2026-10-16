@@ -29,6 +29,20 @@ class Page(HTMLParser):
 
 def normalize(text):return ' '.join(text.split())
 
+def validate_author_manuscript(folder,meta):
+    source=meta['manuscript_source']
+    original=safe_path(folder,source['path']).read_bytes()
+    assert len(original)==source['bytes'],f'Author original byte count changed: {meta["slug"]}'
+    assert hashlib.sha256(original).hexdigest()==source['sha256'],f'Author original changed: {meta["slug"]}'
+    expected=original
+    if meta['text_policy']=='verbatim-author-body':
+        heading,separator,body=original.partition(b'\n')
+        assert separator,'Original manuscript needs a heading and body'
+        ending=b'\r\n' if heading.endswith(b'\r') else b'\n'
+        expected=f'# {meta["number"]}. {meta["title"]}'.encode('utf-8')+ending+body
+    assert safe_path(folder,meta['canonical_text']).read_bytes()==expected,f'Published text differs from authorized manuscript: {meta["slug"]}'
+    return original
+
 def check_site():
     site=ROOT/'site'
     pages={p.resolve():Page(p.read_text(encoding='utf-8')) for p in site.rglob('*.html')}
@@ -69,12 +83,8 @@ def check_site():
             continue
         count+=1
         reader=reader_release(meta)
-        if meta.get('text_policy')=='verbatim-author-original':
-            source=meta['manuscript_source']
-            original=safe_path(folder,source['path']).read_bytes()
-            assert len(original)==source['bytes'],f'Author original byte count changed: {meta["slug"]}'
-            assert hashlib.sha256(original).hexdigest()==source['sha256'],f'Author original changed: {meta["slug"]}'
-            assert safe_path(folder,meta['canonical_text']).read_bytes()==original,f'Published text differs from author original: {meta["slug"]}'
+        if meta.get('text_policy') in {'verbatim-author-original','verbatim-author-body'}:
+            original=validate_author_manuscript(folder,meta)
             recording_script=folder/'audio/reading-script.md'
             if recording_script.exists():assert recording_script.read_bytes()==original,f'Recording script differs from author original: {meta["slug"]}'
             if meta['artifact']=='memory':

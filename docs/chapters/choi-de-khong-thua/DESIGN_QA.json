@@ -1,0 +1,23 @@
+{
+  "status": "design approved; author title correction applied",
+  "title": "Play to Win, Don’t Play Not to Lose",
+  "chapter": "06",
+  "design_version": "v02",
+  "source_bytes": 15519,
+  "source_sha256": "a15ad441628a0c232fdeea52ba4c3e53a53da36cd5a7e81b7558c63136a1c3e1",
+  "original_paragraphs": 41,
+  "verified_source_excerpts": 5,
+  "svg_studies": 6,
+  "screen_widths": [
+    320,
+    390,
+    820,
+    1920
+  ],
+  "interaction_checks": "both phases and all four cells, keyboard, one selected cell, live description",
+  "static_no_js": "initial qualitative matrix readable",
+  "pdf_pages": 1,
+  "linked_local_files": "all present",
+  "site_registry": "unchanged; chapter not registered",
+  "page_errors": []
+}

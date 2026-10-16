@@ -1,0 +1,24 @@
+{
+  "file": "original.md",
+  "received_on": "2026-10-17",
+  "bytes": 15519,
+  "sha256": "a15ad441628a0c232fdeea52ba4c3e53a53da36cd5a7e81b7558c63136a1c3e1",
+  "paragraphs": 41,
+  "original_heading": "# 5. Chơi để không thua",
+  "text_policy": "original preserved verbatim; working manuscript changes only the author-authorized title and chapter number",
+  "working_manuscript": {
+    "file": "manuscript.md",
+    "title": "Play to Win, Don’t Play Not to Lose",
+    "number": "06",
+    "sha256": "116573a7d6778968bdde5be030d9fb764346a992cd263d83efb94c6e2727e42b",
+    "body_sha256": "8c3eef9951e21f0e66323adb33db8c2721cd1bb5da678fd79fa4ce9aa8a08e17",
+    "body_identical_to_original": true
+  },
+  "selected_excerpts": [
+    "Playing not to lose, instead of playing to win.",
+    "Và rồi Rachel đánh ra quân tám tre.",
+    "Điều thay đổi là beliefs của Eleanor về Rachel, về Nick và về hậu quả của từng lựa chọn.",
+    "Một quân mạt chược mà làm người ta phải tính lại cả bài toán.",
+    "Đôi khi hiểu được người khác đang muốn gì còn quan trọng hơn việc chứng minh mình đúng."
+  ]
+}

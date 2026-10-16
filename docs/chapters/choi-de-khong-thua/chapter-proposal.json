@@ -1,0 +1,41 @@
+{
+  "title": "Play to Win, Don’t Play Not to Lose",
+  "slug": "choi-de-khong-thua",
+  "status": "reader-release-prepared",
+  "publish": true,
+  "design_version": "v02",
+  "source_number": "5",
+  "book_number": "06",
+  "number_status": "approved with design; 05 remains For Mother Russia",
+  "source": "source/original.md",
+  "working_manuscript": "source/manuscript.md",
+  "manuscript_policy": "title and chapter number updated; all 41 body paragraphs remain verbatim",
+  "proposed_artifact": "beliefs-and-payoffs-explorer",
+  "approval": {
+    "date": "2026-10-17",
+    "user_reply": "yes approve, but the name should be play to win dont play not to lose",
+    "scope": "design direction, chapter number 06 and title correction"
+  },
+  "palette": {
+    "jade": "#163E35",
+    "ivory": "#F3E8D0",
+    "brass": "#C8A365",
+    "coral": "#BD6756",
+    "oxblood": "#5B2E31",
+    "ink": "#142721"
+  },
+  "art_direction": "An eight-bamboo tile offered across a jade table; quiet cinematic lighting and paper texture; original geometric vector studies.",
+  "narration": "author-recorded; pending",
+  "qr": "deferred",
+  "deployment": "authorized by the subsequent request to appear on the homepage",
+  "reference_folder": "projectboard/",
+  "strategy_reference": "json_immersive_product_strategy.pdf, pages 3–8 and 17",
+  "reference_boards": [
+    "Expected Utility Multimedia Showcase-1.png",
+    "Dating Algorithm Creative Production Board.png"
+  ],
+  "strategy_used_as": "design reference, not authorization for launches, financial commitments or text edits",
+  "production_slug": "play-to-win",
+  "production_folder": "chapters/play-to-win",
+  "canonical_path": "chapters/06/"
+}
