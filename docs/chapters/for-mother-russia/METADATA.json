@@ -1,0 +1,49 @@
+{
+  "working_chapter": "03",
+  "title": "For Mother Russia",
+  "slug": "for-mother-russia",
+  "series": ".json — Jason, under revision",
+  "narrator_age": 23,
+  "publication_approved": false,
+  "release_status": "proof_only",
+  "theme": [
+    "dreams",
+    "grandfather",
+    "memory",
+    "Russia",
+    "video-game heroism"
+  ],
+  "visual": {
+    "palette": {
+      "navy": "#061724",
+      "blue": "#23548C",
+      "ice": "#C8DDF1",
+      "yellow": "#F6C16E",
+      "paper": "#F6F1E5"
+    },
+    "wardrobe": "all black with yellow beanie",
+    "companion": "Gấu, fluffy white dog — symbolic poster addition"
+  },
+  "digital": {
+    "reader": "locally built, not deployed",
+    "nodes": 7,
+    "full_paragraphs": 25
+  },
+  "pdf": {
+    "pages": 7,
+    "status": "A5 editorial proof only"
+  },
+  "video": {
+    "seconds": 24,
+    "dimensions": "720x1280",
+    "narrated": false,
+    "final": false
+  },
+  "tasks": {
+    "count": 68,
+    "ready": 22,
+    "proof": 11,
+    "todo": 12,
+    "blocked": 23
+  }
+}
