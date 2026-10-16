@@ -12,13 +12,15 @@ from common import ROOT, chapters, inline, paragraphs, plain, read_json, safe_pa
 
 def reader_release(meta):
     stage=meta.get('release_stage','multimedia')
-    if stage not in {'reader','multimedia'}:raise ValueError('Unknown chapter release stage: '+stage)
+    if stage not in {'reader','multimedia','supplied'}:raise ValueError('Unknown chapter release stage: '+stage)
     return stage=='reader'
 
 def render_chapter(folder,meta,config,next_meta):
     reader=reader_release(meta)
+    supplied=meta.get('release_stage')=='supplied'
     name='chapter-reader.html' if reader else 'chapter.html'
-    template=Template((ROOT/'shared'/name).read_text(encoding='utf-8'))
+    template_path=safe_path(folder,meta['web_template']) if supplied else ROOT/'shared'/name
+    template=Template(template_path.read_text(encoding='utf-8'))
     prose=paragraphs(safe_path(folder,meta['canonical_text']))
     history=meta.get('history_text','source/original.md')
     values={
@@ -29,7 +31,7 @@ def render_chapter(folder,meta,config,next_meta):
       'tags':''.join(f'<span class="tag">{html.escape(tag)}</span>' for tag in meta['theme']),
       'story':''.join(f'<p>{inline(p)}</p>' for p in prose),
       'closing_quote':inline(prose[-1]),
-      'artifact':artifact(folder,meta),
+      'artifact':'' if supplied else artifact(folder,meta),
       'film_note':'Những khoảnh khắc từ chương được đặt cạnh nhau, cùng chữ trên màn hình và âm thanh nền.',
       'original':''.join(f'<p>{inline(p)}</p>' for p in paragraphs(safe_path(folder,history))),
       'history_label':html.escape(meta.get('history_label','original.md — bản gốc')),
@@ -38,7 +40,7 @@ def render_chapter(folder,meta,config,next_meta):
       'gallery':'',
       'next_url':'../../'+next_meta['canonical_path'],'next_title':html.escape(next_meta['title']),
     }
-    if not reader:
+    if not reader and not supplied:
         alts=read_json(folder/'social/instagram/alt-text.json')
         values['gallery']=''.join(f'<a href="social/instagram/slide-{i:02d}.jpg" download><img src="social/instagram/slide-{i:02d}.jpg" alt="{html.escape(alts[i-1]["alt"])}" width="1080" height="1440" loading="lazy"></a>' for i in range(1,6))
     return template.substitute(values),values
@@ -74,6 +76,7 @@ def build_site():
         chapter=site/meta['canonical_path'];chapter.mkdir(parents=True)
         for name in ['artwork','book','audio','video','social','docs','previews','source']:
             if (folder/name).is_dir():shutil.copytree(folder/name,chapter/name)
+        if (folder/'web/assets').is_dir():shutil.copytree(folder/'web/assets',chapter/'assets')
         shutil.copy2(folder/'chapter.json',chapter/'chapter.json')
         next_meta=published[(index+1)%len(published)][1]
         page,values=render_chapter(folder,meta,config,next_meta)

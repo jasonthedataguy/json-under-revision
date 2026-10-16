@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "slug": "fashion",
+  "number": "02",
+  "title": "Fashion",
+  "subtitle": "Không chỉ để mặc. Có khi quần áo đang kể hộ mình một câu chuyện.",
+  "publish": true,
+  "language": "vi",
+  "theme": [
+    "fashion",
+    "streetwear",
+    "identity",
+    "patina",
+    "family"
+  ],
+  "palette": {
+    "dark": "#062F26",
+    "paper": "#F5EBD8",
+    "accent": "#F47EAC",
+    "ink": "#0F1E1A"
+  },
+  "artifact": "wardrobe",
+  "release_stage": "supplied",
+  "web_template": "web/template.html",
+  "canonical_text": "source/approved.md",
+  "canonical_path": "chapters/02/",
+  "aliases": [
+    "chapters/fashion/"
+  ],
+  "hero_alt": "Fashion — căn phòng xanh và hồng, tủ quần áo và những món đồ đã sống cùng một người.",
+  "illustration": "artwork/source/05_WIDE_HERO.png",
+  "illustration_provenance": "Supplied Fashion v02 artwork; only a homepage crop was derived for this release.",
+  "narration": {
+    "status": "awaiting-author-recording",
+    "file": null,
+    "synthetic_voice": false
+  },
+  "video_mode": "edit cuts awaiting author-recorded narration",
+  "print_status": "supplied editorial proofs; A5 uses the supplied proposed edit, not the published original",
+  "qr_status": "deferred",
+  "source_status": "author-supplied original; published verbatim",
+  "text_policy": "verbatim-author-original",
+  "manuscript_source": {
+    "path": "source/original.md",
+    "received_on": "2026-10-16",
+    "bytes": 7758,
+    "sha256": "b80511a10f1823fe67549e0ae596e677893edc6664c7bad3f5650eb26b3c0486"
+  },
+  "reference_manifest": "docs/REFERENCE_IMPORT.json",
+  "revision_note": "The supplied original is the published text. The proposed edit remains an archived reference."
+}

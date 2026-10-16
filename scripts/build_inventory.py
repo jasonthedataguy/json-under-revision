@@ -5,6 +5,17 @@ from build_site import reader_release
 
 for folder,meta in chapters():
     if not meta['publish']:continue
+    if meta.get('release_stage')=='supplied':
+        inventory=[]
+        for directory in ['source','artwork','book','audio','video','social','web','previews']:
+            for path in sorted((folder/directory).rglob('*')):
+                if path.is_file():inventory.append({'path':path.relative_to(folder).as_posix(),'bytes_at_build':path.stat().st_size,'sha256_normalized_text_lf':artifact_hash(path)})
+        write_json(folder/'docs/INVENTORY.json',inventory)
+        # Imported products keep their actual filenames and documented proof states.
+        for product in read_json(folder/'docs/PRODUCTS.json')['products']:
+            assert (folder/product['path']).is_file(),product
+        print(meta['slug'],len(inventory),'supplied product files inventoried')
+        continue
     if reader_release(meta):
         inventory=[]
         for directory in ['source','artwork','web','previews']:

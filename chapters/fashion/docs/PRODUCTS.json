@@ -1,0 +1,71 @@
+{
+  "chapter": "fashion",
+  "release_stage": "supplied",
+  "products": [
+    {
+      "product": "Original manuscript",
+      "state": "published verbatim",
+      "path": "source/approved.md"
+    },
+    {
+      "product": "Interactive chapter and six-stop Wardrobe Explorer",
+      "state": "ready",
+      "path": "web/index.html"
+    },
+    {
+      "product": "A5 illustrated book",
+      "state": "supplied proposed-edit editorial proof",
+      "path": "book/02_Fashion_Room_in_Revision_A5_PROOF.pdf"
+    },
+    {
+      "product": "A4 album art poster",
+      "state": "supplied art proof",
+      "path": "book/02_Fashion_Album_Poster_A4_ART_PRINT_PROOF.pdf"
+    },
+    {
+      "product": "Vertical film",
+      "state": "24-second animatic awaiting author narration",
+      "path": "video/02_Fashion_RoomInRevision_ANIMATIC_9x16.mp4"
+    },
+    {
+      "product": "Landscape film",
+      "state": "24-second animatic awaiting author narration",
+      "path": "video/02_Fashion_YouTube_LANDSCAPE_ANIMATIC_16x9.mp4"
+    },
+    {
+      "product": "Ambient audio",
+      "state": "supplied synthetic ambience without voice",
+      "path": "audio/ambience.wav"
+    },
+    {
+      "product": "Five-card Instagram carousel",
+      "state": "supplied social artwork",
+      "path": "social/instagram/slide_01_3x4.jpg"
+    },
+    {
+      "product": "Facebook image",
+      "state": "supplied social artwork",
+      "path": "social/facebook_post_1600x900.jpg"
+    },
+    {
+      "product": "YouTube thumbnail",
+      "state": "supplied social artwork",
+      "path": "social/youtube_thumbnail_1280x720.jpg"
+    },
+    {
+      "product": "Original artwork masters",
+      "state": "supplied artwork",
+      "path": "artwork/source/05_WIDE_HERO.png"
+    },
+    {
+      "product": "Production board",
+      "state": "preserved reference",
+      "path": "references/fashion-v02/docs/PROJECT_BOARD.html"
+    }
+  ],
+  "remaining": [
+    "Author-recorded narration and synchronized subtitles",
+    "Final print production",
+    "Author-managed social posting; QR deferred"
+  ]
+}

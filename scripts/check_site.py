@@ -98,7 +98,9 @@ def check_site():
             assert '<video' not in page and '<audio' not in page,'Reader release advertises unfinished media'
             assert not (site/meta['canonical_path']/'product-set.zip').exists()
             continue
-        for plan in read_json(folder/'video/timeline.json'):
+        # Supplied cuts retain their own formats; generated cuts use the shared timeline.
+        plans=[] if meta.get('release_stage')=='supplied' else read_json(folder/'video/timeline.json')
+        for plan in plans:
             assert plan['status']=='edit preview awaiting author narration'
             assert abs(plan['segments'][0]['start'])<.001
             for a,b in zip(plan['segments'],plan['segments'][1:]):assert abs(a['end']-b['start'])<.002
@@ -114,6 +116,10 @@ def check_site():
                 source=(folder/item['path']).read_bytes()
                 assert data==source,f'ZIP differs: {item["path"]}'
             assert 'shared/site.css' in bundle.namelist() and 'shared/site.js' in bundle.namelist()
+            if meta.get('release_stage')=='supplied':
+                for item in read_json(folder/meta['reference_manifest'])['files']:
+                    data=bundle.read(f'chapters/{meta["slug"]}/{item["path"]}')
+                    assert hashlib.sha256(data).hexdigest()==item['sha256'],f'ZIP reference changed: {item["path"]}'
     migration=read_json(ROOT/'docs/MIGRATION.json')
     for item in migration['files']:
         assert hashlib.sha256((ROOT/item['to']).read_bytes()).hexdigest()==item['sha256'],f'Archived file changed: {item["to"]}'

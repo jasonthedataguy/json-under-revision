@@ -12,3 +12,5 @@ chapters/*/references/** -text -whitespace
 # Preserve the author's original attachment, including its CRLF newlines.
 chapters/viet-cho-sai-gon-cua-t/source/original.md -text -whitespace
 chapters/viet-cho-sai-gon-cua-t/source/approved.md -text -whitespace
+chapters/fashion/source/original.md -text -whitespace
+chapters/fashion/source/approved.md -text -whitespace

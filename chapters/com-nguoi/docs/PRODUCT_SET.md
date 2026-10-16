@@ -18,4 +18,4 @@
 
 Remaining: author recording, retimed narration captions, print-specific production and human device review. Social files are prepared; no platform post is claimed.
 
-Inventory: 57 files, 11,763,310 bytes. Checksums use LF-normalized text and raw binary bytes.
+Inventory: 57 files, 11,763,289 bytes. Checksums use LF-normalized text and raw binary bytes.
