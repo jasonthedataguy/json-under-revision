@@ -1,0 +1,33 @@
+{
+  "working_chapter": "04",
+  "title": "Dating Algorithm",
+  "subtitle": "18_feature_importance",
+  "version": "B / Tinder Edition",
+  "part": "03_relationship_modeling",
+  "release_status": "PRODUCTION_PROOF_HOLD",
+  "publication_approved": false,
+  "source": "author-provided DOCX",
+  "visual": {
+    "pine": "#092B25",
+    "pink": "#EF7DA9",
+    "paper": "#F7EBD6",
+    "dress": "dark suit",
+    "eyewear": "ordinary clear prescription glasses",
+    "motif": "pink heart, lecture whiteboard"
+  },
+  "artifacts": {
+    "book": "14-page A5 editorial proof in author ZIP, not printer PDF/X",
+    "digital": "full offline website in author ZIP, teaser on GitHub",
+    "experiment": "ten profile results NOT provided",
+    "video": "24-second 9:16 and 16:9 ambient-only proofs",
+    "social": "5 3:4 Instagram images plus Facebook/YouTube art in author ZIP",
+    "board": "62 editable tasks"
+  },
+  "rights_flags": [
+    "publication author approval",
+    "citations",
+    "participant consent",
+    "stage brand affiliation",
+    "final visual master"
+  ]
+}
