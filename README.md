@@ -11,6 +11,7 @@ A book with a version history. Each chapter is a complete story with an optional
 | 06 — Play to Win, Don’t Play Not to Lose | [Online](https://jasonthedataguy.github.io/json-under-revision/chapters/06/) | [chapters/play-to-win](chapters/play-to-win/) | [Approved board](docs/chapters/choi-de-khong-thua/PROJECT_BOARD.html) |
 | 07 — Cơm nguội | [Online](https://jasonthedataguy.github.io/json-under-revision/chapters/07/) | [chapters/com-nguoi](chapters/com-nguoi/) | [Board](chapters/com-nguoi/previews/product-board.jpg) |
 | 08 — Dating Algorithm | [Online](https://jasonthedataguy.github.io/json-under-revision/chapters/08/) | [chapters/dating-algorithm](chapters/dating-algorithm/) | [Product board](chapters/dating-algorithm/previews/product-board.jpg) |
+| 15 — Three Meeting Theory | [Online](https://jasonthedataguy.github.io/json-under-revision/chapters/15/) | [chapters/three-meeting-theory](chapters/three-meeting-theory/) | [Product board](chapters/three-meeting-theory/previews/product-board.jpg) |
 
 ## Repository
 
@@ -27,6 +28,8 @@ Earlier work remains under `archive/`, with a checksum-verified [migration map](
 Chapter 06 publishes all 41 original paragraphs of Play to Win, Don’t Play Not to Lose with the approved jade/table illustrations and a qualitative before/after beliefs matrix. The author authorized a new title and chapter number; validation permits that heading change and requires the body to remain byte-identical. Its multimedia set adds the complete A5 proof, A4 poster, bookmark, five narration-ready video cuts, captions, recording scripts, social packs and a downloadable bundle. See the [product comparison](chapters/play-to-win/docs/COMPLETENESS_REVIEW.md) and [actual product board](chapters/play-to-win/previews/product-board.jpg).
 
 ## Build the website
+
+Chapter 15 preserves Three Meeting Theory's eight original paragraphs and emphasis, with the supplied blue/yellow design and The Third Intersection explorer. Its 62 kit files remain unchanged references. Downloads include five-page A5 and A4 proofs, the original ambient animatic, a corrected 1080p edit, captions, recording scripts and social artwork. See the [71-item audit](chapters/three-meeting-theory/docs/CHECKLIST_REVIEW.md) for proof states and pending narration, print and artwork work. The chapter number follows the supplied package.
 
 Chapter 08 publishes the supplied Dating Algorithm Version B without changing its 53 essay paragraphs or edition line. Its 65 original kit files remain checksum-verified references, including the working Chapter 04 labels. The product set contains a 14-page A5 proof, A4 poster, two supplied animatics, two reframed 1080p edits, five social cards, recording scripts, captions and the interactive preference/matching/invitation tools. The [62-item checklist audit](chapters/dating-algorithm/docs/CHECKLIST_REVIEW.md) distinguishes verified products from pending narration, real study data/consent, detailed source checks and final print work. No observations are invented. Rebuild the derived cards and cuts with `python scripts/build_supplied_media.py --chapter dating-algorithm --ffmpeg PATH`.
 

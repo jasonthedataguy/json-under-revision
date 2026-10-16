@@ -381,8 +381,8 @@
   },
   {
     "path": "web/index.html",
-    "bytes_at_build": 34930,
-    "sha256_normalized_text_lf": "9a302cf30b2fc2d99e9104a9a201aef3dfa0d0b873fbb36cf24b1d1a89664798"
+    "bytes_at_build": 34943,
+    "sha256_normalized_text_lf": "6c6cf416f54ea4e701690725f68dd65aaeab6669d7fc374bce81c7eeb7fbe7ba"
   },
   {
     "path": "web/template.html",

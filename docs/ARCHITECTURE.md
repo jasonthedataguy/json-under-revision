@@ -24,7 +24,7 @@ archive/                        # original deliveries and earlier work
 site/                           # ignored generated deployment only
 ```
 
-Canonical public number URLs are `/chapters/02/` through `/chapters/08/`. Slug URLs redirect there. Folder identity uses the stable slug so a future table-of-contents change does not require moving source assets. Add a chapter through the scaffold; metadata and the registry drive all builds. No chapter-specific conditionals belong in the site renderer; artifact types use their own small templates.
+Canonical public number URLs are `/chapters/02/` through `/chapters/08/`, plus `/chapters/15/`. Slug URLs redirect there. Three Meeting Theory retains its supplied Chapter 15 label; numbering gaps do not require invented chapters or changed existing URLs. Folder identity uses the stable slug so a future table-of-contents change does not require moving source assets. Add a chapter through the scaffold; metadata and the registry drive all builds. No chapter-specific conditionals belong in the site renderer; artifact types use their own small templates.
 
 The website consumes finished exports, so deployment requires only Python's standard library. Offline production uses Pillow, ReportLab and ffmpeg; PDF QA uses PyMuPDF. All input paths are repo-relative and output writes are restricted to the chapter and generated site folders. The original Expected_utility delivery is retained byte-for-byte, while current products are versioned separately.
 

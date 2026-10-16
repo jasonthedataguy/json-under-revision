@@ -18,7 +18,7 @@ for folder,meta in chapters(args.chapter):
     for index,item in enumerate(recipe['publish_media']['carousel'],1):
         path=f'social/instagram/slide-{index:02d}.jpg'
         save(card(meta,Image.open(folder/item['scene']),item['text'],number=f'{index:02d}',scene_fit='contain'),folder/path)
-        alts.append({'file':path,'alt':item['text']+' — conceptual illustration or diagram from Dating Algorithm.'})
+        alts.append({'file':path,'alt':item['text']+' — conceptual illustration or diagram from '+meta['title']+'.'})
     write_json(folder/'social/alt-text.json',alts)
     first=recipe['publish_media']['carousel'][0]
     poster=card(meta,Image.open(folder/first['scene']),meta['title'],(1080,1920),cover_card=True,scene_fit='contain')

@@ -25,4 +25,8 @@ chapters/dating-algorithm/source/approved.md -text -whitespace
 chapters/dating-algorithm/audio/reading-script.md -text -whitespace
 chapters/dating-algorithm/**/*.csv -text -whitespace
 chapters/dating-algorithm/video/VISUAL_BEAT_CAPTIONS_NOT_VOICE.srt -text -whitespace
+chapters/three-meeting-theory/source/original.md -text -whitespace
+chapters/three-meeting-theory/source/approved.md -text -whitespace
+chapters/three-meeting-theory/audio/reading-script.md -text -whitespace
+chapters/three-meeting-theory/**/*.csv -text -whitespace
 docs/chapters/choi-de-khong-thua/source/*.md -text -whitespace

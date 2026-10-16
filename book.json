@@ -9,7 +9,8 @@
     "for-mother-russia",
     "play-to-win",
     "com-nguoi",
-    "dating-algorithm"
+    "dating-algorithm",
+    "three-meeting-theory"
   ],
   "design": "shared/design.json"
 }
