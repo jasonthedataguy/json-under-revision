@@ -18,6 +18,8 @@ jobs:
           python-version: '3.12'
       - name: Build public files
         run: python scripts/build_site.py
+      - name: Refresh Fashion generated inventory
+        run: python scripts/build_inventory.py --chapter fashion
       - name: Test chapter scaffolding
         run: python -m unittest discover -s tests
       - name: Validate public files
