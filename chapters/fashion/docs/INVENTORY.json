@@ -1,8 +1,8 @@
 [
   {
     "path": "source/approved.md",
-    "bytes_at_build": 7758,
-    "sha256_normalized_text_lf": "b80511a10f1823fe67549e0ae596e677893edc6664c7bad3f5650eb26b3c0486"
+    "bytes_at_build": 6643,
+    "sha256_normalized_text_lf": "fa6d61a045a5c160a45ecd541382077c46a4581b00de6ffd027bf1674ac78c9e"
   },
   {
     "path": "source/original.md",
@@ -10,9 +10,54 @@
     "sha256_normalized_text_lf": "b80511a10f1823fe67549e0ae596e677893edc6664c7bad3f5650eb26b3c0486"
   },
   {
+    "path": "source/revision-2026-10-17.md",
+    "bytes_at_build": 6643,
+    "sha256_normalized_text_lf": "fa6d61a045a5c160a45ecd541382077c46a4581b00de6ffd027bf1674ac78c9e"
+  },
+  {
     "path": "source/revisions.log",
-    "bytes_at_build": 326,
-    "sha256_normalized_text_lf": "c6722e5aaeb79e39df3b8fdb6ec91d9b9361c67738a7fc6b83df2dba134a25e2"
+    "bytes_at_build": 1072,
+    "sha256_normalized_text_lf": "29f3414356e3ecb7c60e1b2681a06974820c9b82d3bcdf4a0c90c82fe98df1ec"
+  },
+  {
+    "path": "source/submitted-2026-10-17.txt",
+    "bytes_at_build": 6644,
+    "sha256_normalized_text_lf": "e5907b317d014492867f9f8d970cee4cdde0e63d7f55dd76a81ee028a4db5b51"
+  },
+  {
+    "path": "artwork/exports/crops.json",
+    "bytes_at_build": 2117,
+    "sha256_normalized_text_lf": "dc689803c3ee697820aab2c8c6a7ec93af985e0b8989349c094e6506f41dd5eb"
+  },
+  {
+    "path": "artwork/exports/detail-01.jpg",
+    "bytes_at_build": 249278,
+    "sha256_normalized_text_lf": "de1682c4ce74340e973d0c1ccab6bc320382c1b33ba770b8ad0e1d5bf32a19e3"
+  },
+  {
+    "path": "artwork/exports/detail-02.jpg",
+    "bytes_at_build": 340971,
+    "sha256_normalized_text_lf": "1f69f22e3a8e0b3797ea96a6aadaba7ca3b50c6bdb4d335cf323f609f0074a91"
+  },
+  {
+    "path": "artwork/exports/detail-03.jpg",
+    "bytes_at_build": 294480,
+    "sha256_normalized_text_lf": "80f07bbb66fb6f03c4fa267c44828f343b06c50171105d324a70b7ed8f5105ac"
+  },
+  {
+    "path": "artwork/exports/detail-04.jpg",
+    "bytes_at_build": 431201,
+    "sha256_normalized_text_lf": "a0953e2ebfcef6586066c430ff253307b846b3dc174c322eafbdce18f0b8348d"
+  },
+  {
+    "path": "artwork/exports/detail-05.jpg",
+    "bytes_at_build": 294302,
+    "sha256_normalized_text_lf": "6e255243aa0acbff023f30eb704e273c485c95a4e4709d4157c4b875b6673f01"
+  },
+  {
+    "path": "artwork/exports/detail-06.jpg",
+    "bytes_at_build": 235883,
+    "sha256_normalized_text_lf": "dc3785f02805f3739303162b2e596662f44003ae27ed85987b729523fa99c1fe"
   },
   {
     "path": "artwork/exports/hero.jpg",
@@ -90,9 +135,69 @@
     "sha256_normalized_text_lf": "d4505cc7d9bce7a69fa80876c429f20334671703b8543447107945dc3d5070f3"
   },
   {
+    "path": "book/BOOKLET_ORDER.json",
+    "bytes_at_build": 310,
+    "sha256_normalized_text_lf": "fda4056e109771029e33a981c1e3b38f1f2f6db52a6bf52379f10affaa67b619"
+  },
+  {
+    "path": "book/Fashion-A4-booklet.pdf",
+    "bytes_at_build": 6051035,
+    "sha256_normalized_text_lf": "251124292a904313fb7e02ccb33b78cc23dc12e808b4d1562d1c54f25eee452d"
+  },
+  {
+    "path": "book/Fashion-A4-ink-saving.pdf",
+    "bytes_at_build": 139972,
+    "sha256_normalized_text_lf": "6bca92df14ab33c64ab5ed147cdb6c46a81783bca17339ec174f91afe6322727"
+  },
+  {
+    "path": "book/Fashion-A5-print.pdf",
+    "bytes_at_build": 6051519,
+    "sha256_normalized_text_lf": "8bd347614103348092067a2645e7ce994ce26531ccebfc333e7e91ca4d52de19"
+  },
+  {
+    "path": "book/Fashion-print-pack.zip",
+    "bytes_at_build": 10011878,
+    "sha256_normalized_text_lf": "45a48f4646929c60bf86b794b9a6dbe1fbe0cc2d291501ffb420330c6e5fa026"
+  },
+  {
+    "path": "book/print-guide.html",
+    "bytes_at_build": 1500,
+    "sha256_normalized_text_lf": "f6e38dbcd1522992a1d0eb34a5d56e88952880c8300fcdfb1965f2d9020f75c5"
+  },
+  {
+    "path": "book/PRINT_FILES.json",
+    "bytes_at_build": 378,
+    "sha256_normalized_text_lf": "a50276d6d7aa4423dbbde80eb8aa860e389836a37da0e121843273533015b9c5"
+  },
+  {
+    "path": "book/PRINT_GUIDE.md",
+    "bytes_at_build": 2159,
+    "sha256_normalized_text_lf": "050193cbed95835816f307bda834092f9b3f703f94a109911dc53599b8222dbf"
+  },
+  {
     "path": "audio/ambience.wav",
     "bytes_at_build": 800044,
     "sha256_normalized_text_lf": "5430144138dca20db768a9ca25b5b0d13518868b1e599a2baf53bd6f020c5eb6"
+  },
+  {
+    "path": "audio/discovery-9x16-script.md",
+    "bytes_at_build": 602,
+    "sha256_normalized_text_lf": "f68f7c01e08cc54d8ca76147e34379e8374fe7ee46df653034103dccac8aaa46"
+  },
+  {
+    "path": "audio/essay-16x9-script.md",
+    "bytes_at_build": 598,
+    "sha256_normalized_text_lf": "4f70bf1b7c4d052ed5cca7be00751f1cc9395f1edf2e143aa9d8f1b7fda07d9e"
+  },
+  {
+    "path": "audio/NARRATION.md",
+    "bytes_at_build": 360,
+    "sha256_normalized_text_lf": "bfd566a1ab90ce3e74723d777d59bffe3b3ef5b3af161b8504bb72a71c88f351"
+  },
+  {
+    "path": "audio/reading-script.md",
+    "bytes_at_build": 6643,
+    "sha256_normalized_text_lf": "fa6d61a045a5c160a45ecd541382077c46a4581b00de6ffd027bf1674ac78c9e"
   },
   {
     "path": "video/02_Fashion_RoomInRevision_ANIMATIC_9x16.mp4",
@@ -108,6 +213,36 @@
     "path": "video/ambient_synthetic.wav",
     "bytes_at_build": 800044,
     "sha256_normalized_text_lf": "5430144138dca20db768a9ca25b5b0d13518868b1e599a2baf53bd6f020c5eb6"
+  },
+  {
+    "path": "video/discovery-9x16.mp4",
+    "bytes_at_build": 769895,
+    "sha256_normalized_text_lf": "a20246adc79d529b4f8c3720123229153938ead5120eee220c229ebcc7930d03"
+  },
+  {
+    "path": "video/discovery-9x16.srt",
+    "bytes_at_build": 603,
+    "sha256_normalized_text_lf": "d420ee88daea40fa1f259ecbac9ece9181f575a11ac49423523d8c1cfdef30c2"
+  },
+  {
+    "path": "video/discovery-9x16.vtt",
+    "bytes_at_build": 598,
+    "sha256_normalized_text_lf": "3b2b87ff9f9ae8ef08130b10bd92d7ee9cb3d87ce91d0207391a9e652a30cd39"
+  },
+  {
+    "path": "video/essay-16x9.mp4",
+    "bytes_at_build": 759952,
+    "sha256_normalized_text_lf": "24d55ac245100080e00a1d13e8b60131f29d283cc572f35aec4e7db4d0090f1b"
+  },
+  {
+    "path": "video/essay-16x9.srt",
+    "bytes_at_build": 603,
+    "sha256_normalized_text_lf": "d420ee88daea40fa1f259ecbac9ece9181f575a11ac49423523d8c1cfdef30c2"
+  },
+  {
+    "path": "video/essay-16x9.vtt",
+    "bytes_at_build": 598,
+    "sha256_normalized_text_lf": "3b2b87ff9f9ae8ef08130b10bd92d7ee9cb3d87ce91d0207391a9e652a30cd39"
   },
   {
     "path": "video/frames/concat.txt",
@@ -171,73 +306,158 @@
   },
   {
     "path": "video/NARRATION_DRAFT.md",
-    "bytes_at_build": 1262,
-    "sha256_normalized_text_lf": "e39e0705ca2f43fa025a212b904e6ebcec8665835dfa3ec7e49e4d224ee5b3e3"
+    "bytes_at_build": 438,
+    "sha256_normalized_text_lf": "af84b0b7c756c32d38adeafcce90d379a14f6ad1abb111569bd240cf97da7eb4"
   },
   {
     "path": "video/STORYBOARD.md",
-    "bytes_at_build": 1084,
-    "sha256_normalized_text_lf": "9dd49bd12aa9ec03823704979b41d4d7a2af5385de1038cea5627319a9bfb5c7"
+    "bytes_at_build": 605,
+    "sha256_normalized_text_lf": "cf9ba55998dbe612975a8ca4813b9556091e15bbfb7f3dca8e7ecfc0bb5dec69"
+  },
+  {
+    "path": "video/timeline.json",
+    "bytes_at_build": 2959,
+    "sha256_normalized_text_lf": "8ac2fa535f49fdfc0afbb055f6b5847d92265d72cedb7dcfe0a1a17ce87453d7"
+  },
+  {
+    "path": "social/alt-text.json",
+    "bytes_at_build": 4381,
+    "sha256_normalized_text_lf": "1ab498b2096cbe00a7a3f8b869b12735c7ac0998dd152834370cc4f6b9f09b95"
   },
   {
     "path": "social/facebook_post.md",
-    "bytes_at_build": 856,
-    "sha256_normalized_text_lf": "ec520c839e87acd2392a5679a88edc4a1aa32d6be6c3f7c5fe360716dc59b1f7"
+    "bytes_at_build": 488,
+    "sha256_normalized_text_lf": "2eca8daa8d50666f9292e84f3ff6d5afe5a86480c81515a3ac5f42b93d5d92d3"
   },
   {
     "path": "social/facebook_post_1600x900.jpg",
-    "bytes_at_build": 494379,
-    "sha256_normalized_text_lf": "7e486b5aa6085da7e11912f39d3225b182b5605b4792c9ec1297abb4a07fefc4"
+    "bytes_at_build": 233297,
+    "sha256_normalized_text_lf": "a82481ee5a9adee4ca519c6c83a9d7da5b64ae3d31d9b5425b2f7ce95e427938"
+  },
+  {
+    "path": "social/Fashion-social-pack.zip",
+    "bytes_at_build": 5756147,
+    "sha256_normalized_text_lf": "0ed79cd2b09fade8309452e7fd6e07f2267d94292f698bfba505de7cc0c53195"
+  },
+  {
+    "path": "social/instagram/alt-text.json",
+    "bytes_at_build": 2341,
+    "sha256_normalized_text_lf": "665f3e6cca51c0132980c22b861ec0932b87f226a4448daa0c0b47207b0da1bb"
+  },
+  {
+    "path": "social/instagram/caption.md",
+    "bytes_at_build": 419,
+    "sha256_normalized_text_lf": "4a02fed1cf512583d93660772e7ccea056e4788b4275b595208821f1f899d7e6"
   },
   {
     "path": "social/instagram/feed_4x5.jpg",
-    "bytes_at_build": 486893,
-    "sha256_normalized_text_lf": "4c05c32bc4e260a3992b2e6bf2b33bccfde1e9b9ac202bcf01947867e491c6fe"
+    "bytes_at_build": 344923,
+    "sha256_normalized_text_lf": "2e69d3f2c4d5669e424a6f4007ed6608f9c3aa79fbb8d069bb6e14c8b6d554be"
+  },
+  {
+    "path": "social/instagram/slide-01.jpg",
+    "bytes_at_build": 253808,
+    "sha256_normalized_text_lf": "47ab58d8694617faab990feaf19571101045d5c80813d90677801150ab77ea8e"
+  },
+  {
+    "path": "social/instagram/slide-02.jpg",
+    "bytes_at_build": 276121,
+    "sha256_normalized_text_lf": "f1563336eb480c75d5db449be87e25e2b9b2da1849927a9416668bd1799a4530"
+  },
+  {
+    "path": "social/instagram/slide-03.jpg",
+    "bytes_at_build": 324703,
+    "sha256_normalized_text_lf": "caa241d0f32945f011c6cab1a52ce70ff85953818a6635798c8c7441d1096d27"
+  },
+  {
+    "path": "social/instagram/slide-04.jpg",
+    "bytes_at_build": 253755,
+    "sha256_normalized_text_lf": "60450b48bc4c738275ee83f54d3f210a7acaee7d337a87a6213ac8cbf7ddd234"
+  },
+  {
+    "path": "social/instagram/slide-05.jpg",
+    "bytes_at_build": 240513,
+    "sha256_normalized_text_lf": "eb1f418429eac9f16ca14ea348168e6fc7662a424005d5c247ddbb0d962e5dff"
   },
   {
     "path": "social/instagram/slide_01_3x4.jpg",
-    "bytes_at_build": 428516,
-    "sha256_normalized_text_lf": "ccadfa24cdfa2da7bbdee6c35e23119ef9df0ea8d68b15211b076d6204e25954"
+    "bytes_at_build": 253808,
+    "sha256_normalized_text_lf": "47ab58d8694617faab990feaf19571101045d5c80813d90677801150ab77ea8e"
   },
   {
     "path": "social/instagram/slide_02_3x4.jpg",
-    "bytes_at_build": 213278,
-    "sha256_normalized_text_lf": "65a79b702df12ec3b8a846b225767b6682c6ba63739ac0230e15d22919e2c793"
+    "bytes_at_build": 276121,
+    "sha256_normalized_text_lf": "f1563336eb480c75d5db449be87e25e2b9b2da1849927a9416668bd1799a4530"
   },
   {
     "path": "social/instagram/slide_03_3x4.jpg",
-    "bytes_at_build": 246243,
-    "sha256_normalized_text_lf": "04d95630efd036b16d68d04d439175b85045f73c548a172196575b604baf5089"
+    "bytes_at_build": 324703,
+    "sha256_normalized_text_lf": "caa241d0f32945f011c6cab1a52ce70ff85953818a6635798c8c7441d1096d27"
   },
   {
     "path": "social/instagram/slide_04_3x4.jpg",
-    "bytes_at_build": 234821,
-    "sha256_normalized_text_lf": "a8d90914d1d1fa6f5d0e6b37d74441d95eabb25be6a04c3e10336556f1d0d056"
+    "bytes_at_build": 253755,
+    "sha256_normalized_text_lf": "60450b48bc4c738275ee83f54d3f210a7acaee7d337a87a6213ac8cbf7ddd234"
   },
   {
     "path": "social/instagram/slide_05_3x4.jpg",
-    "bytes_at_build": 199476,
-    "sha256_normalized_text_lf": "0e355b277869e05cd7ec90b5d5edf1ff75b3797a11e0633e67088d552dab2039"
+    "bytes_at_build": 240513,
+    "sha256_normalized_text_lf": "eb1f418429eac9f16ca14ea348168e6fc7662a424005d5c247ddbb0d962e5dff"
   },
   {
     "path": "social/instagram/square_1x1.jpg",
-    "bytes_at_build": 401592,
-    "sha256_normalized_text_lf": "f0bc2c6f70425bf7410cfd15c67bce2cd9c078b3d121809b487beafb2e121666"
+    "bytes_at_build": 320877,
+    "sha256_normalized_text_lf": "044d104102b53c1d1df6fd47269aae55503733738c9fe1e8a784ffed13e05ce2"
+  },
+  {
+    "path": "social/instagram/story-01.jpg",
+    "bytes_at_build": 290290,
+    "sha256_normalized_text_lf": "d109bbf241803a67a867404230698b024f8c387d7b34a7199662567df4276a9c"
+  },
+  {
+    "path": "social/instagram/story-02.jpg",
+    "bytes_at_build": 340555,
+    "sha256_normalized_text_lf": "aad53bf5b08302ba77ec90f7576e0d49af76ed14bc9f0d0ca067ca85934d818f"
+  },
+  {
+    "path": "social/instagram/story-03.jpg",
+    "bytes_at_build": 228782,
+    "sha256_normalized_text_lf": "832b78b004b1405804102f7c8e0f4238cbad21f0860881ba27bbdfb9f6c251bf"
   },
   {
     "path": "social/instagram_caption.md",
-    "bytes_at_build": 739,
-    "sha256_normalized_text_lf": "49e4973a633289ab011db6cb4285dff256bfa53ac35c596588a7130443801761"
+    "bytes_at_build": 419,
+    "sha256_normalized_text_lf": "4a02fed1cf512583d93660772e7ccea056e4788b4275b595208821f1f899d7e6"
+  },
+  {
+    "path": "social/README.md",
+    "bytes_at_build": 923,
+    "sha256_normalized_text_lf": "bbbc92d49f9832fea351cf12c3892e6d7045d38584f064520887498bec81e397"
+  },
+  {
+    "path": "social/tiktok/caption.md",
+    "bytes_at_build": 302,
+    "sha256_normalized_text_lf": "a238e90959a5f68c771b635139323784b372c6ad5fec03ccdb492d0c64c739b0"
+  },
+  {
+    "path": "social/tiktok/cover.jpg",
+    "bytes_at_build": 366022,
+    "sha256_normalized_text_lf": "2282be57bbdbddd9a4bcf6566ff35dc4104dc801c079be6d239c5e412550af47"
   },
   {
     "path": "social/tiktok_youtube.md",
-    "bytes_at_build": 884,
-    "sha256_normalized_text_lf": "5f2fe50ef2cfb4961e329cfd944b52795f26e51511925522cab7f1406f464ceb"
+    "bytes_at_build": 495,
+    "sha256_normalized_text_lf": "68f5fa5833aed386bf061230746eabb1da3b07d50be7e8a4ed560849f4eaf05b"
+  },
+  {
+    "path": "social/youtube/description.md",
+    "bytes_at_build": 623,
+    "sha256_normalized_text_lf": "c3437d9835b957bd97d2aa6758f35ef2688a7f25a33f94332e7a04f5a81b4d62"
   },
   {
     "path": "social/youtube_thumbnail_1280x720.jpg",
-    "bytes_at_build": 350417,
-    "sha256_normalized_text_lf": "aae723c340681127f26f1e0ba08702c6467b3eba49e9324f3d646a45dc7d8c9c"
+    "bytes_at_build": 163118,
+    "sha256_normalized_text_lf": "e22059abff74b9435021d7c7a04ebdfcfbe4d678cfb175c4c8a4979133145155"
   },
   {
     "path": "web/assets/chapter.js",
@@ -296,13 +516,33 @@
   },
   {
     "path": "web/index.html",
-    "bytes_at_build": 19341,
-    "sha256_normalized_text_lf": "f444811eeedb21601dc5e08796df4ddef0296f5ccb1c5779f1e860ca2705d9a0"
+    "bytes_at_build": 28679,
+    "sha256_normalized_text_lf": "a7dd9494511d8b6b098fb1a02a3ec3b392f4494d7f8b77bc62f48599812d6ecc"
   },
   {
     "path": "web/template.html",
-    "bytes_at_build": 11179,
-    "sha256_normalized_text_lf": "e0a0f691dd427abf425277eed68bd8327bead16fb95817760c4af29629b80a85"
+    "bytes_at_build": 13591,
+    "sha256_normalized_text_lf": "767ce87fc1605c52acf80fb4bd62594f67a88125912cbc51256c92057cd9314f"
+  },
+  {
+    "path": "previews/Fashion-A4-booklet.jpg",
+    "bytes_at_build": 84855,
+    "sha256_normalized_text_lf": "699725d7339dd62837584d8a28322321a0aa2e07b98ad7abc4324607563a86db"
+  },
+  {
+    "path": "previews/Fashion-A4-ink-saving.jpg",
+    "bytes_at_build": 67869,
+    "sha256_normalized_text_lf": "51c429ae8507a18b2ccb298d64794be2edfd5cd3a35c9b47767a19fd87635fbf"
+  },
+  {
+    "path": "previews/Fashion-A5-print.jpg",
+    "bytes_at_build": 276626,
+    "sha256_normalized_text_lf": "c8884a8cc8bbfb82e190e857b6eea870cb63d55b6c1be68fb0306d3102b74dd1"
+  },
+  {
+    "path": "previews/social-current.jpg",
+    "bytes_at_build": 301703,
+    "sha256_normalized_text_lf": "69c24f420cfa9a00423fffe209be8eb1674c6469f4e29d39764f188014c953b4"
   },
   {
     "path": "previews/web-1440.png",

@@ -1,11 +1,6 @@
-# Facebook Page post / DRAFT — NOT POSTED
+Có khi quần áo đã nói hộ mình quá nhiều thứ. Rồi đến một lúc, mình chỉ muốn chúng làm nền cho người đang mặc.
 
-Hồi trẻ, ước mơ của tôi là cứ đến mùa đông sẽ có tiền mua đôi sneakers hot nhất season. Hình như khi bản thân chưa biết mình là ai, một logo đúng trend cũng giúp người ta cảm thấy mình thuộc về một nhóm nào đó.
+“Bạn thích mix cái gì với cái gì thì cứ mix, đó là style của bạn, chẳng ai cấm cả.”
 
-Nhưng càng lớn, tôi càng thấy thú vị với những dấu vết cũ: một cái áo bạc màu, đường chỉ bị sờn, một món đồ đã nằm trong tủ của bố hai mươi năm.
-
-Có thể fashion chưa bao giờ chỉ là mặc đẹp. Nó còn là những gì một người đi qua trong bộ quần áo ấy.
-
-**Be your own label, not a hanger, my man.**
-
-Fashion — một chương của .json, Jason, under revision. Link sẽ được cập nhật khi chương chính thức được duyệt xuất bản.
+Fashion — chương 02 của .json, Jason, under revision. Bản tác giả cập nhật ngày 17/10/2026, có bản đọc và bản in đầy đủ:
+https://jasonthedataguy.github.io/json-under-revision/chapters/02/

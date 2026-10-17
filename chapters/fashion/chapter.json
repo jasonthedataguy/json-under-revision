@@ -36,16 +36,19 @@
     "synthetic_voice": false
   },
   "video_mode": "edit cuts awaiting author-recorded narration",
-  "print_status": "supplied editorial proofs; A5 uses the supplied proposed edit, not the published original",
+  "print_status": "current A5 illustrated, A4 ink-saving and A4 imposed booklet PDFs; home/office printable; commercial press specifications pending",
   "qr_status": "deferred",
-  "source_status": "author-supplied original; published verbatim",
+  "source_status": "Author revision received 2026-10-17; wording preserved with paragraph-spacing normalization only",
   "text_policy": "verbatim-author-original",
   "manuscript_source": {
-    "path": "source/original.md",
-    "received_on": "2026-10-16",
-    "bytes": 7758,
-    "sha256": "b80511a10f1823fe67549e0ae596e677893edc6664c7bad3f5650eb26b3c0486"
+    "path": "source/revision-2026-10-17.md",
+    "received_on": "2026-10-17",
+    "bytes": 6643,
+    "sha256": "fa6d61a045a5c160a45ecd541382077c46a4581b00de6ffd027bf1674ac78c9e"
   },
   "reference_manifest": "docs/REFERENCE_IMPORT.json",
-  "revision_note": "The supplied original is the published text. The proposed edit remains an archived reference."
+  "revision_note": "Bản đang đọc được tác giả cập nhật ngày 17/10/2026. Giữ nguyên câu chữ và chữ ký Jason; chỉ thêm dòng trống để tách đoạn. Bản trước được lưu bên dưới.",
+  "history_text": "source/original.md",
+  "history_label": "Bản trước — 16/10/2026",
+  "publication_authorization": "2026-10-17: author requested Git deployment and review/completion of Fashion posts and books, including a printable edition."
 }

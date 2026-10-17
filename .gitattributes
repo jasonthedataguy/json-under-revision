@@ -39,3 +39,8 @@ chapters/the-gioi-trong-mo-cua-toi/audio/reading-script.md -text -whitespace
 chapters/the-gioi-trong-mo-cua-toi/**/*.csv -text -whitespace
 chapters/the-gioi-trong-mo-cua-toi/video/VISUAL_BEAT_CAPTIONS_NOT_SYNCED_TO_VOICE.srt -text -whitespace
 docs/chapters/choi-de-khong-thua/source/*.md -text -whitespace
+
+# Preserve the Fashion author revision and its raw attachment.
+chapters/fashion/source/revision-2026-10-17.md -text -whitespace
+chapters/fashion/source/submitted-2026-10-17.txt -text -whitespace
+chapters/fashion/audio/reading-script.md -text -whitespace

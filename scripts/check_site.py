@@ -57,6 +57,7 @@ def check_site():
             assert target.is_file(),f'Broken link: {path.relative_to(site)} => {link}'
             if parsed.fragment and target in pages:assert unquote(parsed.fragment) in pages[target].ids,f'Broken anchor: {link}'
     urls=set();numbers=set();count=0;reference_count=0
+    expected_pages={(site/'index.html').resolve(),(site/'about/index.html').resolve()}
     for folder,meta in chapters():
         assert meta['schema_version']==1
         assert re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*',meta['slug'])
@@ -82,6 +83,7 @@ def check_site():
                 assert not (site/route).exists(),f'Draft chapter route was published: {route}'
             continue
         count+=1
+        expected_pages.update((site/route/'index.html').resolve() for route in [meta['canonical_path'],*meta['aliases']])
         reader=reader_release(meta)
         if meta.get('text_policy') in {'verbatim-author-original','verbatim-author-body'}:
             original=validate_author_manuscript(folder,meta)
@@ -111,6 +113,10 @@ def check_site():
         for product in read_json(folder/'docs/PRODUCTS.json')['products']:
             assert product['state']!='missing',product
             assert safe_path(folder,product['path']).is_file(),product
+            # Registered HTML products (for example a print guide) are deployed
+            # alongside the chapter. web/index.html is its offline source page.
+            if product['path'].endswith('.html') and product['path']!='web/index.html' and not product['path'].startswith('references/'):
+                expected_pages.add(safe_path(site/meta['canonical_path'],product['path']))
         home=pages[(site/'index.html').resolve()]
         assert meta['canonical_path'] in home.links,f'Published chapter missing from homepage: {meta["slug"]}'
         if reader:
@@ -144,7 +150,7 @@ def check_site():
     migration=read_json(ROOT/'docs/MIGRATION.json')
     for item in migration['files']:
         assert hashlib.sha256((ROOT/item['to']).read_bytes()).hexdigest()==item['sha256'],f'Archived file changed: {item["to"]}'
-    assert len(pages)==2+2*count, 'Expected index, about, chapter and slug alias pages'
+    assert set(pages)==expected_pages, f'Unexpected or missing public pages: {set(pages)^expected_pages}'
     print(f'PASS: {count} published chapters; {len(pages)} pages; homepage cards, links, manuscripts, inventories, available products, {reference_count} supplied references and {len(migration["files"])} archived files; draft routes excluded')
 
 if __name__=='__main__':check_site()

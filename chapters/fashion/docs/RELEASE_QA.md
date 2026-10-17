@@ -1,3 +1,23 @@
+# Fashion print and post release ? 2026-10-17
+
+Current products use the selected author revision. MEDIA_QA.json verifies every paragraph and closing line in both reading PDFs, font embedding, page bounds, all eight booklet page placements, exact excerpts, social dimensions, recording-script bytes, both 30-second video decodes and print/social ZIP integrity. The eight A5 pages and social contact sheet were visually inspected.
+
+The public collection links the current A5, A4 text, A4 folded booklet, print guide and print/post packs. Earlier supplied proofs remain historical downloads. CHECKLIST_REVIEW.md reviews all 64 supplied tasks and records remaining narration, physical print, commercial press and human-device review. No social upload or schedule is claimed.
+
+The earlier reports below are retained as historical records.
+
+---
+
+# Fashion manuscript update — 2026-10-17
+
+The selected manuscript is the author’s new attachment. All nine essay paragraphs, the closing and Jason signature are retained word-for-word. Only blank lines and newline encoding were normalized for the existing Markdown renderer. The raw attachment is preserved with its SHA-256 in SOURCE_INTAKE.json. The earlier original and all supplied references remain unchanged.
+
+The current manuscript download and offline reader use the revision. Version history displays the previous manuscript. Supplied PDFs, animatics and social assets retain their existing proof state; the A5 label identifies the earlier proposed edit.
+
+The following report records the earlier release and its checks at that time.
+
+---
+
 # Fashion web release — 2026-10-16
 
 The author requested deployment of the five supplied Fashion v02 packages. The release publishes Chapter 02 at `chapters/02/`, with `chapters/fashion/` as an alias and a homepage card before Chapter 03.
